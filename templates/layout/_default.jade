@@ -1,6 +1,9 @@
+- var globalTitleFragment = ' | Site name'
+
 doctype
 html(lang="en")
   head
+    title #{pageTitle} #{globalTitleFragment}
     include ../partials/css-files.jade
   body
     include ../partials/header--global.jade

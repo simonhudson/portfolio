@@ -1,12 +1,14 @@
 var gulp        = require('gulp'),
     concat      = require('gulp-concat'),
     csslint     = require('gulp-csslint'),
+    data        = require('gulp-data'),
     del         = require('del'),
     gutil       = require('gulp-util'),
     imagemin    = require('gulp-imagemin'),
     jade        = require('gulp-jade'),
     jshint      = require('gulp-jshint'),
     minifyCss   = require('gulp-minify-css'),
+    path        = require('path'),
     rename      = require('gulp-rename'),
     sass        = require('gulp-ruby-sass'),
     uglify      = require('gulp-uglify'),
@@ -87,6 +89,10 @@ Jade templates
 ***/
 gulp.task('jade', function() {
   gulp.src(dir.src_pages + '**/*.jade')
+    .pipe(data(function(file) {
+        var fileName = path.basename(file.path).replace('.jade', '');
+        return require('./data/' + fileName + '.json');
+    }))
     .pipe(jade())
     .pipe(gulp.dest(dir.dist));
 });
