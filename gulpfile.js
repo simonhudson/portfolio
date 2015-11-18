@@ -35,7 +35,7 @@ var dir = {};
     dir.watch_css           = dir.src_css + '**/*.scss';
     dir.watch_js            = dir.src_js + '**/*.js';
     dir.watch_templates     = dir.src_templates + '**/*.jade';
-    dir.watch_data          = 'data/**/*.json';
+    dir.watch_data          = dir.src + 'data/**/*.json';
 
 /***
 Clean output dirs
