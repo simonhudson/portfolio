@@ -2,10 +2,12 @@
 // Portfolio
 //
 .portfolio-img {
+    position:relative;
     z-index:index($global-stacking-order, 'portfolio-img');
 }
 .portfolio-content {
-    @include border-radius();
+    @include border-radius($spacing-sm);
+    @include float-l();
     @include margin-y(-$spacing-lg, $spacing-lg);
     @include padding-y();
     background:#fff;
