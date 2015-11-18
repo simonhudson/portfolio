@@ -3,6 +3,7 @@ var gulp        = require('gulp'),
     csslint     = require('gulp-csslint'),
     data        = require('gulp-data'),
     del         = require('del'),
+    filesize    = require('gulp-filesize'),
     gutil       = require('gulp-util'),
     imagemin    = require('gulp-imagemin'),
     jade        = require('gulp-jade'),
@@ -115,6 +116,16 @@ Copy Fonts
 gulp.task('copyfonts', function() {
     return gulp.src(dir.src_fonts)
         .pipe(gulp.dest(dir.dist_fonts));
+});
+
+/***
+Copy Images
+***/
+gulp.task('copyimgs', ['delimgs'], function() {
+    return gulp.src(dir.src_imgs)
+        .pipe(imagemin())
+        .pipe(filesize())
+        .pipe(gulp.dest(dir.dist_imgs));
 });
 
 /***

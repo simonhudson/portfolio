@@ -1,0 +1,14 @@
+//
+// Portfolio
+//
+.portfolio-img {
+    z-index:index($global-stacking-order, 'portfolio-img');
+}
+.portfolio-content {
+    @include border-radius();
+    @include margin-y(-$spacing-lg, $spacing-lg);
+    @include padding-y();
+    background:#fff;
+    position:relative;
+    z-index:index($global-stacking-order, 'portfolio-content');
+}

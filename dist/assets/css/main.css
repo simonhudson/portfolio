@@ -21,6 +21,10 @@ h1 {
   margin: 0.67em 0;
 }
 
+img {
+  border: 0;
+}
+
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
@@ -51,6 +55,10 @@ body {
   line-height: 1.42857;
   color: #333333;
   background-color: #fff;
+}
+
+img {
+  vertical-align: middle;
 }
 
 .container {
@@ -178,11 +186,38 @@ body {
   min-height: 100%;
 }
 
+img {
+  border: none;
+}
+
 body {
   background: #ddd;
 }
 
 .band {
   background: #ccc;
-  min-height: 300px;
+}
+
+.band--img {
+  max-height: 300px;
+  overflow: hidden;
+  position: relative;
+}
+
+.portfolio-img {
+  z-index: 3;
+}
+
+.portfolio-content {
+  -webkit-border-radius: 2px 2px 2px 2px;
+  -moz-border-radius: 2px 2px 2px 2px;
+  -o-border-radius: 2px 2px 2px 2px;
+  border-radius: 2px 2px 2px 2px;
+  margin-top: -32px;
+  margin-bottom: 32px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  background: #fff;
+  position: relative;
+  z-index: 2;
 }

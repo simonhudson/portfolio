@@ -3,5 +3,9 @@
 //
 .band {
     background:#ccc;
-    min-height:300px;
+}
+.band--img {
+    max-height:300px;
+    overflow:hidden;
+    position:relative;
 }

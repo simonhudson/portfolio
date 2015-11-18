@@ -56,4 +56,4 @@ $grid__width--wide: $desktop-wide;
 
 // Layout
 $global-header-height:pxToEm(70px);
-$global-stacking-order: 'global-header';
+$global-stacking-order: 'global-header', 'portfolio-content', 'portfolio-img';
