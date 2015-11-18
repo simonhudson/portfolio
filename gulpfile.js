@@ -91,10 +91,19 @@ gulp.task('jade', function() {
     .pipe(gulp.dest(dir.dist));
 });
 
+/**
+Minify images
+***/
+gulp.task('imagemin', ['delimgs'], function () {
+    return gulp.src(dir.src_imgs + '**/*.{gif,jpg,jpeg,png,svg}')
+        .pipe(imagemin())
+        .pipe(gulp.dest(dir.dist_imgs));
+});
+
 /***
 Tasks
 ***/
-gulp.task('default', ['jade', 'minifycss']);
+gulp.task('default', ['jade', 'minifycss', 'imagemin']);
 
 gulp.task('serve', ['default'], function () {
     gutil.log('Initiating watch');
