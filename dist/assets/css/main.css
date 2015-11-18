@@ -88,6 +88,7 @@ body {
   }
 }
 
+.col-md-4,
 .col-md-8,
 .col-xs-12 {
   position: relative;
@@ -105,8 +106,13 @@ body {
 }
 
 @media (min-width: 992px) {
+  .col-md-4,
   .col-md-8 {
     float: left;
+  }
+
+  .col-md-4 {
+    width: 33.33333%;
   }
 
   .col-md-8 {
@@ -174,4 +180,9 @@ body {
 
 body {
   background: #ddd;
+}
+
+.band {
+  background: #ccc;
+  min-height: 300px;
 }
