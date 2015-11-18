@@ -35,6 +35,7 @@ var dir = {};
     dir.watch_css           = dir.src_css + '**/*.scss';
     dir.watch_js            = dir.src_js + '**/*.js';
     dir.watch_templates     = dir.src_templates + '**/*.jade';
+    dir.watch_data          = 'data/**/*.json';
 
 /***
 Clean output dirs
@@ -117,4 +118,5 @@ gulp.task('serve', ['default'], function () {
     gulp.watch(dir.watch_js, { interval: 1000 }, ['default']);
     gulp.watch(dir.watch_imgs, { interval: 1000 }, ['default']);
     gulp.watch(dir.watch_templates, { interval: 1000 }, ['default']);
+    gulp.watch(dir.watch_data, { interval: 1000 }, ['default']);
 });

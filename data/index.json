@@ -1,4 +1,25 @@
 {
     "pageTitle" : "Home",
-    "pageHeading" : "Welcome to the site"
+    "pageHeading" : "Welcome to the site",
+    "portfolio" : [
+        {
+            "title" : "Item 1",
+            "slug" : "item-1",
+            "madewith" : [
+                "HTML",
+                "CSS",
+                "JavaScript/jQuery"
+            ]
+        },
+        {
+            "title" : "Item 2",
+            "slug" : "item-2",
+            "madewith" : [
+                "HTML",
+                "CSS",
+                "JavaScript/jQuery",
+                "PHP"
+            ]
+        }
+    ]
 }
