@@ -1,4 +1,9 @@
+@import 'bootstrap/bootstrap';
+
 @import 'functions/px-to-em';
+@import 'typography/fonts';
 @import 'variables/variables';
 @import 'mixins/mixins';
 @import 'reset/reset';
+
+@import 'layout/layout';
