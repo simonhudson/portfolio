@@ -25,12 +25,14 @@ var dir = {};
     dir.src_css         = dir.src_assets + 'css/';
     dir.src_js          = dir.src_assets + 'js/';
     dir.src_imgs        = dir.src_assets + 'imgs/';
+    dir.src_fonts       = dir.src_assets + 'fonts/**/';
 
     dir.dist            = 'dist/';
     dir.dist_assets     = dir.dist + 'assets/';
     dir.dist_css        = dir.dist_assets + 'css/';
     dir.dist_js         = dir.dist_assets + 'js/';
     dir.dist_imgs       = dir.dist_assets + 'imgs/';
+    dir.dist_fonts      = dir.dist_assets + 'fonts/';
 
     dir.watch_css           = dir.src_css + '**/*.scss';
     dir.watch_js            = dir.src_js + '**/*.js';
@@ -108,9 +110,17 @@ gulp.task('imagemin', ['delimgs'], function () {
 });
 
 /***
+Copy Fonts
+***/
+gulp.task('copyfonts', function() {
+    return gulp.src(dir.src_fonts)
+        .pipe(gulp.dest(dir.dist_fonts));
+});
+
+/***
 Tasks
 ***/
-gulp.task('default', ['jade', 'minifycss', 'imagemin']);
+gulp.task('default', ['copyfonts', 'jade', 'minifycss', 'imagemin']);
 
 gulp.task('serve', ['default'], function () {
     gutil.log('Initiating watch');
