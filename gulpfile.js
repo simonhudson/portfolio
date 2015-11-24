@@ -28,7 +28,7 @@ var dir = {};
     dir.src_imgs        = dir.src_assets + 'imgs/';
     dir.src_fonts       = dir.src_assets + 'fonts/**/';
 
-    dir.dist            = 'dist/';
+    dir.dist            = dir.src + 'dist/';
     dir.dist_assets     = dir.dist + 'assets/';
     dir.dist_css        = dir.dist_assets + 'css/';
     dir.dist_js         = dir.dist_assets + 'js/';

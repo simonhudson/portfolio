@@ -16,6 +16,15 @@ body {
   margin: 0;
 }
 
+a {
+  background-color: transparent;
+}
+
+a:active,
+a:hover {
+  outline: 0;
+}
+
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
@@ -55,6 +64,23 @@ body {
   line-height: 1.42857;
   color: #333333;
   background-color: #fff;
+}
+
+a {
+  color: #337ab7;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  color: #23527c;
+  text-decoration: underline;
+}
+
+a:focus {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
 }
 
 img {
@@ -188,6 +214,20 @@ body {
 
 img {
   border: none;
+}
+
+a {
+  font-size: inherit;
+}
+
+.hidden {
+  font-size: 0 !important;
+  height: 0 !important;
+  left: -999% !important;
+  line-height: 0 !important;
+  overflow: hidden !important;
+  position: absolute !important;
+  width: 0 !important;
 }
 
 body {
