@@ -20,15 +20,13 @@ var gulp        = require('gulp'),
 var dir = {};
 
     dir.src             = './';
-    dir.src_templates   = dir.src + 'templates/';
-    dir.src_pages       = dir.src_templates + 'pages/';
-    dir.src_assets      = dir.src + 'assets/';
+    dir.src_assets      = dir.src + 'assets/src/';
     dir.src_css         = dir.src_assets + 'css/';
     dir.src_js          = dir.src_assets + 'js/';
     dir.src_imgs        = dir.src_assets + 'imgs/';
     dir.src_fonts       = dir.src_assets + 'fonts/**/';
 
-    dir.dist            = dir.src + 'dist/';
+    dir.dist            = dir.src + './';
     dir.dist_assets     = dir.dist + 'assets/';
     dir.dist_css        = dir.dist_assets + 'css/';
     dir.dist_js         = dir.dist_assets + 'js/';
@@ -37,8 +35,6 @@ var dir = {};
 
     dir.watch_css           = dir.src_css + '**/*.scss';
     dir.watch_js            = dir.src_js + '**/*.js';
-    dir.watch_templates     = dir.src_templates + '**/*.jade';
-    dir.watch_data          = dir.src + 'data/**/*.json';
 
 /***
 Clean output dirs
@@ -72,11 +68,11 @@ gulp.task('minifycss', ['uncss'], function() {
 });
 
 gulp.task('uncss', ['sass'], function () {
-    return gulp.src(dir.dist_css + '*.css')
-        .pipe(uncss({
-            html: [dir.dist + '**/*.html']
-        }))
-        .pipe(gulp.dest(dir.dist_css));
+    // return gulp.src(dir.dist_css + '*.css')
+    //     .pipe(uncss({
+    //         html: [dir.dist + '**/*.php']
+    //     }))
+    //     .pipe(gulp.dest(dir.dist_css));
 });
 
 gulp.task('sass', ['delcss'], function () {
@@ -86,19 +82,6 @@ gulp.task('sass', ['delcss'], function () {
         })
         .pipe(rename('main.css'))
         .pipe(gulp.dest(dir.dist_css));
-});
-
-/***
-Jade templates
-***/
-gulp.task('jade', function() {
-  gulp.src(dir.src_pages + '**/*.jade')
-    .pipe(data(function(file) {
-        var fileName = path.basename(file.path).replace('.jade', '');
-        return require('./data/' + fileName + '.json');
-    }))
-    .pipe(jade())
-    .pipe(gulp.dest(dir.dist));
 });
 
 /**
@@ -131,7 +114,7 @@ gulp.task('copyimgs', ['delimgs'], function() {
 /***
 Tasks
 ***/
-gulp.task('default', ['copyfonts', 'jade', 'minifycss', 'imagemin']);
+gulp.task('default', ['copyfonts', 'minifycss', 'imagemin']);
 
 gulp.task('serve', ['default'], function () {
     gutil.log('Initiating watch');
