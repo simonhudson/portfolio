@@ -2,16 +2,23 @@
 // Global header
 //
 .header--global {
+    @include full-width();
     background:$palette-accent-primary;
     color:#fff;
     height:$global-header-height;
-    position:relative;
+    position:fixed;
+    will-change:transform;
+    z-index:index($global-stacking-order, 'global-header');
 }
-.site-logo {
-    @include position-tl(10px, 0);
+.header-logo {
+    @include position-tl(5px, 0);
+}
+.header-logo__img {
+    height:auto;
+    width:80%;
 }
 .strapline {
-    @include position-tr(25px, 0);
+    @include position-tr(15px, 0);
     @include strong();
     text-transform:uppercase;
 

@@ -37,8 +37,8 @@ $currentPage = currentPage();
     <header class="header--global">
         <div class="container container--header">
             <div class="col-md-3">
-                <a class="site-logo" href="<?= $pages->home->url; ?>">
-                    <img alt="<?= $site->name; ?>" class="header-logo" src="<?= $paths->imgs; ?>logo.svg" />
+                <a class="header-logo" href="<?= $pages->home->url; ?>">
+                    <img alt="<?= $site->name; ?>" class="header-logo__img" src="<?= $paths->imgs; ?>logo.svg" />
                 </a>
             </div>
             <div class="col-md-9">
