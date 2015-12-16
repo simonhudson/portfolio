@@ -1,7 +1,7 @@
 //
 // Navigation
 //
-a {
+main a {
     @include animate(border-bottom);
     border-bottom:1px solid rgba($palette-body, .20);
     color:$palette-accent-secondary;

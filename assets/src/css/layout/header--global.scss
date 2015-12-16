@@ -5,4 +5,18 @@
     background:$palette-accent-primary;
     color:#fff;
     height:$global-header-height;
+    position:relative;
+}
+.site-logo {
+    @include position-tl(10px, 0);
+}
+.strapline {
+    display:none;
+
+    @include bp($bp-3) {
+        display:block;
+        @include position-tr(30px, 0);
+        @include strong();
+        text-transform:uppercase;
+    }
 }

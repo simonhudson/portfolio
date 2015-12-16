@@ -4,6 +4,7 @@ include('config/site.config.inc.php');
 include('config/pages.config.inc.php');
 include('config/paths.config.inc.php');
 include('functions/functions.inc.php');
+include('includes/portfolio.inc.php');
 $currentPage = currentPage();
 ?>
 <!doctype html>
@@ -35,9 +36,12 @@ $currentPage = currentPage();
     <header class="header--global">
         <div class="container container--header">
             <div class="col-md-3">
-                <a href="<?= $pages->home->url; ?>">
-                    <img alt="<?= $site->name; ?>" class="header-logo" src="" />
+                <a class="site-logo" href="<?= $pages->home->url; ?>">
+                    <img alt="<?= $site->name; ?>" class="header-logo" src="<?= $paths->imgs; ?>logo.png" />
                 </a>
+            </div>
+            <div class="col-md-9">
+                <p class="strapline"><?= $site->name; ?></p>
             </div>
             <!-- <a class="navbar-toggle main-nav__toggle" data-showhide-target="main-nav" href="#">
                 <span class="fa fa-bars fa-2x"></span>

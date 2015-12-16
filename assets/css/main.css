@@ -1229,9 +1229,27 @@ body {
 .header--global {
   background: #05abb6;
   color: #fff;
-  height: 4.375em; }
+  height: 5.625em;
+  position: relative; }
 
-a {
+.site-logo {
+  left: 0;
+  position: absolute;
+  top: 10px; }
+
+.strapline {
+  display: none; }
+  @media all and (min-width: 768px) {
+    .strapline {
+      display: block;
+      position: absolute;
+      right: 0;
+      top: 30px;
+      font-family: "opensans_semibold", "opensans_regular", arial, helvetica, sans-serif;
+      font-weight: normal;
+      text-transform: uppercase; } }
+
+main a {
   -webkit-transition: border-bottom 0.3s linear;
   -moz-transition: border-bottom 0.3s linear;
   -ms-transition: border-bottom 0.3s linear;
@@ -1239,7 +1257,7 @@ a {
   border-bottom: 1px solid rgba(73, 78, 81, 0.2);
   color: #c4421e;
   text-decoration: none; }
-  a:hover, a:focus {
+  main a:hover, main a:focus {
     border-bottom: 1px solid #c4421e;
     color: #c4421e;
     text-decoration: none; }
