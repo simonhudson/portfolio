@@ -19,6 +19,7 @@ $currentPage = currentPage();
 <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
 <meta content="width=device-width, initial-scale=1" name="viewport" />
 <title><?= (isset($pages->$currentPage->pageTitle) ? $pages->$currentPage->pageTitle : $pages->$currentPage->mainNavText).$site->globalHeadingFragment; ?></title>
+<link href="<?= $paths->libs; ?>font-awesome/css/font-awesome.min.css" rel="stylesheet" />
 <link href="<?= $paths->css; ?>main.min.css" rel="stylesheet" />
 </head>
 <body>
@@ -37,7 +38,7 @@ $currentPage = currentPage();
         <div class="container container--header">
             <div class="col-md-3">
                 <a class="site-logo" href="<?= $pages->home->url; ?>">
-                    <img alt="<?= $site->name; ?>" class="header-logo" src="<?= $paths->imgs; ?>logo.png" />
+                    <img alt="<?= $site->name; ?>" class="header-logo" src="<?= $paths->imgs; ?>logo.svg" />
                 </a>
             </div>
             <div class="col-md-9">
