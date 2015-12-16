@@ -1,13 +1,13 @@
 <?php include('layouts/precontent.inc.php'); ?>
 
+    <h1 class="hidden"><?= pageHeading(); ?></h1>
+
     <?php foreach($portfolio as $item) { ?>
         <section id="item-<?php echo $item->slug; ?>">
-            <div class="col-xs-12">
-                <img alt="<?php echo $item->title; ?> screen shot" src="<?php echo $config->paths->imgs; ?>teasers/<?php echo $item->slug; ?>.png" />
-            </div>
-            <div class="container">
+            <img alt="<?php echo $item->title; ?> screen shot" class="portfolio__img" src="<?php echo $config->paths->imgs; ?>teasers/<?php echo $item->slug; ?>.png" />
+            <div class="container portfolio__content">
                 <div class="col-md-9">
-                    <h2><?php echo $item->title; ?></h2>
+                    <h2 class="portfolio__title"><?php echo $item->title; ?></h2>
                     <?php if (isset($item->text)) { echo $item->text; } ?>
                 </div>
                 <div class="col-md-3">

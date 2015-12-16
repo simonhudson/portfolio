@@ -11,12 +11,16 @@
     @include position-tl(10px, 0);
 }
 .strapline {
-    display:none;
+    @include position-tr(25px, 0);
+    @include strong();
+    text-transform:uppercase;
 
-    @include bp($bp-3) {
-        display:block;
-        @include position-tr(30px, 0);
-        @include strong();
-        text-transform:uppercase;
+    span {
+        display:none;
+
+        @include bp($bp-1) {
+            display:inline;
+        }
+
     }
 }

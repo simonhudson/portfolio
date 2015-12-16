@@ -12,7 +12,7 @@
 // Typography
 @mixin headings-common() {
     @include font-weight-normal();
-    line-height:pxToEm($base-font-size * 1.6);
+    line-height:pxToEm($base-font-size * 1.4);
 }
 @mixin faux-h1() {
     @include headings-common();

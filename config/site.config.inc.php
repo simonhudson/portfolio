@@ -1,7 +1,7 @@
 <?php
 
 $site = (object) array(
-    'name' => 'Web Design &amp; Development by Simon Hudson',
+    'name' => '<span>Web Design &amp; Development by </span>Simon Hudson',
     'globalHeadingFragment' => ' | Web Design &amp; Development by Simon Hudson'
 );
 

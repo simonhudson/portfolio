@@ -1,9 +1,14 @@
 //
 // Portfolio
 //
-.portfolio-img {
-
+.portfolio__img {
+    background:#efefef;
+    width:100%;
+    height:$global-header-height * 3;
 }
-.portfolio-content {
-
+.portfolio__content {
+    @include padding-y($spacing-xlg);
+}
+.portfolio__title {
+    @include faux-h1();
 }
