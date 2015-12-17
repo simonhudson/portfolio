@@ -591,6 +591,9 @@ main {
     .portfolio__img {
       width: 50%; } }
 
+.portfolio__client {
+  padding-bottom: 0; }
+
 .portfolio-action__link {
   width: 100%; }
 

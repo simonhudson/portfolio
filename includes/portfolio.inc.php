@@ -20,6 +20,7 @@ $portfolio = (object) array(
     'gov-petitions' => (object) array(
         'slug'      => 'gov-petitions',
         'title'     => 'UK Government Petitions',
+        'client'    => 'Personal project',
         'text'      => 'An experiment using the publicly-accessible government petitions API. Petitions are searchable by ID, data is returned to the browser and displayed using the KnockoutJS framework. The API is polled periodically to give a real-time update of the number of signatories.',
         'url'       => 'govpetitions.heyhudson.com',
         'github'    => 'gov-petitions',
@@ -27,7 +28,8 @@ $portfolio = (object) array(
             'XHTML',
             'CSS',
             'JavaScript/jQuery',
-            'KnockoutJS'
+            'KnockoutJS',
+            'Government API'
         )
     ),
     // 'steve-bloomers-watching' => (object) array(

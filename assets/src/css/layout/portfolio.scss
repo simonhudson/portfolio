@@ -39,6 +39,9 @@
     }
 
 }
+.portfolio__client {
+    padding-bottom:0;
+}
 .portfolio-action__link {
     @include full-width();
 }

@@ -10,6 +10,9 @@
                 </div>
                 <div class="grid__span--12">
                     <h2 class="portfolio__title"><?= $item->title; ?></h2>
+                    <?php if (isset($item->client)): ?>
+                        <p class="portfolio__client"><strong><?= $item->client; ?></strong></p>
+                    <?php endif; ?>
                     <?php if (isset($item->madewith)): ?>
                         <ul class="no-bullet tools__list">
                         <?php foreach ($item->madewith as $madewithitem): ?>
