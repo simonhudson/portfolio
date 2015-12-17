@@ -144,7 +144,7 @@
     width:1%;
 }
 @mixin center() {
-    margin:0 auto;
+    margin:0 auto !important;
 }
 @mixin center-content {
     text-align:center;
@@ -171,28 +171,27 @@
     @include border-radius();
     // @include margin-x(auto);
     @include margin-b();
-    @include padding-x($spacing);
-    @include padding-y(5px);
+    @include padding();
     @include strong();
     // @include vert-gradient($palette-accent-primary, darken($palette-accent-primary, 10%));
     background:$palette-accent-secondary;
     border:1px solid transparent;
     color:#fff;
     cursor:pointer;
+    display:inline-block;
     font-size:pxToEm($base-font-size * 1);
     position:relative;
     text-align:center;
     text-decoration:none;
-    width:75%;
 
     &.invert {
         background:#fff;
         color:$palette-body;
     }
 
-    @include bp($bp-1) {
-        width:75%;
-    }
+    // @include bp($bp-1) {
+    //     width:75%;
+    // }
 
 }
 @mixin btn--primary() {

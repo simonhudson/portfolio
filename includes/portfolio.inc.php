@@ -17,20 +17,33 @@ $portfolio = (object) array(
     //      'Swig'
     //  )
     // ),
-    'steve-bloomers-watching' => (object) array(
-        'slug'      => 'steve-bloomers-watching',
-        'title'     => 'Steve Bloomer\'s Watching',
-        'text'      => '<p>As a season ticket holder at Derby County FC (for my sins!), I decided to create a blog in which to write match reports and articles on the club. The blog uses the basic WordPress engine which has been ripped out and integrated into a custom <abbr title="Hypertext Markup Language">HTML</abbr>5 template. The site also makes use of <abbr title="Cascading Style Sheets">CSS</abbr> media queries to enable a responsive layout across devices.</p>',
-        'url'       => 'www.stevebloomerswatching.com',
-        'github'    => 'www.github.com/simonhudson/foo',
+    'gov-petitions' => (object) array(
+        'slug'      => 'gov-petitions',
+        'title'     => 'UK Government Petitions',
+        'text'      => 'An experiment using the publicly-accessible government petitions API. Petitions are searchable by ID, data is returned to the browser and displayed using the KnockoutJS framework. The API is polled periodically to give a real-time update of the number of signatories.',
+        'url'       => 'govpetitons.heyhudson.com',
+        'github'    => 'gov-petitions',
         'madewith'  => (object) array(
             'XHTML',
             'CSS',
             'JavaScript/jQuery',
-            'WordPress',
-            'Photoshop'
+            'KnockoutJS'
         )
     ),
+    // 'steve-bloomers-watching' => (object) array(
+    //     'slug'      => 'steve-bloomers-watching',
+    //     'title'     => 'Steve Bloomer\'s Watching',
+    //     'text'      => '<p>As a season ticket holder at Derby County FC (for my sins!), I decided to create a blog in which to write match reports and articles on the club. The blog uses the basic WordPress engine which has been ripped out and integrated into a custom <abbr title="Hypertext Markup Language">HTML</abbr>5 template. The site also makes use of <abbr title="Cascading Style Sheets">CSS</abbr> media queries to enable a responsive layout across devices.</p>',
+    //     'url'       => 'www.stevebloomerswatching.com',
+    //     'github'    => 'www.github.com/simonhudson/foo',
+    //     'madewith'  => (object) array(
+    //         'XHTML',
+    //         'CSS',
+    //         'JavaScript/jQuery',
+    //         'WordPress',
+    //         'Photoshop'
+    //     )
+    // ),
     // 'nhs-choices' => (object) array(
     //     'slug'      => 'nhs-choices',
     //     'title'     => 'NHS Choices',

@@ -244,7 +244,7 @@ acronym {
   width: 0 !important; }
 
 .center {
-  margin: 0 auto; }
+  margin: 0 auto !important; }
 
 .center-content {
   text-align: center; }
@@ -570,11 +570,11 @@ main {
   overflow: hidden;
   position: relative; }
 
-.portfolio__img {
-  background: #efefef;
-  display: inline-block;
+.portfolio__item {
   width: 100%;
-  height: 13.125em; }
+  background: top left no-repeat #fff;
+  height: 26.25em;
+  position: relative; }
 
 .portfolio__content {
   padding-top: 16px;
@@ -584,16 +584,29 @@ main {
       padding-top: 32px;
       padding-bottom: 32px; } }
 
+.portfolio__img {
+  width: 100%;
+  height: auto; }
+  @media all and (min-width: 768px) {
+    .portfolio__img {
+      width: 50%; } }
+
+.portfolio-action__link {
+  width: 100%; }
+
 .portfolio__title {
   color: #05abb6; }
 
-.item__link {
-  margin: 0 auto;
-  display: block; }
-  @media all and (min-width: 410px) {
-    .item__link {
-      margin-right: 0;
-      margin-left: 0; } }
+.tools__list {
+  margin-bottom: 16px; }
+
+.tools__item {
+  color: rgba(196, 66, 30, 0.75);
+  display: inline; }
+  .tools__item:after {
+    content: ', '; }
+  .tools__item:last-of-type:after {
+    content: ''; }
 
 .header--global {
   width: 100%;
@@ -653,31 +666,23 @@ main a {
   -o-border-radius: 2px 2px 2px 2px;
   border-radius: 2px 2px 2px 2px;
   margin-bottom: 16px;
-  padding-right: 16px;
-  padding-left: 16px;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding: 16px;
   font-family: "opensans_semibold", "opensans_regular", arial, helvetica, sans-serif;
   font-weight: normal;
   background: #c4421e;
   border: 1px solid transparent;
   color: #fff;
   cursor: pointer;
+  display: inline-block;
   font-size: 1em;
   position: relative;
   text-align: center;
-  text-decoration: none;
-  width: 75%; }
+  text-decoration: none; }
   .btn.invert,
   .btn:hover.invert,
   .btn:focus.invert {
     background: #fff;
     color: #494e51; }
-  @media all and (min-width: 410px) {
-    .btn,
-    .btn:hover,
-    .btn:focus {
-      width: 75%; } }
 
 .btn--secondary,
 .btn--secondary:hover,
@@ -687,21 +692,18 @@ main a {
   -o-border-radius: 2px 2px 2px 2px;
   border-radius: 2px 2px 2px 2px;
   margin-bottom: 16px;
-  padding-right: 16px;
-  padding-left: 16px;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding: 16px;
   font-family: "opensans_semibold", "opensans_regular", arial, helvetica, sans-serif;
   font-weight: normal;
   background: #c4421e;
   border: 1px solid transparent;
   color: #fff;
   cursor: pointer;
+  display: inline-block;
   font-size: 1em;
   position: relative;
   text-align: center;
   text-decoration: none;
-  width: 75%;
   background: #443526;
   border-color: transparent;
   box-shadow: none;
@@ -711,11 +713,6 @@ main a {
   .btn--secondary:focus.invert {
     background: #fff;
     color: #494e51; }
-  @media all and (min-width: 410px) {
-    .btn--secondary,
-    .btn--secondary:hover,
-    .btn--secondary:focus {
-      width: 75%; } }
   .btn--secondary.invert,
   .btn--secondary:hover.invert,
   .btn--secondary:focus.invert {
