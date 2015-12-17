@@ -21,7 +21,7 @@ $portfolio = (object) array(
         'slug'      => 'gov-petitions',
         'title'     => 'UK Government Petitions',
         'text'      => 'An experiment using the publicly-accessible government petitions API. Petitions are searchable by ID, data is returned to the browser and displayed using the KnockoutJS framework. The API is polled periodically to give a real-time update of the number of signatories.',
-        'url'       => 'govpetitons.heyhudson.com',
+        'url'       => 'govpetitions.heyhudson.com',
         'github'    => 'gov-petitions',
         'madewith'  => (object) array(
             'XHTML',
