@@ -169,18 +169,16 @@
 // Buttons
 @mixin btn() {
     @include border-radius();
-    @include margin-x(auto);
+    // @include margin-x(auto);
     @include margin-b();
     @include padding-x($spacing);
     @include padding-y(5px);
     @include strong();
     // @include vert-gradient($palette-accent-primary, darken($palette-accent-primary, 10%));
-    background:$palette-accent-primary;
-    border:1px solid darken($palette-accent-primary, 20%);
-    box-shadow:inset 0 0 1px #fff;
+    background:$palette-accent-secondary;
+    border:1px solid transparent;
     color:#fff;
     cursor:pointer;
-    display:inline-block;
     font-size:pxToEm($base-font-size * 1);
     position:relative;
     text-align:center;
@@ -193,7 +191,7 @@
     }
 
     @include bp($bp-1) {
-        width:auto;
+        width:75%;
     }
 
 }
@@ -210,10 +208,10 @@
 }
 @mixin btn--secondary() {
     @include btn();
-    background:transparent;
-    border-color:$palette-accent-primary;
+    background:$palette-accent-tertiary;
+    border-color:transparent;
     box-shadow:none;
-    color:$palette-accent-primary;
+    color:#fff;
 
     &.invert {
         border-color:#fff;

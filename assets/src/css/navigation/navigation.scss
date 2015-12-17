@@ -15,3 +15,22 @@ main a {
     }
 
 }
+.btn,
+.btn--secondary {
+
+    &:hover,
+    &:focus {
+        border:0;
+    }
+
+}
+.btn,
+.btn:hover,
+.btn:focus {
+    @include btn();
+}
+.btn--secondary,
+.btn--secondary:hover,
+.btn--secondary:focus {
+    @include btn--secondary();
+}

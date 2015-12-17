@@ -11,10 +11,19 @@
     @include padding-y($spacing);
 
     @include bp($bp-2) {
-        @include padding-y($spacing-xlg);
+        @include padding-y($spacing-lg);
     }
 
 }
 .portfolio__title {
     color:$palette-accent-primary;
+}
+.item__link {
+    @include center();
+    display:block;
+
+    @include bp($bp-1) {
+        @include margin-x(0);
+    }
+
 }
