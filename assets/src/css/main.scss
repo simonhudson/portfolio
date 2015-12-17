@@ -1,4 +1,4 @@
-@import 'bootstrap/bootstrap';
+// @import 'bootstrap/bootstrap';
 
 @import 'functions/px-to-em';
 @import 'typography/fonts';
@@ -7,6 +7,8 @@
 @import 'reset/reset';
 
 @import 'utilities/utilities';
+
+@import 'grid/grid-custom';
 
 @import 'layout/layout';
 @import 'layout/bands';

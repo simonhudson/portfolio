@@ -35,13 +35,13 @@ $currentPage = currentPage();
         </ul>
     </nav>
     <header class="header--global">
-        <div class="container container--header">
-            <div class="col-md-3">
-                <a class="header-logo" href="<?= $pages->home->url; ?>">
-                    <img alt="<?= $site->name; ?>" class="header-logo__img" src="<?= $paths->imgs; ?>logo.svg" />
+        <div class="grid__wrap">
+            <div class="grid__span--4 logo__wrap">
+                <a class="logo__link" href="<?= $pages->home->url; ?>">
+                    <img alt="<?= $site->name; ?>" class="logo__img" src="<?= $paths->imgs; ?>logo.svg" />
                 </a>
             </div>
-            <div class="col-md-9">
+            <div class="grid__span--14 strapline__wrap">
                 <p class="strapline"><?= $site->name; ?></p>
             </div>
             <!-- <a class="navbar-toggle main-nav__toggle" data-showhide-target="main-nav" href="#">

@@ -10,16 +10,18 @@
     will-change:transform;
     z-index:index($global-stacking-order, 'global-header');
 }
-.header-logo {
+.logo__wrap {
     @include position-tl(5px, 0);
 }
-.header-logo__img {
-    height:auto;
-    width:80%;
+.logo__img {
+    // @include margin-y(3px, 0);
+    height:($global-header-height - pxToEm($spacing));
+    width:auto;
 }
-.strapline {
-    @include position-tr(15px, 0);
+.strapline__wrap {
+    @include position-tr(20px, 0);
     @include strong();
+    text-align:right;
     text-transform:uppercase;
 
     span {
