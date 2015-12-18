@@ -289,6 +289,9 @@ li {
     .grid__wrap {
       width: 1792px; } }
 
+.grid__wrap--reverse {
+  flex-direction: row-reverse; }
+
 .grid-example [class*=grid__span] {
   background: pink; }
 
@@ -895,10 +898,15 @@ main {
   position: relative; }
 
 .portfolio__item {
+  float: left;
   width: 100%;
+  padding-top: 32px;
+  padding-bottom: 32px;
   background: top left no-repeat #fff;
-  height: 26.25em;
-  position: relative; }
+  height: 35em; }
+
+.portfolio__item:nth-of-type(2n) {
+  background: #efefef; }
 
 .portfolio__content {
   padding-top: 16px;
@@ -926,7 +934,7 @@ main {
       margin-right: 16px;
       margin-left: 0;
       display: inline;
-      width: 25%; } }
+      width: 35%; } }
 
 .portfolio__title {
   color: #05abb6; }

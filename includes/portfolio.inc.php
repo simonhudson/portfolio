@@ -32,6 +32,21 @@ $portfolio = (object) array(
             'Government API'
         )
     ),
+    'steve-bloomers-watching' => (object) array(
+        'slug'      => 'steve-bloomers-watching',
+        'title'     => 'Steve Bloomer\'s Watching',
+        'client'    => 'Personal project',
+        'text'      => 'An experiment using the publicly-accessible government petitions API. Petitions are searchable by ID, data is returned to the browser and displayed using the KnockoutJS framework. The API is polled periodically to give a real-time update of the number of signatories.',
+        'url'       => 'www.stevebloomerswatching.com',
+        'github'    => '',
+        'madewith'  => (object) array(
+            'XHTML',
+            'CSS',
+            'JavaScript/jQuery',
+            'WordPress',
+            'Photoshop'
+        )
+    )
     // 'steve-bloomers-watching' => (object) array(
     //     'slug'      => 'steve-bloomers-watching',
     //     'title'     => 'Steve Bloomer\'s Watching',

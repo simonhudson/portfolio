@@ -2,10 +2,11 @@
 // Portfolio
 //
 .portfolio__item {
+    @include float-l();
     @include full-width();
+    @include padding-y($spacing-lg);
     background:top left no-repeat #fff;
     height:$portfolio-item-height;
-    position:relative;
 
     // &::after {
     //     @include full-width();
@@ -16,6 +17,9 @@
     //     height:$portfolio-item-height;
     // }
 
+}
+.portfolio__item:nth-of-type(2n) {
+    background:#efefef;
 }
 // @each $item in $portfolio-items {
 //     .portfolio__item--#{$item} {
@@ -47,7 +51,7 @@
     @include bp($switch-layout) {
         @include margin-x($spacing, 0);
         display:inline;
-        width:25%;
+        width:35%;
     }
 
 }

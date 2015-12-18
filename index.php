@@ -2,13 +2,13 @@
 
     <h1 class="hidden"><?= pageHeading(); ?></h1>
 
-    <?php foreach($portfolio as $item): ?>
+    <?php $count=1; foreach($portfolio as $item): ?>
         <section class="portfolio__item" id="item-<?= $item->slug; ?>">
-            <div class="grid__wrap portfolio__content">
+            <div class="grid__wrap portfolio__content <?= ($count % 2 != 0 ? 'grid__wrap--reverse' : ''); ?>">
                 <div class="grid__span--6 center-content">
                     <img alt="<?= $item->title; ?> screen shot" class="portfolio__img" src="<?= $paths->imgs; ?>portfolio__<?= $item->slug; ?>--sm.png" srcset="<?= $paths->imgs; ?>portfolio__<?= $item->slug; ?>--md.png 1000w" />
                 </div>
-                <div class="grid__span--10 grid__pull-right--2">
+                <div class="grid__span--12">
                     <h2 class="portfolio__title"><?= $item->title; ?></h2>
                     <?php if (isset($item->client)): ?>
                         <p class="portfolio__client"><strong><?= $item->client; ?></strong></p>
@@ -42,6 +42,6 @@
                 </div>
             </div>
         </section>
-    <?php endforeach; ?>
+    <?php $count++; endforeach; ?>
 
 <?php include('layouts/postcontent.inc.php'); ?>

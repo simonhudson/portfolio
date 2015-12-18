@@ -21,6 +21,9 @@
     }
 
 }
+.grid__wrap--reverse {
+    flex-direction:row-reverse;
+}
 .grid-example {
 
     [class*=grid__span] {
