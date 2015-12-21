@@ -11,7 +11,7 @@
                     <a class="btn btn--tertiary center-content" href="/Simon_Hudson_CV.pdf">
                         <span class="fa fa-file-pdf-o fa-2x margin-r-sm"></span>
                         <span class="">Download my CV</span>
-                        <span>(PDF, <?= formatBytes(filesize('Simon_Hudson_CV.pdf')); ?>)</span>
+                        <span><small>(PDF, <?= formatBytes(filesize('Simon_Hudson_CV.pdf')); ?>)</small></span>
                     </a>
                 </p>
             </div>

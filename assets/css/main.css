@@ -904,7 +904,7 @@ main {
   background: top left no-repeat #fff; }
 
 .portfolio__item:nth-of-type(2n) {
-  background: #efefef; }
+  background: rgba(196, 66, 30, 0.05); }
 
 .portfolio__img {
   width: 100%;
