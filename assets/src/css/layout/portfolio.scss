@@ -32,13 +32,6 @@
 .portfolio__client {
     padding-bottom:0;
 }
-.portfolio-action__link {
-
-    @include bp($switch-layout) {
-        width:35%;
-    }
-
-}
 .portfolio__title {
     color:$palette-accent-primary;
 }

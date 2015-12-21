@@ -10,19 +10,13 @@
     }
 
 }
-.btn,
-.btn:hover,
-.btn:focus {
+.btn {
     @include btn();
 }
-.btn--secondary,
-.btn--secondary:hover,
-.btn--secondary:focus {
+.btn--secondary {
     @include btn--secondary();
 }
-.btn--tertiary,
-.btn--tertiary:hover,
-.btn--tertiary:focus {
+.btn--tertiary {
     @include btn--tertiary();
 }
 .btn-row {

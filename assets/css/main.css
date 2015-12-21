@@ -282,9 +282,7 @@ li {
 .btn--secondary:focus {
   border: 0; }
 
-.btn,
-.btn:hover,
-.btn:focus {
+.btn {
   -webkit-border-radius: 2px 2px 2px 2px;
   -moz-border-radius: 2px 2px 2px 2px;
   -o-border-radius: 2px 2px 2px 2px;
@@ -302,19 +300,16 @@ li {
   position: relative;
   text-align: center;
   text-decoration: none; }
-  .btn.invert,
-  .btn:hover.invert,
-  .btn:focus.invert {
+  .btn.invert {
     background: #fff;
     color: #494e51; }
-  .btn [class*=fa-],
-  .btn:hover [class*=fa-],
-  .btn:focus [class*=fa-] {
+  .btn:hover, .btn:focus {
+    border: 1px solid transparent;
+    color: #fff; }
+  .btn [class*=fa-] {
     vertical-align: middle; }
 
-.btn--secondary,
-.btn--secondary:hover,
-.btn--secondary:focus {
+.btn--secondary {
   -webkit-border-radius: 2px 2px 2px 2px;
   -moz-border-radius: 2px 2px 2px 2px;
   -o-border-radius: 2px 2px 2px 2px;
@@ -336,24 +331,16 @@ li {
   border-color: transparent;
   box-shadow: none;
   color: #fff; }
-  .btn--secondary.invert,
-  .btn--secondary:hover.invert,
-  .btn--secondary:focus.invert {
+  .btn--secondary.invert {
     background: #fff;
     color: #494e51; }
-  .btn--secondary [class*=fa-],
-  .btn--secondary:hover [class*=fa-],
-  .btn--secondary:focus [class*=fa-] {
-    vertical-align: middle; }
-  .btn--secondary.invert,
-  .btn--secondary:hover.invert,
-  .btn--secondary:focus.invert {
-    border-color: #fff;
+  .btn--secondary:hover, .btn--secondary:focus {
+    border: 1px solid transparent;
     color: #fff; }
+  .btn--secondary [class*=fa-] {
+    vertical-align: middle; }
 
-.btn--tertiary,
-.btn--tertiary:hover,
-.btn--tertiary:focus {
+.btn--tertiary {
   -webkit-border-radius: 2px 2px 2px 2px;
   -moz-border-radius: 2px 2px 2px 2px;
   -o-border-radius: 2px 2px 2px 2px;
@@ -374,15 +361,17 @@ li {
   background: transparent;
   border-color: #c4421e;
   color: #c4421e; }
-  .btn--tertiary.invert,
-  .btn--tertiary:hover.invert,
-  .btn--tertiary:focus.invert {
+  .btn--tertiary.invert {
     background: #fff;
     color: #494e51; }
-  .btn--tertiary [class*=fa-],
-  .btn--tertiary:hover [class*=fa-],
-  .btn--tertiary:focus [class*=fa-] {
+  .btn--tertiary:hover, .btn--tertiary:focus {
+    border: 1px solid transparent;
+    color: #fff; }
+  .btn--tertiary [class*=fa-] {
     vertical-align: middle; }
+  .btn--tertiary:hover, .btn--tertiary:focus {
+    border-color: #c4421e;
+    color: #c4421e; }
 
 .btn-row {
   padding-top: 16px;
@@ -1038,10 +1027,6 @@ main {
 
 .portfolio__client {
   padding-bottom: 0; }
-
-@media all and (min-width: 1024px) {
-  .portfolio-action__link {
-    width: 35%; } }
 
 .portfolio__title {
   color: #05abb6; }

@@ -189,6 +189,12 @@
         color:$palette-body;
     }
 
+    &:hover,
+    &:focus {
+        border:1px solid transparent;
+        color:#fff;
+    }
+
     // @include bp($bp-1) {
     //     width:75%;
     // }
@@ -198,35 +204,25 @@
     }
 
 }
-@mixin btn--primary() {
-    @include btn();
-    background:$palette-body;
-    color:#fff;
-
-    &.invert {
-        background:#fff;
-        color:$palette-body;
-    }
-
-}
 @mixin btn--secondary() {
     @include btn();
     background:$palette-accent-tertiary;
     border-color:transparent;
     box-shadow:none;
     color:#fff;
-
-    &.invert {
-        border-color:#fff;
-        color:#fff;
-    }
-
 }
 @mixin btn--tertiary() {
     @include btn();
     background:transparent;
     border-color:$palette-accent-secondary;
     color:$palette-accent-secondary;
+
+    &:hover,
+    &:focus {
+        border-color:$palette-accent-secondary;
+        color:$palette-accent-secondary;
+    }
+    
 }
 
 // UI
