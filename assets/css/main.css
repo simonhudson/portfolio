@@ -899,20 +899,12 @@ main {
 
 .portfolio__item {
   width: 100%;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding-top: 64px;
+  padding-bottom: 64px;
   background: top left no-repeat #fff; }
 
 .portfolio__item:nth-of-type(2n) {
   background: #efefef; }
-
-.portfolio__content {
-  padding-top: 16px;
-  padding-bottom: 16px; }
-  @media all and (min-width: 640px) {
-    .portfolio__content {
-      padding-top: 32px;
-      padding-bottom: 32px; } }
 
 .portfolio__img {
   width: 100%;
@@ -987,6 +979,10 @@ main {
     @media all and (min-width: 410px) {
       .strapline__wrap span {
         display: inline; } }
+
+.footer--global {
+  padding-top: 64px;
+  padding-bottom: 64px; }
 
 main a {
   -webkit-transition: border-bottom 0.3s linear;

@@ -3,7 +3,7 @@
 //
 .portfolio__item {
     @include full-width();
-    @include padding-y($spacing-lg);
+    @include padding-y($spacing-xlg);
     background:top left no-repeat #fff;
     // height:$portfolio-item-height;
 
@@ -25,14 +25,6 @@
 //         background-image:url('../imgs/portfolio-#{$item}.png');
 //     }
 // }
-.portfolio__content {
-    @include padding-y($spacing);
-
-    @include bp($bp-2) {
-        @include padding-y($spacing-lg);
-    }
-
-}
 .portfolio__img {
     @include full-width();
     height:auto;
