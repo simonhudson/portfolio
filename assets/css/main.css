@@ -1071,6 +1071,39 @@ main a {
     border-color: #fff;
     color: #fff; }
 
+.btn--tertiary,
+.btn--tertiary:hover,
+.btn--tertiary:focus {
+  -webkit-border-radius: 2px 2px 2px 2px;
+  -moz-border-radius: 2px 2px 2px 2px;
+  -o-border-radius: 2px 2px 2px 2px;
+  border-radius: 2px 2px 2px 2px;
+  margin-bottom: 16px;
+  padding: 16px;
+  font-family: "opensans_semibold", "opensans_regular", arial, helvetica, sans-serif;
+  font-weight: normal;
+  background: #c4421e;
+  border: 1px solid transparent;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1em;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  background: transparent;
+  border-color: #c4421e;
+  color: #c4421e; }
+  .btn--tertiary.invert,
+  .btn--tertiary:hover.invert,
+  .btn--tertiary:focus.invert {
+    background: #fff;
+    color: #494e51; }
+  .btn--tertiary [class*=fa-],
+  .btn--tertiary:hover [class*=fa-],
+  .btn--tertiary:focus [class*=fa-] {
+    vertical-align: middle; }
+
 .access-nav__item {
   display: inline;
   list-style-type: none; }

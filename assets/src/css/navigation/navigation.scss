@@ -34,3 +34,8 @@ main a {
 .btn--secondary:focus {
     @include btn--secondary();
 }
+.btn--tertiary,
+.btn--tertiary:hover,
+.btn--tertiary:focus {
+    @include btn--tertiary();
+}

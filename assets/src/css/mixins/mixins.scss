@@ -222,6 +222,12 @@
     }
 
 }
+@mixin btn--tertiary() {
+    @include btn();
+    background:transparent;
+    border-color:$palette-accent-secondary;
+    color:$palette-accent-secondary;
+}
 
 // UI
 @mixin animate($property, $duration: .3s) {
