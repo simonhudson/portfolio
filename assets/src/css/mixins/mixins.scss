@@ -193,6 +193,10 @@
     //     width:75%;
     // }
 
+    [class*=fa-] {
+        vertical-align:middle;
+    }
+
 }
 @mixin btn--primary() {
     @include btn();

@@ -1023,6 +1023,10 @@ main a {
   .btn:focus.invert {
     background: #fff;
     color: #494e51; }
+  .btn [class*=fa-],
+  .btn:hover [class*=fa-],
+  .btn:focus [class*=fa-] {
+    vertical-align: middle; }
 
 .btn--secondary,
 .btn--secondary:hover,
@@ -1053,6 +1057,10 @@ main a {
   .btn--secondary:focus.invert {
     background: #fff;
     color: #494e51; }
+  .btn--secondary [class*=fa-],
+  .btn--secondary:hover [class*=fa-],
+  .btn--secondary:focus [class*=fa-] {
+    vertical-align: middle; }
   .btn--secondary.invert,
   .btn--secondary:hover.invert,
   .btn--secondary:focus.invert {
