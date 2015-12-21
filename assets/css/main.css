@@ -982,7 +982,11 @@ main {
 
 .footer--global {
   padding-top: 64px;
-  padding-bottom: 64px; }
+  padding-bottom: 64px;
+  background: #efefef; }
+
+.footer__btn-link {
+  width: 75%; }
 
 main a {
   -webkit-transition: border-bottom 0.3s linear;
