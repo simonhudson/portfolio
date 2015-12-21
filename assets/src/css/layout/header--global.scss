@@ -16,7 +16,11 @@
 
 }
 .logo__wrap {
-    @include position-tl(5px, $grid__gutter);
+    @include position-tl(5px, 0);
+
+    @include bp($switch-layout) {
+        @include position-tl(5px, $grid__gutter);
+    }
 }
 .logo__img {
     // @include margin-y(3px, 0);

@@ -961,9 +961,14 @@ main {
     position: relative; }
 
 .logo__wrap {
-  left: 20px;
+  left: 0;
   position: absolute;
   top: 5px; }
+  @media all and (min-width: 1024px) {
+    .logo__wrap {
+      left: 20px;
+      position: absolute;
+      top: 5px; } }
 
 .logo__img {
   height: 3.375em;
