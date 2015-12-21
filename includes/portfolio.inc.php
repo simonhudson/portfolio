@@ -21,7 +21,7 @@ $portfolio = (object) array(
         'slug'      => 'lastfm',
         'title'     => 'LastFM',
         'client'    => 'Personal project',
-        'text'      => '<p>I know lying is wrong, but if the elephant man came in now in a blouse with some make up on, and said "how do I look?" Would you say — bearing in mind he\'s depressed and has respiratory problems — would you say "go and take that blusher off you mis-shapen headed elephant tranny"? No. You\'d say "You look nice... John"<p>',
+        'text'      => 'I know lying is wrong, but if the elephant man came in now in a blouse with some make up on, and said "how do I look?" Would you say — bearing in mind he\'s depressed and has respiratory problems — would you say "go and take that blusher off you mis-shapen headed elephant tranny"? No. You\'d say "You look nice... John"',
         'url'       => 'lastfm.heyhudson.com',
         'github'    => 'lastfm',
         'madewith'  => (object) array(
@@ -35,7 +35,7 @@ $portfolio = (object) array(
         'slug'      => 'gov-petitions',
         'title'     => 'UK Government Petitions',
         'client'    => 'Personal project',
-        'text'      => '<p>An experiment using the publicly-accessible government petitions API. Petitions are searchable by ID, data is returned to the browser and displayed using the KnockoutJS framework. The API is polled periodically to give a real-time update of the number of signatories.</p>',
+        'text'      => 'An experiment using the publicly-accessible government petitions API. Petitions are searchable by ID, data is returned to the browser and displayed using the KnockoutJS framework. The API is polled periodically to give a real-time update of the number of signatories.',
         'url'       => 'govpetitions.heyhudson.com',
         'github'    => 'gov-petitions',
         'madewith'  => (object) array(
@@ -50,7 +50,7 @@ $portfolio = (object) array(
         'slug'      => 'steve-bloomers-watching',
         'title'     => 'Steve Bloomer\'s Watching',
         'client'    => 'Personal project',
-        'text'      => '<p>As a season ticket holder at Derby County FC (for my sins!), I decided to create a blog in which to write match reports and articles on the club. The blog uses the basic WordPress engine which has been ripped out and integrated into a custom <abbr title="Hypertext Markup Language">HTML</abbr>5 template. The site also makes use of <abbr title="Cascading Style Sheets">CSS</abbr> media queries to enable a responsive layout across devices.</p>',
+        'text'      => 'As a season ticket holder at Derby County FC (for my sins!), I decided to create a blog in which to write match reports and articles on the club. The blog uses the basic WordPress engine which has been ripped out and integrated into a custom <abbr title="Hypertext Markup Language">HTML</abbr>5 template. The site also makes use of <abbr title="Cascading Style Sheets">CSS</abbr> media queries to enable a responsive layout across devices.',
         'url'       => 'www.stevebloomerswatching.com',
         'github'    => '',
         'madewith'  => (object) array(
@@ -65,10 +65,7 @@ $portfolio = (object) array(
         'slug'      => 'nhs-choices',
         'title'     => 'NHS Choices',
         'text'      =>
-            '<p>Working on one of the largest websites in Europe, it was my responsibility to create front-end code to the highest standards and then liaise with the back-end developers to ensure it was integrated properly into the solution. Development was done on a Sharepoint/.NET platform using a process based on Agile and Kanban methodologies.</p>
-            <p>As a public health information site, accessibility was at the forefront of everything we did, and as such my knowledge of progressive enhancement & graceful degradation, assistive technologies and cross-browser compatibility was increased hugely. We had regular contact with third parties, such as the R.N.I.B and AbilityNet and took action based on their recommendations and audits.</p>
-            <p>As part of my role, I was responsible for reviewing wireframes/designs from the User Experience team and highlighting any potential issues regarding front-end implementation and/or accessibility. I worked closely with the Experience Architects and Designers to come up with solutions to any issues which arose and ensured they met all requirements, from both a front-end code and user experience point-of-view.</p>
-            <p>I was also required to respond quickly to bug reports, both during the release cycle and once products had gone live. For this, I needed fast diagnostic skills regarding cross-browser issues and a thorough approach to testing my code fixes.</p>',
+            'Working on one of the largest websites in Europe, it was my responsibility to create front-end code to the highest standards and then liaise with the back-end developers to ensure it was integrated properly into the solution. As a public health information site, accessibility was at the forefront of everything we did, and as such my knowledge of progressive enhancement & graceful degradation, assistive technologies and cross-browser compatibility was increased hugely, helped in no small part by regular contact with third parties, such as the R.N.I.B and AbilityNet.',
         'url'       => 'www.nhs.uk',
         'madewith'  => (object) array(
             'XHTML',
