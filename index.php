@@ -24,15 +24,15 @@
                         <p><?= $item->text; ?></p>
                     <?php endif; ?>
                     <?php if (isset($item->url) || isset($item->github)): ?>
-                        <div class="portfolio-action__wrap">
+                        <div class="btn-row">
                             <?php if (isset($item->url)): ?>
-                                <a class="btn portfolio-action__link" href="http://<?= $item->url; ?>" target="_blank">
+                                <a class="btn btn-row__btn portfolio-action__link" href="http://<?= $item->url; ?>" target="_blank">
                                     <span class="fa fa-link fa-2x margin-r-sm"></span>
                                     View project<span class="hidden"> (Link opens in a new window)</span>
                                 </a>
                             <?php endif; ?>
                             <?php if (isset($item->github)): ?>
-                                <a class="btn--secondary portfolio-action__link" href="http://www.github.com/simonhudson/<?= $item->github; ?>" target="_blank">
+                                <a class="btn--secondary btn-row__btn portfolio-action__link" href="http://www.github.com/simonhudson/<?= $item->github; ?>" target="_blank">
                                     <span class="fa fa-github fa-2x margin-r-sm"></span>
                                     View on Github<span class="hidden"> (Link opens in a new window)</span>
                                 </a>

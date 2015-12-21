@@ -264,12 +264,138 @@ acronym {
 .float-r {
   float: right; }
 
+.img-circle {
+  -webkit-border-radius: 50% 50% 50% 50%;
+  -moz-border-radius: 50% 50% 50% 50%;
+  -o-border-radius: 50% 50% 50% 50%;
+  border-radius: 50% 50% 50% 50%; }
+
 li {
   line-height: 1.8em;
   padding-bottom: 0.6em; }
 
 .no-bullet {
   list-style: none outside; }
+
+.btn:hover, .btn:focus,
+.btn--secondary:hover,
+.btn--secondary:focus {
+  border: 0; }
+
+.btn,
+.btn:hover,
+.btn:focus {
+  -webkit-border-radius: 2px 2px 2px 2px;
+  -moz-border-radius: 2px 2px 2px 2px;
+  -o-border-radius: 2px 2px 2px 2px;
+  border-radius: 2px 2px 2px 2px;
+  margin-bottom: 16px;
+  padding: 16px;
+  font-family: "opensans_semibold", "opensans_regular", arial, helvetica, sans-serif;
+  font-weight: normal;
+  background: #c4421e;
+  border: 1px solid transparent;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1em;
+  position: relative;
+  text-align: center;
+  text-decoration: none; }
+  .btn.invert,
+  .btn:hover.invert,
+  .btn:focus.invert {
+    background: #fff;
+    color: #494e51; }
+  .btn [class*=fa-],
+  .btn:hover [class*=fa-],
+  .btn:focus [class*=fa-] {
+    vertical-align: middle; }
+
+.btn--secondary,
+.btn--secondary:hover,
+.btn--secondary:focus {
+  -webkit-border-radius: 2px 2px 2px 2px;
+  -moz-border-radius: 2px 2px 2px 2px;
+  -o-border-radius: 2px 2px 2px 2px;
+  border-radius: 2px 2px 2px 2px;
+  margin-bottom: 16px;
+  padding: 16px;
+  font-family: "opensans_semibold", "opensans_regular", arial, helvetica, sans-serif;
+  font-weight: normal;
+  background: #c4421e;
+  border: 1px solid transparent;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1em;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  background: #443526;
+  border-color: transparent;
+  box-shadow: none;
+  color: #fff; }
+  .btn--secondary.invert,
+  .btn--secondary:hover.invert,
+  .btn--secondary:focus.invert {
+    background: #fff;
+    color: #494e51; }
+  .btn--secondary [class*=fa-],
+  .btn--secondary:hover [class*=fa-],
+  .btn--secondary:focus [class*=fa-] {
+    vertical-align: middle; }
+  .btn--secondary.invert,
+  .btn--secondary:hover.invert,
+  .btn--secondary:focus.invert {
+    border-color: #fff;
+    color: #fff; }
+
+.btn--tertiary,
+.btn--tertiary:hover,
+.btn--tertiary:focus {
+  -webkit-border-radius: 2px 2px 2px 2px;
+  -moz-border-radius: 2px 2px 2px 2px;
+  -o-border-radius: 2px 2px 2px 2px;
+  border-radius: 2px 2px 2px 2px;
+  margin-bottom: 16px;
+  padding: 16px;
+  font-family: "opensans_semibold", "opensans_regular", arial, helvetica, sans-serif;
+  font-weight: normal;
+  background: #c4421e;
+  border: 1px solid transparent;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1em;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  background: transparent;
+  border-color: #c4421e;
+  color: #c4421e; }
+  .btn--tertiary.invert,
+  .btn--tertiary:hover.invert,
+  .btn--tertiary:focus.invert {
+    background: #fff;
+    color: #494e51; }
+  .btn--tertiary [class*=fa-],
+  .btn--tertiary:hover [class*=fa-],
+  .btn--tertiary:focus [class*=fa-] {
+    vertical-align: middle; }
+
+.btn-row {
+  padding-top: 16px;
+  padding-bottom: 16px; }
+
+.btn-row__btn {
+  width: 100%; }
+  @media all and (min-width: 1024px) {
+    .btn-row__btn {
+      margin-right: 16px;
+      margin-left: 0;
+      display: inline;
+      width: auto; } }
 
 .grid__wrap {
   display: flex;
@@ -913,19 +1039,9 @@ main {
 .portfolio__client {
   padding-bottom: 0; }
 
-.portfolio-action__wrap {
-  padding-top: 16px;
-  display: flex;
-  flex-wrap: wrap; }
-
-.portfolio-action__link {
-  width: 100%; }
-  @media all and (min-width: 1024px) {
-    .portfolio-action__link {
-      margin-right: 16px;
-      margin-left: 0;
-      display: inline;
-      width: 35%; } }
+@media all and (min-width: 1024px) {
+  .portfolio-action__link {
+    width: 35%; } }
 
 .portfolio__title {
   color: #05abb6; }
@@ -985,9 +1101,6 @@ main {
   padding-bottom: 64px;
   background: #efefef; }
 
-.footer__btn-link {
-  width: 75%; }
-
 main a {
   -webkit-transition: border-bottom 0.3s linear;
   -moz-transition: border-bottom 0.3s linear;
@@ -1000,113 +1113,6 @@ main a {
     border-bottom: 1px solid #c4421e;
     color: #c4421e;
     text-decoration: none; }
-
-.btn:hover, .btn:focus,
-.btn--secondary:hover,
-.btn--secondary:focus {
-  border: 0; }
-
-.btn,
-.btn:hover,
-.btn:focus {
-  -webkit-border-radius: 2px 2px 2px 2px;
-  -moz-border-radius: 2px 2px 2px 2px;
-  -o-border-radius: 2px 2px 2px 2px;
-  border-radius: 2px 2px 2px 2px;
-  margin-bottom: 16px;
-  padding: 16px;
-  font-family: "opensans_semibold", "opensans_regular", arial, helvetica, sans-serif;
-  font-weight: normal;
-  background: #c4421e;
-  border: 1px solid transparent;
-  color: #fff;
-  cursor: pointer;
-  display: inline-block;
-  font-size: 1em;
-  position: relative;
-  text-align: center;
-  text-decoration: none; }
-  .btn.invert,
-  .btn:hover.invert,
-  .btn:focus.invert {
-    background: #fff;
-    color: #494e51; }
-  .btn [class*=fa-],
-  .btn:hover [class*=fa-],
-  .btn:focus [class*=fa-] {
-    vertical-align: middle; }
-
-.btn--secondary,
-.btn--secondary:hover,
-.btn--secondary:focus {
-  -webkit-border-radius: 2px 2px 2px 2px;
-  -moz-border-radius: 2px 2px 2px 2px;
-  -o-border-radius: 2px 2px 2px 2px;
-  border-radius: 2px 2px 2px 2px;
-  margin-bottom: 16px;
-  padding: 16px;
-  font-family: "opensans_semibold", "opensans_regular", arial, helvetica, sans-serif;
-  font-weight: normal;
-  background: #c4421e;
-  border: 1px solid transparent;
-  color: #fff;
-  cursor: pointer;
-  display: inline-block;
-  font-size: 1em;
-  position: relative;
-  text-align: center;
-  text-decoration: none;
-  background: #443526;
-  border-color: transparent;
-  box-shadow: none;
-  color: #fff; }
-  .btn--secondary.invert,
-  .btn--secondary:hover.invert,
-  .btn--secondary:focus.invert {
-    background: #fff;
-    color: #494e51; }
-  .btn--secondary [class*=fa-],
-  .btn--secondary:hover [class*=fa-],
-  .btn--secondary:focus [class*=fa-] {
-    vertical-align: middle; }
-  .btn--secondary.invert,
-  .btn--secondary:hover.invert,
-  .btn--secondary:focus.invert {
-    border-color: #fff;
-    color: #fff; }
-
-.btn--tertiary,
-.btn--tertiary:hover,
-.btn--tertiary:focus {
-  -webkit-border-radius: 2px 2px 2px 2px;
-  -moz-border-radius: 2px 2px 2px 2px;
-  -o-border-radius: 2px 2px 2px 2px;
-  border-radius: 2px 2px 2px 2px;
-  margin-bottom: 16px;
-  padding: 16px;
-  font-family: "opensans_semibold", "opensans_regular", arial, helvetica, sans-serif;
-  font-weight: normal;
-  background: #c4421e;
-  border: 1px solid transparent;
-  color: #fff;
-  cursor: pointer;
-  display: inline-block;
-  font-size: 1em;
-  position: relative;
-  text-align: center;
-  text-decoration: none;
-  background: transparent;
-  border-color: #c4421e;
-  color: #c4421e; }
-  .btn--tertiary.invert,
-  .btn--tertiary:hover.invert,
-  .btn--tertiary:focus.invert {
-    background: #fff;
-    color: #494e51; }
-  .btn--tertiary [class*=fa-],
-  .btn--tertiary:hover [class*=fa-],
-  .btn--tertiary:focus [class*=fa-] {
-    vertical-align: middle; }
 
 .access-nav__item {
   display: inline;

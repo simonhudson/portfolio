@@ -32,17 +32,9 @@
 .portfolio__client {
     padding-bottom:0;
 }
-.portfolio-action__wrap {
-    @include padding-t();
-    display:flex;
-    flex-wrap:wrap;
-}
 .portfolio-action__link {
-    @include full-width();
 
     @include bp($switch-layout) {
-        @include margin-x($spacing, 0);
-        display:inline;
         width:35%;
     }
 
