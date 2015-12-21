@@ -922,6 +922,7 @@ main {
   padding-bottom: 0; }
 
 .portfolio-action__wrap {
+  padding-top: 16px;
   display: flex;
   flex-wrap: wrap; }
 
