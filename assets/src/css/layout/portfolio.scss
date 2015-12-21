@@ -2,11 +2,10 @@
 // Portfolio
 //
 .portfolio__item {
-    @include float-l();
     @include full-width();
     @include padding-y($spacing-lg);
     background:top left no-repeat #fff;
-    height:$portfolio-item-height;
+    // height:$portfolio-item-height;
 
     // &::after {
     //     @include full-width();
