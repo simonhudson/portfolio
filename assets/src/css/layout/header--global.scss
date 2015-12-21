@@ -9,9 +9,14 @@
     position:fixed;
     will-change:transform;
     z-index:index($global-stacking-order, 'global-header');
+
+    .grid__wrap {
+        position:relative;
+    }
+
 }
 .logo__wrap {
-    @include position-tl(5px, 0);
+    @include position-tl(5px, $grid__gutter);
 }
 .logo__img {
     // @include margin-y(3px, 0);

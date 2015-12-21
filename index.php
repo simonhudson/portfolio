@@ -21,7 +21,7 @@
                         </ul>
                     <?php endif; ?>
                     <?php if (isset($item->text)): ?>
-                        <p><?= $item->text; ?></p>
+                        <?= $item->text; ?>
                     <?php endif; ?>
                     <?php if (isset($item->url) || isset($item->github)): ?>
                         <div class="portfolio-action__wrap">

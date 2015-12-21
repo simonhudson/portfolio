@@ -957,9 +957,11 @@ main {
   position: fixed;
   will-change: transform;
   z-index: 3; }
+  .header--global .grid__wrap {
+    position: relative; }
 
 .logo__wrap {
-  left: 0;
+  left: 20px;
   position: absolute;
   top: 5px; }
 
