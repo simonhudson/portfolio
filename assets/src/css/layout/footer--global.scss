@@ -6,3 +6,13 @@
     background:rgba($palette-accent-secondary, .05);
     border-bottom:$spacing solid $palette-accent-secondary;
 }
+.self-img {
+    display:block;
+    margin:0 auto;
+
+    @include bp($switch-layout) {
+        height:auto;
+        width:100%;
+    }
+
+}

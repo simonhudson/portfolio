@@ -1043,6 +1043,14 @@ main {
   background: rgba(196, 66, 30, 0.05);
   border-bottom: 16px solid #c4421e; }
 
+.self-img {
+  display: block;
+  margin: 0 auto; }
+  @media all and (min-width: 1024px) {
+    .self-img {
+      height: auto;
+      width: 100%; } }
+
 main a {
   -webkit-transition: border-bottom 0.3s linear;
   -moz-transition: border-bottom 0.3s linear;
