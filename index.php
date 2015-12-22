@@ -5,10 +5,10 @@
     <?php $count=1; foreach($portfolio as $item): ?>
         <section class="portfolio__item" id="item-<?= $item->slug; ?>">
             <div class="grid__wrap portfolio__content <?= ($count % 2 != 0 ? 'grid__wrap--reverse' : ''); ?>">
-                <div class="grid__span--6 center-content">
+                <div class="grid__span--7 center-content">
                     <img alt="<?= $item->title; ?> screen shot" class="portfolio__img" src="<?= $paths->imgs; ?>portfolio__<?= $item->slug; ?>--sm.png" srcset="<?= $paths->imgs; ?>portfolio__<?= $item->slug; ?>--md.png 1000w" />
                 </div>
-                <div class="grid__span--10 grid__pull-<?= ($count % 2 != 0 ? 'left' : 'right'); ?>--2">
+                <div class="grid__span--9 grid__pull-<?= ($count % 2 != 0 ? 'left' : 'right'); ?>--2">
                     <h2 class="portfolio__title"><?= $item->title; ?></h2>
                     <?php if (isset($item->client)): ?>
                         <p class="portfolio__client"><strong><?= $item->client; ?></strong></p>
