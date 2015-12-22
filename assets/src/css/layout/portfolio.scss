@@ -2,14 +2,12 @@
 // Portfolio
 //
 .portfolio__item {
-    @include box-shadow(0, 5px, 5px, #ddd);
     @include full-width();
     @include padding-y($spacing-xlg);
     background:top left no-repeat #fff;
 }
 .portfolio__item:nth-of-type(2n) {
-    @include box-shadow(0, -5px, 5px, #ddd, true);
-    background:rgba($palette-accent-secondary, .05);
+    background:#fafafa;
 }
 .portfolio__img {
     @include full-width();

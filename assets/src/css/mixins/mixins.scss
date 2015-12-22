@@ -245,9 +245,12 @@
          -ms-transition:$property $duration linear;
             transition:$property $duration linear;
 }
-@mixin box-shadow($x:0, $y:0, $spread:$spacing-sm, $color:#000, $inset:null) {
+@mixin box-shadow($x:0, $y:0, $spread:$spacing-sm, $color:#000, $inset:false) {
     @if ($inset == true) {
         $inset: inset;
+    }
+    @if ($inset == false) {
+        $inset: null;
     }
     -webkit-box-shadow:$inset $x $y $spread $color;
        -moz-box-shadow:$inset $x $y $spread $color;
