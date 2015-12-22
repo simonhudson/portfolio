@@ -23,7 +23,6 @@
     }
 }
 .logo__img {
-    // @include margin-y(3px, 0);
     height:($global-header-height - pxToEm($spacing));
     width:auto;
 }

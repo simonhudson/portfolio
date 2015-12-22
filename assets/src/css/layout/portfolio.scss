@@ -5,26 +5,10 @@
     @include full-width();
     @include padding-y($spacing-xlg);
     background:top left no-repeat #fff;
-    // height:$portfolio-item-height;
-
-    // &::after {
-    //     @include full-width();
-    //     @include position-tl();
-    //     background:rgba(#000, .85);
-    //     content:'';
-    //     display:block;
-    //     height:$portfolio-item-height;
-    // }
-
 }
 .portfolio__item:nth-of-type(2n) {
     background:rgba($palette-accent-secondary, .05);
 }
-// @each $item in $portfolio-items {
-//     .portfolio__item--#{$item} {
-//         background-image:url('../imgs/portfolio-#{$item}.png');
-//     }
-// }
 .portfolio__img {
     @include full-width();
     height:auto;
@@ -37,8 +21,6 @@
 }
 .tools__list {
     @include margin-b();
-    // @include padding-l-sm();
-    // border-left:5px solid rgba($palette-accent-secondary, .75);
 }
 .tools__item {
     color:rgba($palette-accent-secondary, .75);
