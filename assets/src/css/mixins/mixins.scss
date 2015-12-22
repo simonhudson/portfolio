@@ -144,7 +144,11 @@
     width:1%;
 }
 @mixin center() {
-    margin:0 auto !important;
+
+    @include bp($switch-layout) {
+        margin:0 auto !important;
+    }
+    
 }
 @mixin center-content {
     text-align:center;

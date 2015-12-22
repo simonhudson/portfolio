@@ -243,8 +243,9 @@ acronym {
   position: absolute !important;
   width: 0 !important; }
 
-.center {
-  margin: 0 auto !important; }
+@media all and (min-width: 1024px) {
+  .center {
+    margin: 0 auto !important; } }
 
 .center-content {
   text-align: center; }
@@ -379,7 +380,7 @@ li {
 
 .btn-row__btn {
   width: 100%; }
-  @media all and (min-width: 1024px) {
+  @media all and (min-width: 768px) {
     .btn-row__btn {
       margin-right: 16px;
       margin-left: 0;
@@ -417,74 +418,11 @@ li {
   [class*="grid__span"].to-edge {
     margin-right: 0;
     margin-left: 0; }
-    @media all and (min-width: 768px) {
+    @media all and (min-width: 1024px) {
       [class*="grid__span"].to-edge {
         margin-right: 20px;
         margin-left: 20px; } }
 
-@media all and (min-width: 768px) {
-  .grid__span--1 {
-    width: 2.66667px; }
-
-  .grid__span--2 {
-    width: 45.33333px; }
-
-  .grid__span--3 {
-    width: 88px; }
-
-  .grid__span--4 {
-    width: 130.66667px; }
-
-  .grid__span--5 {
-    width: 173.33333px; }
-
-  .grid__span--6 {
-    width: 216px; }
-
-  .grid__span--7 {
-    width: 258.66667px; }
-
-  .grid__span--8 {
-    width: 301.33333px; }
-
-  .grid__span--9 {
-    width: 344px; }
-
-  .grid__span--10 {
-    width: 386.66667px; }
-
-  .grid__span--11 {
-    width: 429.33333px; }
-
-  .grid__span--12 {
-    width: 472px; }
-
-  .grid__span--13 {
-    width: 514.66667px; }
-
-  .grid__span--14 {
-    width: 557.33333px; }
-
-  .grid__span--15 {
-    width: 600px; }
-
-  .grid__span--16 {
-    width: 642.66667px; }
-
-  .grid__span--17 {
-    width: 685.33333px; }
-
-  .grid__span--18 {
-    width: 728px; }
-
-  .grid__span--quarter {
-    width: 152px; }
-
-  .grid__span--third {
-    width: 216px; }
-
-  .grid__span--half {
-    width: 344px; } }
 @media all and (min-width: 1024px) {
   .grid__span--1 {
     width: 16.88889px; }

@@ -39,36 +39,36 @@
     &.to-edge {
         @include margin-x(0);
 
-        @include bp($bp-tab-p) {
+        @include bp($switch-layout) {
             @include margin-x($grid__gutter);
         }
 
     }
 }
 
-@include bp($bp-tab-p) {
+// @include bp($bp-tab-p) {
 
-    @for $i from 1 through $grid__max-cols {
+//     @for $i from 1 through $grid__max-cols {
 
-        .grid__span--#{$i} {
-            width: ($grid__width--tab-p / ($grid__max-cols / $i) - ($grid__gutter * 2));
-        }  
+//         .grid__span--#{$i} {
+//             width: ($grid__width--tab-p / ($grid__max-cols / $i) - ($grid__gutter * 2));
+//         }  
 
-    }
+//     }
 
-    .grid__span--quarter {
-        width: ($grid__width--tab-p / 4) - ($grid__gutter * 2);
-    }
+//     .grid__span--quarter {
+//         width: ($grid__width--tab-p / 4) - ($grid__gutter * 2);
+//     }
 
-    .grid__span--third {
-        width: ($grid__width--tab-p / 3) - ($grid__gutter * 2);
-    }
+//     .grid__span--third {
+//         width: ($grid__width--tab-p / 3) - ($grid__gutter * 2);
+//     }
 
-    .grid__span--half {
-        width: ($grid__width--tab-p / 2) - ($grid__gutter * 2);
-    }
+//     .grid__span--half {
+//         width: ($grid__width--tab-p / 2) - ($grid__gutter * 2);
+//     }
 
-}
+// }
 
 @include bp($bp-tab-l) {
 

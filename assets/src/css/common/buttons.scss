@@ -25,7 +25,7 @@
 .btn-row__btn {
     @include full-width();
 
-    @include bp($bp-tab-l) {
+    @include bp($bp-tab-p) {
         @include margin-x($spacing, 0);
         display:inline;
         width:auto;
