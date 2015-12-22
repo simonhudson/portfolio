@@ -4,4 +4,5 @@
 .footer--global {
     @include padding-y($spacing-xlg);
     background:#efefef;
+    border-bottom:$spacing solid $palette-accent-secondary;
 }

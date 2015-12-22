@@ -64,8 +64,9 @@ $portfolio = (object) array(
     'nhs-choices' => (object) array(
         'slug'      => 'nhs-choices',
         'title'     => 'NHS Choices',
+        'client'    => 'Capita',
         'text'      =>
-            'Working on one of the largest websites in Europe, it was my responsibility to create front-end code to the highest standards and then liaise with the back-end developers to ensure it was integrated properly into the solution. As a public health information site, accessibility was at the forefront of everything we did, and as such my knowledge of progressive enhancement & graceful degradation, assistive technologies and cross-browser compatibility was increased hugely, helped in no small part by regular contact with third parties, such as the R.N.I.B and AbilityNet.',
+            'Working on one of the largest websites in Europe, it was my responsibility to create front-end code to the highest standards and then liaise with the back-end developers to ensure it was integrated properly into the solution.</p><p>As a public health information site, accessibility was at the forefront of everything we did, and as such my knowledge of progressive enhancement & graceful degradation, assistive technologies and cross-browser compatibility was increased hugely, helped in no small part by regular contact with third parties, such as the <a href="http://www.rnib.org.uk/" target="_blank">R.N.I.B<span class="hidden"> (Link opens in a new window)</span></a> and <a href="https://www.abilitynet.org.uk/" target="_blank">AbilityNet<span class="hidden"> (Link opens in a new window)</span></a>.',
         'url'       => 'www.nhs.uk',
         'madewith'  => (object) array(
             'XHTML',
@@ -78,6 +79,7 @@ $portfolio = (object) array(
     'nhs-choices-pims' => (object) array(
         'slug'      => 'nhs-choices-pims',
         'title'     => 'NHS Choices Provider Information Management System',
+        'client'    => 'Capita',
         'text'      =>
             'NHS Choices provided healthcare organisations (such as dentists, GPs and clinics) with an internal <abbr title="Content Management System">CMS</abbr> through which they could update their profile on the NHS website.</p>
             <p>The profiles were built up of customisable modules, allowing organisations to add videos, news articles, registration information, opening times and numerous other details about their service.</p>
@@ -94,6 +96,7 @@ $portfolio = (object) array(
     'nhs-choices-media-library' => (object) array(
         'slug'      => 'nhs-choices-media-library',
         'title'     => 'NHS Choices Media Library',
+        'client'    => 'Capita',
         'text'      =>
             'One of the largest pieces of work I was involved in whilst working for NHS Choices was the rebuild of the site&apos;s media library.</p>
             <p>As well as being solely responsible for the front-end development, I also had to very quickly familiarise myself with the technical aspects of the <a href="https://www.brightcove.com">new media provider</a> we were switching to. This involved me learning their proprietary markup language, <abbr title="Brightcove Experience Markup Language">BEML</abbr>, and also working with the back-end developers to make best use of their API.',
@@ -110,6 +113,7 @@ $portfolio = (object) array(
     'dept-health-summer-campaign' => (object) array(
         'slug'      => 'dept-health-summer-campaign',
         'title'     => 'Department of Health Summer campaign',
+        'client'    => 'Capita',
         'text'      =>
             'Whilst working at NHS Choices, I was often part of the development team on campaign microsites for the Department of Health.</p>
             <p>This was a simple one-page site to encourage users to sign up for healthy living emails. Campaign sites were built using the same basic front-end framework, however during the development of this site, I made several accessibility improvements and streamlined some of the markup which not only provided benefits for this site, but also for future sites using the framework.',
@@ -124,6 +128,7 @@ $portfolio = (object) array(
     'marshalls-tree-surgeons' => (object) array(
         'slug'      => 'marshalls-tree-surgeons',
         'title'     => 'Marshalls Tree Surgeons',
+        'client'    => 'Bedrock Digital',
         'text'      =>
             'During a short time working with Bedrock Digital, I worked on several small brochure sites for <abbr title="Small and medium enterprises">SMEs</abbr>, including Marshalls Tree Surgeons.</p>
             <p>Working closely with the client throughout, I was responsible for the requirement gathering, prototyping, designing, building and testing of the site, as well as integrating an existing dynamic news feature and basic <abbr title="Content Management System">CMS</abbr>.',
@@ -139,6 +144,7 @@ $portfolio = (object) array(
     'nucleus-change' => (object) array(
         'slug'      => 'nucleus-change',
         'title'     => 'Nucleus Human Change Technologies',
+        'client'    => 'Personal project',
         'text'      =>
             'Nucleus Human Change Technologies approached me to help them design and build the website arm of a new branding campaign they were launching.</p>
             <p>The aim was to create a simple brochure site which would give an overview of the services they offer, as well as offering scope for expansion in the future.</p><p>They were keen to make the site as clean and fresh looking as possible, incorporating imagery and branding which was being used on their printed literature. The site also included multi-media elements in the form of an audio clip from one of their relaxation CD&#8217;s and a video excerpt from one of their presentations.',
