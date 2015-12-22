@@ -284,6 +284,10 @@ li {
   border: 0; }
 
 .btn {
+  -webkit-transition: background 0.3s linear;
+  -moz-transition: background 0.3s linear;
+  -ms-transition: background 0.3s linear;
+  transition: background 0.3s linear;
   -webkit-border-radius: 2px 2px 2px 2px;
   -moz-border-radius: 2px 2px 2px 2px;
   -o-border-radius: 2px 2px 2px 2px;
@@ -305,12 +309,17 @@ li {
     background: #fff;
     color: #494e51; }
   .btn:hover, .btn:focus {
+    background: #e05a35;
     border: 1px solid transparent;
     color: #fff; }
   .btn [class*=fa-] {
     vertical-align: middle; }
 
 .btn--secondary {
+  -webkit-transition: background 0.3s linear;
+  -moz-transition: background 0.3s linear;
+  -ms-transition: background 0.3s linear;
+  transition: background 0.3s linear;
   -webkit-border-radius: 2px 2px 2px 2px;
   -moz-border-radius: 2px 2px 2px 2px;
   -o-border-radius: 2px 2px 2px 2px;
@@ -336,12 +345,19 @@ li {
     background: #fff;
     color: #494e51; }
   .btn--secondary:hover, .btn--secondary:focus {
+    background: #e05a35;
     border: 1px solid transparent;
     color: #fff; }
   .btn--secondary [class*=fa-] {
     vertical-align: middle; }
+  .btn--secondary:hover, .btn--secondary:focus {
+    background: #654f38; }
 
 .btn--tertiary {
+  -webkit-transition: background 0.3s linear;
+  -moz-transition: background 0.3s linear;
+  -ms-transition: background 0.3s linear;
+  transition: background 0.3s linear;
   -webkit-border-radius: 2px 2px 2px 2px;
   -moz-border-radius: 2px 2px 2px 2px;
   -o-border-radius: 2px 2px 2px 2px;
@@ -366,11 +382,13 @@ li {
     background: #fff;
     color: #494e51; }
   .btn--tertiary:hover, .btn--tertiary:focus {
+    background: #e05a35;
     border: 1px solid transparent;
     color: #fff; }
   .btn--tertiary [class*=fa-] {
     vertical-align: middle; }
   .btn--tertiary:hover, .btn--tertiary:focus {
+    background: transparent;
     border-color: #c4421e;
     color: #c4421e; }
 

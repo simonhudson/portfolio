@@ -148,7 +148,7 @@
     @include bp($switch-layout) {
         margin:0 auto !important;
     }
-    
+
 }
 @mixin center-content {
     text-align:center;
@@ -172,6 +172,7 @@
 
 // Buttons
 @mixin btn() {
+    @include animate(background);
     @include border-radius();
     // @include margin-x(auto);
     @include margin-b();
@@ -195,6 +196,7 @@
 
     &:hover,
     &:focus {
+        background:lighten($palette-accent-secondary, 10%);
         border:1px solid transparent;
         color:#fff;
     }
@@ -214,6 +216,12 @@
     border-color:transparent;
     box-shadow:none;
     color:#fff;
+
+    &:hover,
+    &:focus {
+        background:lighten($palette-accent-tertiary, 10%);
+    }
+
 }
 @mixin btn--tertiary() {
     @include btn();
@@ -223,6 +231,7 @@
 
     &:hover,
     &:focus {
+        background:transparent;
         border-color:$palette-accent-secondary;
         color:$palette-accent-secondary;
     }
