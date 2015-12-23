@@ -1043,6 +1043,9 @@ main {
   background: rgba(196, 66, 30, 0.05);
   border-bottom: 16px solid #c4421e; }
 
+.self-img {
+  margin-bottom: 16px; }
+
 main a {
   -webkit-transition: border-bottom 0.3s linear;
   -moz-transition: border-bottom 0.3s linear;
