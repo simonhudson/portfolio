@@ -393,8 +393,7 @@ li {
     color: #c4421e; }
 
 .btn-row {
-  padding-top: 16px;
-  padding-bottom: 16px; }
+  padding-top: 16px; }
 
 .btn-row__btn {
   width: 100%; }
@@ -404,6 +403,9 @@ li {
       margin-left: 0;
       display: inline;
       width: auto; } }
+
+.btn-row__btn:last-child {
+  margin: 0; }
 
 .grid__wrap {
   display: flex;
@@ -970,8 +972,8 @@ main {
 
 .portfolio__item {
   width: 100%;
-  padding-top: 64px;
-  padding-bottom: 64px;
+  padding-top: 32px;
+  padding-bottom: 16px;
   background: top left no-repeat #fff; }
 
 .portfolio__item:nth-of-type(2n) {

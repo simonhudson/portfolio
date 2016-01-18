@@ -20,7 +20,7 @@
     @include btn--tertiary();
 }
 .btn-row {
-    @include padding-y();
+    @include padding-t();
 }
 .btn-row__btn {
     @include full-width();
@@ -31,4 +31,7 @@
         width:auto;
     }
 
+}
+.btn-row__btn:last-child {
+    margin:0;
 }
