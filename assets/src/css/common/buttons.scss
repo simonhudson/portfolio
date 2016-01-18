@@ -27,7 +27,7 @@
 
     @include bp($bp-tab-p) {
         @include margin-x($spacing, 0);
-        display:inline;
+        display:inline-block;
         width:auto;
     }
 

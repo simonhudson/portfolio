@@ -401,7 +401,7 @@ li {
     .btn-row__btn {
       margin-right: 16px;
       margin-left: 0;
-      display: inline;
+      display: inline-block;
       width: auto; } }
 
 .btn-row__btn:last-child {
@@ -1090,7 +1090,7 @@ main a {
 
 p {
   line-height: 1.8em;
-  padding-bottom: 1.6em; }
+  padding-bottom: 1em; }
   p:last-child {
     padding-bottom: 0; }
 
