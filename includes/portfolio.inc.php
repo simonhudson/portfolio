@@ -19,16 +19,16 @@ $portfolio = (object) array(
     // ),
     'lastfm' => (object) array(
         'slug'      => 'lastfm',
-        'title'     => 'LastFM',
+        'title'     => 'Last.fm',
         'client'    => 'Personal project',
-        'text'      => 'I know lying is wrong, but if the elephant man came in now in a blouse with some make up on, and said "how do I look?" Would you say — bearing in mind he\'s depressed and has respiratory problems — would you say "go and take that blusher off you mis-shapen headed elephant tranny"? No. You\'d say "You look nice... John"',
+        'text'      => 'Making use of the <a href="http://www.last.fm/" target="_blank">Last.fm<span class="hidden"> (opens in a new window)</span></a> API, this tool simply provides a real-time display of a users\' most recently played tracks, or their top artists of all time, based on track plays. This data is then displayed as thumbnails, which click through to the relevant track/artist page on the Last.fm website.',
         'url'       => 'lastfm.heyhudson.com',
         'github'    => 'lastfm',
         'madewith'  => (object) array(
             'XHTML',
             'CSS',
             'JavaScript/jQuery',
-            'LastFM API'
+            'Last.fm API'
         )
     ),
     'gov-petitions' => (object) array(
