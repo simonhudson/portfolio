@@ -9,12 +9,12 @@
             <div class="btn-row">
                     <a class="btn-row__btn btn btn--tertiary center-content" href="<?= $siteRoot; ?>Simon_Hudson_CV.pdf" target="_blank">
                         <span class="fa fa-file-pdf-o fa-2x margin-r-sm"></span>
-                        <span class="">Download my CV</span>
-                        <span><small>(PDF, <?= formatBytes(filesize('Simon_Hudson_CV.pdf')); ?>)</small><span class="hidden"> (Link opens in a new window)</span></span>
+                        <span class="">Download my CV </span>
+                        <span><small>(PDF, <?= formatBytes(filesize('Simon_Hudson_CV.pdf')); ?>)</small><span class="hidden"> (opens in a new window)</span></span>
                     </a>
                     <a class="btn-row__btn btn btn--tertiary center-content" href="https://github.com/simonhudson?tab=repositories" target="_blank">
                         <span class="fa fa-github fa-2x margin-r-sm"></span>
-                        <span class="">View my Github profile<span class="hidden"> (Link opens in a new window)</span></span>
+                        <span class="">View my Github profile<span class="hidden"> (opens in a new window)</span></span>
                     </a>
                 </div>
             </div>
