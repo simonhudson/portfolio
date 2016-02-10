@@ -27,13 +27,13 @@
                         <div class="btn-row">
                             <?php if (isset($item->url)): ?>
                                 <a class="btn btn-row__btn portfolio-action__link" href="http://<?= $item->url; ?>" target="_blank">
-                                    <span class="fa fa-link fa-2x margin-r-sm"></span>
+                                    <span aria-hidden="true" class="fa fa-link fa-2x margin-r-sm"></span>
                                     View <span class="hidden"><?= $item->title; ?> </span>project<span class="hidden"> (opens in a new window)</span>
                                 </a>
                             <?php endif; ?>
                             <?php if (isset($item->github)): ?>
                                 <a class="btn--secondary btn-row__btn portfolio-action__link" href="http://www.github.com/simonhudson/<?= $item->github; ?>" target="_blank">
-                                    <span class="fa fa-github fa-2x margin-r-sm"></span>
+                                    <span aria-hidden="true" class="fa fa-github fa-2x margin-r-sm"></span>
                                     View <span class="hidden"><?= $item->title; ?> </span>on Github<span class="hidden"> (opens in a new window)</span>
                                 </a>
                             <?php endif; ?>

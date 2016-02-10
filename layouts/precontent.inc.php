@@ -29,9 +29,6 @@ $currentPage = currentPage();
             <li class="access-nav__item">
                 <a class="access-nav__link" href="#main-content">Skip to main content</a>
             </li>
-            <li class="access-nav__item">
-                <a class="access-nav__link" href="#main-nav">Skip to main navigation</a>
-            </li>
         </ul>
     </nav>
     <header class="header--global">
@@ -44,17 +41,6 @@ $currentPage = currentPage();
             <div class="grid__span--14 strapline__wrap">
                 <p class="strapline"><?= $site->name; ?></p>
             </div>
-            <!-- <a class="navbar-toggle main-nav__toggle" data-showhide-target="main-nav" href="#">
-                <span class="fa fa-bars fa-2x"></span>
-                <span class="hidden">Menu</span>
-            </a>
-            <div class="col-md-9">
-                <div class="main-nav" data-showhide-content="main-nav" id="main-nav">
-                    <ul class="nav navbar-nav main-nav__list">
-                    <?php //include('partials/global/main-nav.inc.php'); ?>
-                    </ul>
-                </div>
-            </div> -->
         </div>
     </header>
 
