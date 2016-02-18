@@ -11,7 +11,7 @@
                 <div class="grid__span--9 grid__pull-<?= ($count % 2 != 0 ? 'left' : 'right'); ?>--2">
                     <h2 class="portfolio__title"><?= $item->title; ?></h2>
                     <?php if (isset($item->client)): ?>
-                        <p class="portfolio__client"><strong><?= $item->client; ?></strong></p>
+                        <p class="portfolio__client"><?= $item->client; ?></p>
                     <?php endif; ?>
                     <?php if (isset($item->madewith)): ?>
                         <ul class="no-bullet tools__list">
