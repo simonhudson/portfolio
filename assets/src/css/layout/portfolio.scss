@@ -14,7 +14,7 @@
     height:auto;
 }
 .portfolio__client {
-    color:rgba($palette-accent-secondary, .75);
+    @include strong();
     padding-bottom:0;
 }
 .portfolio__title {
@@ -24,8 +24,7 @@
     @include margin-b();
 }
 .tools__item {
-    @include strong();
-    // color:rgba($palette-accent-secondary, .75);
+    color:rgba($palette-accent-secondary, .75);
     display:inline;
 
     &:after {

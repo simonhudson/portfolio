@@ -984,7 +984,8 @@ main {
   height: auto; }
 
 .portfolio__client {
-  color: rgba(196, 66, 30, 0.75);
+  font-family: "opensans_semibold", "opensans_regular", arial, helvetica, sans-serif;
+  font-weight: normal;
   padding-bottom: 0; }
 
 .portfolio__title {
@@ -994,8 +995,7 @@ main {
   margin-bottom: 16px; }
 
 .tools__item {
-  font-family: "opensans_semibold", "opensans_regular", arial, helvetica, sans-serif;
-  font-weight: normal;
+  color: rgba(196, 66, 30, 0.75);
   display: inline; }
   .tools__item:after {
     content: ', '; }
