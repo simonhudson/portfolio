@@ -1048,7 +1048,9 @@ main {
   border-bottom: 16px solid #c4421e; }
 
 .self-img {
-  margin-bottom: 16px; }
+  margin-bottom: 16px;
+  border: 5px solid #fff;
+  box-shadow: 0 0 8px rgba(73, 78, 81, 0.25); }
 
 main a {
   -webkit-transition: border-bottom 0.3s linear;

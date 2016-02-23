@@ -8,4 +8,6 @@
 }
 .self-img {
     @include margin-b();
+    border:5px solid #fff;
+    box-shadow:0 0 $spacing-sm rgba($palette-body, .25);
 }
