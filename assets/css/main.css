@@ -296,7 +296,7 @@ li {
   padding: 16px;
   font-family: "opensans_semibold", "opensans_regular", arial, helvetica, sans-serif;
   font-weight: normal;
-  background: #c4421e;
+  background: #FF2753;
   border: 1px solid transparent;
   color: #fff;
   cursor: pointer;
@@ -309,7 +309,7 @@ li {
     background: #fff;
     color: #494e51; }
   .btn:hover, .btn:focus {
-    background: #e05a35;
+    background: #ff5a7c;
     border: 1px solid transparent;
     color: #fff; }
   .btn [class*=fa-] {
@@ -328,7 +328,7 @@ li {
   padding: 16px;
   font-family: "opensans_semibold", "opensans_regular", arial, helvetica, sans-serif;
   font-weight: normal;
-  background: #c4421e;
+  background: #FF2753;
   border: 1px solid transparent;
   color: #fff;
   cursor: pointer;
@@ -337,7 +337,7 @@ li {
   position: relative;
   text-align: center;
   text-decoration: none;
-  background: #443526;
+  background: #372a4d;
   border-color: transparent;
   box-shadow: none;
   color: #fff; }
@@ -345,13 +345,13 @@ li {
     background: #fff;
     color: #494e51; }
   .btn--secondary:hover, .btn--secondary:focus {
-    background: #e05a35;
+    background: #ff5a7c;
     border: 1px solid transparent;
     color: #fff; }
   .btn--secondary [class*=fa-] {
     vertical-align: middle; }
   .btn--secondary:hover, .btn--secondary:focus {
-    background: #654f38; }
+    background: #4f3c6e; }
 
 .btn--tertiary {
   -webkit-transition: background 0.3s linear;
@@ -366,7 +366,7 @@ li {
   padding: 16px;
   font-family: "opensans_semibold", "opensans_regular", arial, helvetica, sans-serif;
   font-weight: normal;
-  background: #c4421e;
+  background: #FF2753;
   border: 1px solid transparent;
   color: #fff;
   cursor: pointer;
@@ -376,21 +376,21 @@ li {
   text-align: center;
   text-decoration: none;
   background: transparent;
-  border-color: #c4421e;
-  color: #c4421e; }
+  border-color: #FF2753;
+  color: #FF2753; }
   .btn--tertiary.invert {
     background: #fff;
     color: #494e51; }
   .btn--tertiary:hover, .btn--tertiary:focus {
-    background: #e05a35;
+    background: #ff5a7c;
     border: 1px solid transparent;
     color: #fff; }
   .btn--tertiary [class*=fa-] {
     vertical-align: middle; }
   .btn--tertiary:hover, .btn--tertiary:focus {
     background: transparent;
-    border-color: #c4421e;
-    color: #c4421e; }
+    border-color: #FF2753;
+    color: #FF2753; }
 
 .btn-row {
   padding-top: 16px; }
@@ -977,7 +977,7 @@ main {
   background: top left no-repeat #fff; }
 
 .portfolio__item:nth-of-type(2n) {
-  background: #fafafa; }
+  background: #E8EFF2; }
 
 .portfolio__img {
   width: 100%;
@@ -989,13 +989,13 @@ main {
   padding-bottom: 0; }
 
 .portfolio__title {
-  color: #05abb6; }
+  color: #FF2753; }
 
 .tools__list {
   margin-bottom: 16px; }
 
 .tools__item {
-  color: rgba(196, 66, 30, 0.75);
+  color: rgba(55, 42, 77, 0.75);
   display: inline; }
   .tools__item:after {
     content: ', '; }
@@ -1003,8 +1003,12 @@ main {
     content: ''; }
 
 .header--global {
+  -webkit-box-shadow: 0 0 8px #000;
+  -moz-box-shadow: 0 0 8px #000;
+  box-shadow: 0 0 8px #000;
   width: 100%;
-  background: #05abb6;
+  background: #FF2753;
+  border-bottom: 1px solid #fff;
   color: #fff;
   height: 4.375em;
   position: fixed;
@@ -1044,8 +1048,8 @@ main {
 .footer--global {
   padding-top: 64px;
   padding-bottom: 64px;
-  background: rgba(196, 66, 30, 0.05);
-  border-bottom: 16px solid #c4421e; }
+  background: rgba(55, 42, 77, 0.05);
+  border-bottom: 16px solid #372a4d; }
 
 .self-img {
   margin-bottom: 16px;
@@ -1058,11 +1062,11 @@ main a {
   -ms-transition: border-bottom 0.3s linear;
   transition: border-bottom 0.3s linear;
   border-bottom: 1px solid rgba(73, 78, 81, 0.2);
-  color: #c4421e;
+  color: #372a4d;
   text-decoration: none; }
   main a:hover, main a:focus {
-    border-bottom: 1px solid #c4421e;
-    color: #c4421e;
+    border-bottom: 1px solid #372a4d;
+    color: #372a4d;
     text-decoration: none; }
 
 .access-nav__item {
@@ -1081,7 +1085,7 @@ main a {
   top: 0;
   text-decoration: none; }
 .access-nav__link:active, .access-nav__link:focus {
-  background: #05abb6;
+  background: #FF2753;
   color: #fff;
   height: auto;
   left: 0;

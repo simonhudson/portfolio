@@ -179,7 +179,7 @@
     @include padding();
     @include strong();
     // @include vert-gradient($palette-accent-primary, darken($palette-accent-primary, 10%));
-    background:$palette-accent-secondary;
+    background:$palette-accent-primary;
     border:1px solid transparent;
     color:#fff;
     cursor:pointer;
@@ -196,7 +196,7 @@
 
     &:hover,
     &:focus {
-        background:lighten($palette-accent-secondary, 10%);
+        background:lighten($palette-accent-primary, 10%);
         border:1px solid transparent;
         color:#fff;
     }
@@ -212,28 +212,28 @@
 }
 @mixin btn--secondary() {
     @include btn();
-    background:$palette-accent-tertiary;
+    background:$palette-accent-secondary;
     border-color:transparent;
     box-shadow:none;
     color:#fff;
 
     &:hover,
     &:focus {
-        background:lighten($palette-accent-tertiary, 10%);
+        background:lighten($palette-accent-secondary, 10%);
     }
 
 }
 @mixin btn--tertiary() {
     @include btn();
     background:transparent;
-    border-color:$palette-accent-secondary;
-    color:$palette-accent-secondary;
+    border-color:$palette-accent-primary;
+    color:$palette-accent-primary;
 
     &:hover,
     &:focus {
         background:transparent;
-        border-color:$palette-accent-secondary;
-        color:$palette-accent-secondary;
+        border-color:$palette-accent-primary;
+        color:$palette-accent-primary;
     }
     
 }
