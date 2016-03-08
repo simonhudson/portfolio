@@ -21,6 +21,7 @@ $currentPage = currentPage();
 <title><?= (isset($pages->$currentPage->pageTitle) ? $pages->$currentPage->pageTitle : $pages->$currentPage->mainNavText).$site->globalHeadingFragment; ?></title>
 <link href="<?= $paths->libs; ?>font-awesome/css/font-awesome.min.css" rel="stylesheet" />
 <link href="<?= $paths->css; ?>main.min.css" rel="stylesheet" />
+<link rel="shortcut icon" href="<?= $paths->imgs; ?>favicon.ico">
 </head>
 <body>
     
