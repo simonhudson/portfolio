@@ -176,7 +176,7 @@
     @include border-radius();
     // @include margin-x(auto);
     @include margin-b();
-    @include padding();
+    @include padding-md();
     @include strong();
     // @include vert-gradient($palette-accent-primary, darken($palette-accent-primary, 10%));
     background:$palette-accent-primary;
@@ -307,6 +307,12 @@
 @mixin padding-r-sm() {padding-right:$spacing-sm;}
 @mixin padding-b-sm() {padding-bottom:$spacing-sm;}
 @mixin padding-l-sm() {padding-left:$spacing-sm;}
+
+@mixin padding-md() {padding:$spacing-md;}
+@mixin padding-t-md() {padding-top:$spacing-md;}
+@mixin padding-r-md() {padding-right:$spacing-md;}
+@mixin padding-b-md() {padding-bottom:$spacing-md;}
+@mixin padding-l-md() {padding-left:$spacing-md;}
 
 @mixin padding-lg() {padding:$spacing-lg;}
 @mixin padding-t-lg() {padding-top:$spacing-lg;}
