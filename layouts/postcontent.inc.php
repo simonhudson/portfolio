@@ -16,6 +16,10 @@
                         <span aria-hidden="true" class="fa fa-github fa-2x margin-r-sm"></span>
                         <span class="">View my Github profile<span class="hidden"> (opens in a new window)</span></span>
                     </a>
+                    <a class="btn-row__btn btn btn--tertiary center-content" href="http://stackoverflow.com/story/simonhudson" target="_blank">
+                        <span aria-hidden="true" class="fa fa-stack-overflow fa-2x margin-r-sm"></span>
+                        <span class="">View my Stack Overflow Developer Story<span class="hidden"> (opens in a new window)</span></span>
+                    </a>
                 </div>
             </div>
         </div>
