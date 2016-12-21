@@ -3,6 +3,7 @@ $headerHeight: 50px;
 header {
 	@include padding();
 	background: palette(primary, white);
+	border-bottom: 1px solid #efefef;
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
@@ -12,4 +13,9 @@ header {
 .header__logo {
 	height:$headerHeight;
 	width:auto;
+}
+
+.header__strap {
+	@include strong();
+	margin-bottom: 0;
 }

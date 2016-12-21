@@ -12,6 +12,7 @@ include('config/import.inc.php');
 
 		<header>
 			<img class="header__logo" src="<?= $paths->imgs?>logo.svg" />
+			<p class="header__strap"><?= $sitename; ?></p>
 		</header>
 
 		<main>
