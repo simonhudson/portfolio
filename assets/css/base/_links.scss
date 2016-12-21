@@ -1,10 +1,9 @@
 a,
 .text-link {
-	color: palette(primary, link-blue);
+	color: palette(primary, orange-alt);
 	text-decoration:none;
 
 	&:hover {
-		color: palette(primary, dark-blue);
 		text-decoration: underline;
 	}
 

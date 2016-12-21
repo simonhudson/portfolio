@@ -1,11 +1,20 @@
+<?php
+include('data/portfolio.inc.php');
+include('config/import.inc.php');
+?>
 <!doctype html>
 <html>
 	<head>
-		<title>Web Design &amp; Development by Simon Hudson</title>
+		<title><?= $sitename; ?></title>
 		<link href="./assets/css/main.css" rel="stylesheet" />
 	</head>
 	<body>
-		<h1>testing</h1>
-		<p>Lorem ipsum dolor sit amet, adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		<h1 class="visuallyhidden"><?= $sitename; ?></h1>
+		<?php foreach($portfolio as $item): ?>
+			<h2><?= $item->title; ?></h2>
+			<a class="btn btn--primary" href="<?= $item->url; ?>">View project</a>
+			<p><?= $item->text; ?></p>
+		<?php endforeach; ?>
+
 	</body>
 </html>

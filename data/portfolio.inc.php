@@ -21,7 +21,7 @@ $portfolio = (object) array(
         'slug'      => 'lastfm',
         'title'     => 'Last.fm',
         'client'    => 'Personal project',
-        'text'      => 'Making use of the <a href="http://www.last.fm/" target="_blank">Last.fm<span class="hidden"> (opens in a new window)</span></a> API, this tool simply provides a real-time display of a users\' most recently played tracks, or their top artists of all time, based on track plays. This data is then displayed as thumbnails, which click through to the relevant track/artist page on the Last.fm website.',
+        'text'      => 'Making use of the <a href="http://www.last.fm/" target="_blank">Last.fm<span class="visuallyhidden"> (opens in a new window)</span></a> API, this tool simply provides a real-time display of a users\' most recently played tracks, or their top artists of all time, based on track plays. This data is then displayed as thumbnails, which click through to the relevant track/artist page on the Last.fm website.',
         'url'       => 'lastfm.heyhudson.com',
         'github'    => 'lastfm',
         'madewith'  => (object) array(
@@ -66,7 +66,7 @@ $portfolio = (object) array(
         'title'     => 'NHS Choices',
         'client'    => 'Capita',
         'text'      =>
-            'Working on one of the largest websites in Europe, it was my responsibility to create front-end code to the highest standards and then liaise with the back-end developers to ensure it was integrated properly into the solution.</p><p>As a public health information site, accessibility was at the forefront of everything we did, and as such my knowledge of progressive enhancement & graceful degradation, assistive technologies and cross-browser compatibility was increased hugely, helped in no small part by regular contact with third parties, such as the <a href="http://www.rnib.org.uk/" target="_blank">R.N.I.B<span class="hidden"> (Link opens in a new window)</span></a> and <a href="https://www.abilitynet.org.uk/" target="_blank">AbilityNet<span class="hidden"> (Link opens in a new window)</span></a>.',
+            'Working on one of the largest websites in Europe, it was my responsibility to create front-end code to the highest standards and then liaise with the back-end developers to ensure it was integrated properly into the solution.</p><p>As a public health information site, accessibility was at the forefront of everything we did, and as such my knowledge of progressive enhancement & graceful degradation, assistive technologies and cross-browser compatibility was increased hugely, helped in no small part by regular contact with third parties, such as the <a href="http://www.rnib.org.uk/" target="_blank">R.N.I.B<span class="visuallyhidden"> (Link opens in a new window)</span></a> and <a href="https://www.abilitynet.org.uk/" target="_blank">AbilityNet<span class="visuallyhidden"> (Link opens in a new window)</span></a>.',
         'url'       => 'www.nhs.uk',
         'madewith'  => (object) array(
             'XHTML',

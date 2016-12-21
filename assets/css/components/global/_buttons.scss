@@ -1,0 +1,49 @@
+button,
+.btn {
+	border:0;
+	border-radius:3px;
+	color:#fff;
+	cursor:pointer;
+	display:inline-block;
+	font-weight: 500;
+	font-size: rem($base-font-size);
+	line-height: rem($base-font-size);
+	padding: 0.75em 1em 0.85em;
+	transition: background-color 0.5s ease-in-out;
+	vertical-align: top;
+	width: 98%;
+
+	@include bp(15) {
+		width: auto;
+	}
+
+	&:hover,
+	&:focus {
+		color:#fff;
+		text-decoration: none;
+	}
+
+	&--has-icon { //Use --has-icon for consistency with other classes, .has-icon is legacy
+		background-image: url($img-path+'arrow-white-right.svg');
+		background-position: right 10px center;
+		background-repeat: no-repeat;
+		background-size:rem($base-font-size * 1.4);
+		padding-right:rem(45px);
+	}
+
+	&--primary {
+		background-color: palette(primary, orange);
+
+		&:hover, &:focus {
+			background-color: palette(primary, orange-alt);
+		}
+
+		&.is-hollow {
+			background-color: palette(primary, white);
+			border: 1px solid palette(primary, orange);
+			color: palette(primary, orange);
+		}
+
+	}
+
+}
