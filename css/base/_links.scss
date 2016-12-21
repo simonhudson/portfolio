@@ -1,0 +1,15 @@
+a,
+.text-link {
+	color: palette(primary, link-blue);
+	text-decoration:none;
+
+	&:hover {
+		color: palette(primary, dark-blue);
+		text-decoration: underline;
+	}
+
+	&:focus {
+		@include accessibleOutline();
+	}
+
+}

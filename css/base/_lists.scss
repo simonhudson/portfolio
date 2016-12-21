@@ -1,0 +1,19 @@
+ul,
+ol {
+	@include margin-b();
+	padding-left: rem($base-font-size * 1.25);
+
+	ul,
+	ol {
+		margin-bottom:0;
+	}
+
+	li {
+		line-height: rem($base-font-size * 1.6);
+	}
+
+}
+
+ul {
+	list-style: disc;
+}

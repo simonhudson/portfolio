@@ -1,0 +1,96 @@
+fieldset {
+	border:0;
+}
+
+legend {
+	@include h3();
+}
+
+label,
+.faux-label,
+.input-error-msg {
+	display: block;
+    font-size: rem($base-font-size * 0.875);
+    font-weight: 500;
+	margin-bottom:0.5em;
+}
+
+[type="text"],
+[type="password"],
+[type="date"],
+[type="datetime"],
+[type="datetime-local"],
+[type="month"],
+[type="week"],
+[type="email"],
+[type="number"],
+[type="search"],
+[type="tel"],
+[type="time"],
+[type="url"],
+[type="color"],
+textarea,
+select {
+	background-color: #fff;
+	border: 1px solid #a8b6d1;
+	border-radius: 5px;
+	box-sizing: border-box;
+    display: block;
+	font-family: inherit;
+    font-size: 1rem;
+    height: 2.4375rem;
+	margin: 0 0 rem($base-font-size * 0.5);
+    padding: 0.5rem;
+    // box-shadow: inset 0 1px 2px rgba(10, 10, 10, 0.1);
+    transition: box-shadow 0.5s, border-color 0.25s ease-in-out;
+	width: 100%;
+    -webkit-appearance: none;
+	-moz-appearance: none;
+
+	&:focus {
+		border-color: #26478d;
+		outline: none;
+		// box-shadow: 0 0 5px #26478d;
+		transition: border-color 0.25s ease-in-out;
+	}
+
+	&.has-error {
+		background: palette(alerts, error, 0.05);
+		border-color: palette(alerts, error);
+	}
+
+}
+
+select {
+	background-image: url($img-path+'caret-grey-down.svg');
+	background-size: 9px 6px;
+	background-position: right -1rem center;
+	background-origin: content-box;
+	background-repeat: no-repeat;
+	padding-right: 1.5rem;
+}
+
+.input-row {
+
+	@include bp(17) {
+		display:flex;
+		flex-wrap: wrap;
+
+		&__item {
+			flex-grow: 1;
+			margin-right: $spacing / 2;
+
+			&:last-of-type {
+				margin-right:0;
+			}
+
+		}
+
+	}
+
+}
+
+.input-error-msg {
+	color: palette(alerts, error);
+	font-weight: $base-font-weight;
+}

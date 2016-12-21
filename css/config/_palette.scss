@@ -1,0 +1,27 @@
+$palette: (
+	primary: (
+		white: #fff,
+		grey: #575756,
+		black: #000,
+		link-blue: #0076DC,
+		link-blue-alt: #0066DC,
+		dark-blue: #26478d,
+		light-blue: #406eb3,
+		violet: #632678,
+		purple: #982881,
+		pink: #ba2f7d
+	),
+	tertiary: (
+		red: #bb0048,
+		orange: #e2a235,
+		yellow: #fde723,
+		green: #c8c922,
+		sapphire: #3d87af
+	),
+	alerts: (
+		info: #015cae,
+		warn: #eeb320,
+		error: #f00,
+		success: #01943b,
+	)
+);

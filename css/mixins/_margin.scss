@@ -1,0 +1,23 @@
+@mixin margin() { margin: rem($spacing); }
+@mixin margin-t() { margin: rem($spacing) 0 0 0; }
+@mixin margin-r() { margin: 0 rem($spacing) 0 0; }
+@mixin margin-b() { margin: 0 0 rem($spacing) 0; }
+@mixin margin-l() { margin: 0 0 0 rem($spacing); }
+@mixin margin-x() { margin: 0 rem($spacing); }
+@mixin margin-y() { margin: rem($spacing) 0; }
+
+@mixin margin-sm() { margin: rem($spacing / 2); }
+@mixin margin-t-sm() { margin: rem($spacing / 2) 0 0 0; }
+@mixin margin-r-sm() { margin: 0 rem($spacing / 2) 0 0; }
+@mixin margin-b-sm() { margin: 0 0 rem($spacing / 2) 0; }
+@mixin margin-l-sm() { margin: 0 0 0 rem($spacing / 2); }
+@mixin margin-x-sm() { margin: 0 rem($spacing / 2); }
+@mixin margin-y-sm() { margin: rem($spacing / 2) 0; }
+
+@mixin margin-lg() { margin: rem($spacing * 2); }
+@mixin margin-t-lg() { margin: rem($spacing * 2) 0 0 0; }
+@mixin margin-r-lg() { margin: 0 rem($spacing * 2) 0 0; }
+@mixin margin-b-lg() { margin: 0 0 rem($spacing * 2) 0; }
+@mixin margin-l-lg() { margin: 0 0 0 rem($spacing * 2); }
+@mixin margin-x-lg() { margin: 0 rem($spacing * 2); }
+@mixin margin-y-lg() { margin: rem($spacing * 2) 0; }
