@@ -1,0 +1,14 @@
+// Typography
+$base-font-size: 16px;
+$base-font-family: 'opensans_regular', arial, helvetica, sans-serif;
+$base-font-serif: georgia, 'times new roman', serif;
+$base-font-bold: 'opensans_semibold', $base-font-family;
+$base-font-code: "Courier New", Courier, monospace;
+$base-font-weight: 400;
+
+// Spacing
+$spacing: $base-font-size;
+
+// Paths
+$img-path: '_assets/imgs/';
+$font-path: '_assets/fonts/';
