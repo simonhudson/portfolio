@@ -1,3 +1,12 @@
 @mixin columns($cols: 1) {
 
-};
+	@include bp(17) {
+		-moz-column-gap: $spacing;
+		-webkit-column-gap: $spacing;
+		column-gap: $spacing;
+		-moz-column-count: #{$cols};
+		-webkit-column-count: #{$cols};
+		column-count: #{$cols};
+	}
+
+}

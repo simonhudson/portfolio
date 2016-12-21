@@ -19,3 +19,7 @@ h3, .faux-h3 { @include h3(); }
 h4, .faux-h4 { @include h4(); }
 h5, .faux-h5 { @include h5(); }
 h6, .faux-h6 { @include h6(); }
+
+p {
+	@include columns(2);
+}
