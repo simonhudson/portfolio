@@ -1,0 +1,16 @@
+.item {
+
+	&__content {
+		@include padding();
+	}
+
+	&__img {
+		height:auto;
+		width:100%;
+	}
+
+	p:last-child {
+		margin-bottom: 0;
+	}
+
+}

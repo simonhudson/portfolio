@@ -18,9 +18,14 @@ include('config/import.inc.php');
 		<main>
 			<h1 class="visuallyhidden"><?= $sitename; ?></h1>
 			<?php foreach($portfolio as $item): ?>
-				<h2><?= $item->title; ?></h2>
-				<a class="btn btn--primary" href="<?= $item->url; ?>">View project</a>
-				<p><?= $item->text; ?></p>
+				<div class="item">
+					<img class="item__img" src="http://placehold.it/350x150" />
+					<div class="item__content">
+						<h2><?= $item->title; ?></h2>
+						<a class="btn btn--primary" href="<?= $item->url; ?>">View project</a>
+						<p><?= $item->text; ?></p>
+					</div>
+				</div>
 			<?php endforeach; ?>
 		</main>
 

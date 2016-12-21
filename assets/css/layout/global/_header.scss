@@ -2,11 +2,11 @@ $headerHeight: 50px;
 
 header {
 	@include padding();
+	align-items: center;
 	background: palette(primary, white);
 	border-bottom: 1px solid #efefef;
 	display: flex;
 	flex-wrap: wrap;
-	align-items: center;
 	height: $headerHeight + $spacing;
 }
 
