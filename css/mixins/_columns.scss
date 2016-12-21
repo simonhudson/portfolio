@@ -1,6 +1,6 @@
-@mixin columns($cols: 1) {
+@mixin columns($cols: 1, $bp: 17) {
 
-	@include bp(17) {
+	@include bp($bp) {
 		-moz-column-gap: $spacing;
 		-webkit-column-gap: $spacing;
 		column-gap: $spacing;
