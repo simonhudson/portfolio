@@ -2,6 +2,12 @@
 
 	&__content {
 		@include padding();
+
+		@include bp(17) {
+			display: flex;
+			flex-wrap: wrap;
+		}
+
 	}
 
 	&__img {

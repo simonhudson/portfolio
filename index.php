@@ -21,9 +21,13 @@ include('config/import.inc.php');
 				<div class="item">
 					<img class="item__img" src="http://placehold.it/350x150" />
 					<div class="item__content">
-						<h2><?= $item->title; ?></h2>
-						<a class="btn btn--primary" href="<?= $item->url; ?>">View project</a>
-						<p><?= $item->text; ?></p>
+						<div>
+							<h2><?= $item->title; ?></h2>
+							<a class="btn btn--primary" href="<?= $item->url; ?>">View project</a>
+						</div>
+						<div>
+							<p><?= $item->text; ?></p>
+						</div>
 					</div>
 				</div>
 			<?php endforeach; ?>
