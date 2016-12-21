@@ -1,0 +1,15 @@
+$headerHeight: 50px;
+
+header {
+	@include padding();
+	background: palette(primary, white);
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	height: $headerHeight + $spacing;
+}
+
+.header__logo {
+	height:$headerHeight;
+	width:auto;
+}

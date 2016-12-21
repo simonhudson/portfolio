@@ -26,6 +26,7 @@
 fieldset {
   box-sizing: border-box;
   font-family: "opensans_regular", arial, helvetica, sans-serif;
+  font-size: 14px;
   font-weight: 400;
   margin: 0;
   padding: 0;
@@ -36,9 +37,9 @@ html {
 
 p,
 .body-text {
-  font-size: 0.9rem;
-  line-height: 1.6em;
-  margin-bottom: 1em; }
+  font-size: 1rem;
+  line-height: 1.575em;
+  margin-bottom: 0.875em; }
 
 strong,
 .strong {
@@ -55,7 +56,7 @@ h1, .faux-h1 {
   line-height: 1.2em;
   margin-bottom: 0.5em;
   font-size: 1.5rem; }
-  @media (min-width: 50rem) {
+  @media (min-width: 57.14286rem) {
     h1, .faux-h1 {
       font-size: 3rem; } }
 
@@ -65,7 +66,7 @@ h2, .faux-h2 {
   line-height: 1.2em;
   margin-bottom: 0.5em;
   font-size: 1.1875rem; }
-  @media (min-width: 50rem) {
+  @media (min-width: 57.14286rem) {
     h2, .faux-h2 {
       font-size: 2.5rem; } }
 
@@ -75,7 +76,7 @@ h3, .faux-h3 {
   line-height: 1.2em;
   margin-bottom: 0.5em;
   font-size: 1.5rem; }
-  @media (min-width: 50rem) {
+  @media (min-width: 57.14286rem) {
     h3, .faux-h3 {
       font-size: 1.9375rem; } }
 
@@ -85,7 +86,7 @@ h4, .faux-h4 {
   line-height: 1.2em;
   margin-bottom: 0.5em;
   font-size: 1.125rem; }
-  @media (min-width: 50rem) {
+  @media (min-width: 57.14286rem) {
     h4, .faux-h4 {
       font-size: 1.5625rem; } }
 
@@ -95,7 +96,7 @@ h5, .faux-h5 {
   line-height: 1.2em;
   margin-bottom: 0.5em;
   font-size: 1.25rem; }
-  @media (min-width: 50rem) {
+  @media (min-width: 57.14286rem) {
     h5, .faux-h5 {
       font-size: 1.0625rem; } }
 
@@ -271,22 +272,21 @@ a,
 
 button,
 .btn {
+  font-family: "opensans_semibold", "opensans_regular", arial, helvetica, sans-serif;
+  font-weight: normal;
   border: 0;
   border-radius: 3px;
   color: #fff;
   cursor: pointer;
   display: inline-block;
   font-weight: 500;
-  font-size: 1rem;
+  font-size: 0.9rem;
   line-height: 1rem;
   padding: 0.75em 1em 0.85em;
   transition: background-color 0.5s ease-in-out;
+  text-transform: uppercase;
   vertical-align: top;
-  width: 98%; }
-  @media (min-width: 43.75rem) {
-    button,
-    .btn {
-      width: auto; } }
+  width: auto; }
   button:hover, button:focus,
   .btn:hover,
   .btn:focus {
@@ -298,7 +298,7 @@ button,
     background-position: right 10px center;
     background-repeat: no-repeat;
     background-size: 1.4rem;
-    padding-right: 2.8125rem; }
+    padding-right: 3.21429rem; }
   button--primary,
   .btn--primary {
     background-color: #ff9800; }
@@ -311,5 +311,20 @@ button,
       background-color: white;
       border: 1px solid #ff9800;
       color: #ff9800; }
+
+header {
+  padding: 1rem;
+  background: white;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  height: 64px; }
+
+.header__logo {
+  height: 50px;
+  width: auto; }
+
+main {
+  padding: 1rem; }
 
 /*# sourceMappingURL=main.css.map */
