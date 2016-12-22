@@ -42,6 +42,12 @@ include('config/import.inc.php');
 			<?php endforeach; ?>
 		</main>
 
+		<footer>
+			<div class="wrap footer__wrap">
+				<h2 class="faux-h3">Hello, my name's Simon and I build websites.</h2>
+			</div>
+		</footer>
+
 		<script src="<?= $paths->js ?>main.js"></script>
 	</body>
 </html>

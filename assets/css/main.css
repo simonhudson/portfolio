@@ -267,6 +267,9 @@ a,
 .margin-y-lg {
   margin: 4rem 0; }
 
+.center-text {
+  text-align: center; }
+
 button,
 .btn {
   font-family: "opensans_semibold", "opensans_regular", arial, helvetica, sans-serif;
@@ -362,6 +365,11 @@ main {
     margin-right: auto;
     margin-left: auto;
     width: 80%; } }
+
+.footer__wrap {
+  text-align: center;
+  padding: 2rem;
+  border-top: 1px solid #ff9800; }
 
 @media (min-width: 64.28571rem) {
   .item {

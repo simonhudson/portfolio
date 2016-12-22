@@ -2,3 +2,7 @@
 	font-family: $base-font-bold;
 	font-weight:normal;
 }
+
+@mixin center-text() {
+	text-align: center;
+}

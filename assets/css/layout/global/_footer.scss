@@ -1,0 +1,9 @@
+.footer {
+
+	&__wrap {
+		@include center-text();
+		@include padding();
+		border-top: 1px solid palette(primary, a);
+	}
+
+}
