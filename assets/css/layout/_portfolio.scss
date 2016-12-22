@@ -1,8 +1,12 @@
 .item {
 
-	@include bp(5) {
-		@include margin-b();
-		display:flex;
+	&__wrap {
+
+		@include bp(5) {
+			@include padding-y-lg();
+			display:flex;
+		}
+
 	}
 
 	&__content {
@@ -10,6 +14,7 @@
 
 		@include bp(5) {
 			@include padding-x();
+			padding-right: 0;
 		}
 	}
 

@@ -6,6 +6,8 @@ include('functions/import.inc.php');
 <!doctype html>
 <html>
 	<head>
+		<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
+		<meta content="width=device-width, initial-scale=1" name="viewport" />
 		<title><?= $sitename; ?></title>
 		<link href="<?= $paths->css ?>main.css" rel="stylesheet" />
 	</head>
@@ -18,25 +20,27 @@ include('functions/import.inc.php');
 			</div>
 		</header>
 
-		<main class="wrap">
+		<main>
 			<h1 class="visuallyhidden"><?= $sitename; ?></h1>
 			<?php foreach($portfolio as $item): ?>
 				<div class="item">
-					<img class="item__img" src="http://placehold.it/350x150" />
-					<div class="item__content">
-						<div class="item__info">
-							<h2><?= $item->title; ?></h2>
-							<div class="btn-row item__links">
-								<?php if (isset($item->url)): ?>
-									<a class="item__link item__link--project btn btn--primary" href="http://<?= $item->url; ?>" target="_blank">View <span class="visuallyhidden"><?= $item->title; ?> </span>project<?= $newTabWindowWarning ?></a>
-								<?php endif; ?>
-								<?php if (isset($item->github)): ?>
-									<a class="item__link item__link--project btn btn--primary" href="http://www.github.com/simonhudson/<?= $item->github; ?>" target="_blank">View <span class="visuallyhidden"><?= $item->title; ?> </span>on Github<?= $newTabWindowWarning ?></a>
-                            	<?php endif; ?>
+					<div class="wrap item__wrap">
+						<img class="item__img" src="http://placehold.it/350x150" />
+						<div class="item__content">
+							<div class="item__info">
+								<h2><?= $item->title; ?></h2>
+								<div class="btn-row item__links">
+									<?php if (isset($item->url)): ?>
+										<a class="item__link item__link--project btn btn--primary" href="http://<?= $item->url; ?>" target="_blank">View <span class="visuallyhidden"><?= $item->title; ?> </span>project<?= $newTabWindowWarning ?></a>
+									<?php endif; ?>
+									<?php if (isset($item->github)): ?>
+										<a class="item__link item__link--project btn btn--primary" href="http://www.github.com/simonhudson/<?= $item->github; ?>" target="_blank">View <span class="visuallyhidden"><?= $item->title; ?> </span>on Github<?= $newTabWindowWarning ?></a>
+	                            	<?php endif; ?>
+								</div>
 							</div>
-						</div>
-						<div class="item__text">
-							<p><?= $item->text; ?></p>
+							<div class="item__text">
+								<p><?= $item->text; ?></p>
+							</div>
 						</div>
 					</div>
 				</div>
