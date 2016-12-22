@@ -29,7 +29,6 @@
 	}
 
 	&__links {
-		justify-content: center;
 
 		@include bp(tab-l) {
 			justify-content: flex-start;

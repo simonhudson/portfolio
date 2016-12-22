@@ -272,6 +272,7 @@ a,
 
 button,
 .btn {
+  padding: 1rem;
   font-family: "opensans_semibold", "opensans_regular", arial, helvetica, sans-serif;
   font-weight: normal;
   border: 0;
@@ -280,9 +281,7 @@ button,
   cursor: pointer;
   display: inline-block;
   font-weight: 500;
-  font-size: 0.9rem;
   line-height: 1rem;
-  padding: 0.75em 1em 0.85em;
   transition: background-color 0.5s ease-in-out;
   text-transform: uppercase;
   vertical-align: top;
@@ -388,11 +387,9 @@ main {
     .item__img {
       height: 100%;
       width: auto; } }
-.item__links {
-  justify-content: center; }
-  @media (min-width: 73.14286rem) {
-    .item__links {
-      justify-content: flex-start; } }
+@media (min-width: 73.14286rem) {
+  .item__links {
+    justify-content: flex-start; } }
 .item p:last-child {
   margin-bottom: 0; }
 
@@ -400,7 +397,6 @@ main {
   display: flex;
   flex-wrap: wrap; }
   .btn-row .btn {
-    flex-grow: 1;
     margin-right: 28px;
     margin-bottom: 28px; }
     .btn-row .btn:last-of-type {
