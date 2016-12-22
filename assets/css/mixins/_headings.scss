@@ -2,7 +2,7 @@
 	color: palette(primary, bodyText);
 	font-weight: 300;
 	line-height: 1.2em;
-	margin-bottom:0.5em;
+	margin-bottom:1em;
 }
 @mixin h1() {
 	@include headings();

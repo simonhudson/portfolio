@@ -25,7 +25,14 @@ include('config/import.inc.php');
 					<div class="item__content">
 						<div class="item__info">
 							<h2><?= $item->title; ?></h2>
-							<a class="btn btn--primary" href="<?= $item->url; ?>">View project</a>
+							<div class="item__links">
+								<?php if (isset($item->url)): ?>
+									<a class="item__link item__link--project btn btn--primary" href="http://<?= $item->url; ?>" target="_blank">View <span class="visuallyhidden"><?= $item->title; ?> </span>project<span class="visuallyhidden"> (opens in a new tab/window)</span></a>
+								<?php endif; ?>
+								<?php if (isset($item->github)): ?>
+									<a class="item__link item__link--project btn btn--primary" href="http://www.github.com/simonhudson/<?= $item->github; ?>" target="_blank">View <span class="visuallyhidden"><?= $item->title; ?> </span>on Github<span class="visuallyhidden"> (opens in a new tab/window)</span></a>
+                            	<?php endif; ?>
+							</div>
 						</div>
 						<div class="item__text">
 							<p><?= $item->text; ?></p>
