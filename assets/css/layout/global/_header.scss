@@ -46,4 +46,10 @@ header {
 
 	}
 
+	em {
+		font-family: $base-font-serif;
+		letter-spacing: normal;
+		text-transform: lowercase;
+	}
+
 }

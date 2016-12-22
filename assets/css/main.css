@@ -360,6 +360,10 @@ header {
         overflow: visible;
         position: static;
         width: auto; } }
+  .header__strap em {
+    font-family: georgia, "times new roman", serif;
+    letter-spacing: normal;
+    text-transform: lowercase; }
 
 main {
   padding-top: 106px; }
