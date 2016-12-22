@@ -3,7 +3,7 @@ main {
 }
 
 .wrap {
-	@include bp(5) {
+	@include bp(tab-l) {
 		margin-right: auto;
 		margin-left: auto;
 		width: 80%;

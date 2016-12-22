@@ -3,10 +3,7 @@
 // ------------------------------------------------------------------------------------------------------------------------//
 
 $breakpoints: (
-	1: 400px, //iPhone 4, 5, SE are 320px; iPhone 6, 7 are 375px; iPhone 6 Plus, 7 Plus are 414px
-	2: 590px,
-	3: 700px,
-	4: 800px, //iPad portrait is 768px
-	5: 900px,
-	6: 1024px,
+	tab-p: 750px,
+	tab-l: 1024px,
+	desktop: 12000px
 );

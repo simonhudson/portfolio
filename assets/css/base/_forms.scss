@@ -72,7 +72,7 @@ select {
 
 .input-row {
 
-	@include bp(5) {
+	@include bp(tab-l) {
 		display:flex;
 		flex-wrap: wrap;
 

@@ -19,7 +19,7 @@ header {
 	display: flex;
 	flex-wrap: wrap;
 
-	@include bp(5) {
+	@include bp(tab-l) {
 		@include padding-y-sm();
 	}
 
@@ -40,7 +40,7 @@ header {
 	span {
 		@include visuallyhidden();
 
-		@include bp(5) {
+		@include bp(tab-l) {
 			@include visuallyshown();
 		}
 

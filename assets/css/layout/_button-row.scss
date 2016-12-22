@@ -7,10 +7,6 @@
 		margin-right: $spacing;
 		margin-bottom: $spacing;
 
-		@include bp(5) {
-			flex-grow: 0;
-		}
-
 		&:last-of-type {
 			margin-right: 0;
 		}

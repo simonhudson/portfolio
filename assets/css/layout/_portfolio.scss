@@ -2,7 +2,7 @@
 
 	&__wrap {
 
-		@include bp(5) {
+		@include bp(tab-l) {
 			@include padding-y-lg();
 			display:flex;
 		}
@@ -12,7 +12,7 @@
 	&__content {
 		@include padding();
 
-		@include bp(5) {
+		@include bp(tab-l) {
 			@include padding-x();
 			padding-right: 0;
 		}
@@ -22,7 +22,7 @@
 		height:auto;
 		width:100%;
 
-		@include bp(5) {
+		@include bp(tab-l) {
 			height: 100%;
 			width: auto;
 		}
@@ -31,7 +31,7 @@
 	&__links {
 		justify-content: center;
 
-		@include bp(5) {
+		@include bp(tab-l) {
 			justify-content: flex-start;
 		}
 
