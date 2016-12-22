@@ -13,7 +13,7 @@ include('config/import.inc.php');
 		<header>
 			<div class="wrap header__wrap">
 				<img class="header__logo" src="<?= $paths->imgs?>logo.svg" />
-				<p class="header__strap"><?= $sitename; ?></p>
+				<p class="header__strap"><span>Web Design &amp; Development by </span>Simon Hudson</p>
 			</div>
 		</header>
 

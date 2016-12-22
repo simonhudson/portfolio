@@ -7,9 +7,15 @@ header {
 }
 
 .header__wrap {
+	@include padding-sm();
 	align-items: center;
 	display: flex;
 	flex-wrap: wrap;
+
+	@include bp(5) {
+		@include padding-y-sm();
+	}
+
 }
 
 .header__logo {
@@ -19,5 +25,18 @@ header {
 
 .header__strap {
 	@include strong();
+	letter-spacing: 1px;
 	margin-bottom: 0;
+	margin-left: rem($base-font-size);
+	text-transform: uppercase;
+
+	span {
+		@include visuallyhidden();
+
+		@include bp(5) {
+			@include visuallyshown();
+		}
+
+	}
+
 }

@@ -135,12 +135,9 @@ a,
     outline: 5px solid orange; }
 
 .visuallyhidden {
-  border: 0;
   clip: rect(0 0 0 0);
   height: 1px;
-  margin: -1px;
   overflow: hidden;
-  padding: 0;
   position: absolute;
   width: 1px; }
 
@@ -320,9 +317,13 @@ header {
   width: 100%; }
 
 .header__wrap {
+  padding: 1rem;
   align-items: center;
   display: flex;
   flex-wrap: wrap; }
+  @media (min-width: 64.28571rem) {
+    .header__wrap {
+      padding: 1rem 0; } }
 
 .header__logo {
   height: 50px;
@@ -331,7 +332,23 @@ header {
 .header__strap {
   font-family: "opensans_semibold", "opensans_regular", arial, helvetica, sans-serif;
   font-weight: normal;
-  margin-bottom: 0; }
+  letter-spacing: 1px;
+  margin-bottom: 0;
+  margin-left: 1rem;
+  text-transform: uppercase; }
+  .header__strap span {
+    clip: rect(0 0 0 0);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    width: 1px; }
+    @media (min-width: 64.28571rem) {
+      .header__strap span {
+        clip: rect(0 0 0 0);
+        height: auto;
+        overflow: visible;
+        position: static;
+        width: auto; } }
 
 main {
   padding-top: 106px; }
