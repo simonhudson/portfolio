@@ -6,37 +6,37 @@
 }
 @mixin h1() {
 	@include headings();
-	font-size: rem($base-font-size * 1.5);
+	font-size: rem($base-font-size * 2);
 	@include bp(5) {
 		font-size: rem($base-font-size * 3);
 	}
 }
 @mixin h2() {
 	@include headings();
-	font-size: rem($base-font-size * 1.1875);
+	font-size: rem($base-font-size * 1.8);
 	@include bp(5) {
-		font-size: rem($base-font-size * 2.5);
+		font-size: rem($base-font-size * 1.8);
 	}
 }
 @mixin h3() {
 	@include headings();
-	font-size: rem($base-font-size * 1.5);
+	font-size: rem($base-font-size * 1.6);
 	@include bp(5) {
-		font-size: rem($base-font-size * 1.9375);
+		font-size: rem($base-font-size * 1.6);
 	}
 }
 @mixin h4() {
 	@include headings();
-	font-size: rem($base-font-size * 1.125);
+	font-size: rem($base-font-size * 1.4);
 	@include bp(5) {
-		font-size: rem($base-font-size * 1.5625);
+		font-size: rem($base-font-size * 1.4);
 	}
 }
 @mixin h5() {
 	@include headings();
-	font-size: rem($base-font-size * 1.25);
+	font-size: rem($base-font-size * 1.2);
 	@include bp(5) {
-		font-size: rem($base-font-size * 1.0625);
+		font-size: rem($base-font-size * 1.2);
 	}
 }
 @mixin h6() {
