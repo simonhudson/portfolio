@@ -1,4 +1,4 @@
-function headerScroll(e) {
+function headerScroll() {
 	var header = document.querySelector('.js-header');
 	var headerHeight = header.offsetHeight;
 	var method = (window.scrollY >= headerHeight) ? 'add' : 'remove';
