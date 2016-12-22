@@ -24,26 +24,10 @@
 	}
 
 	&__links {
-		@include padding-b();
-		display: flex;
 		justify-content: center;
 
 		@include bp(5) {
 			justify-content: flex-start;
-		}
-
-	}
-
-	&__link {
-		flex-grow: 1;
-		margin-right: $spacing;
-
-		@include bp(5) {
-			flex-grow: 0;
-		}
-
-		&:last-of-type {
-			margin-right: 0;
 		}
 
 	}

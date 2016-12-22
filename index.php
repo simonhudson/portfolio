@@ -26,7 +26,7 @@ include('functions/import.inc.php');
 					<div class="item__content">
 						<div class="item__info">
 							<h2><?= $item->title; ?></h2>
-							<div class="item__links">
+							<div class="btn-row item__links">
 								<?php if (isset($item->url)): ?>
 									<a class="item__link item__link--project btn btn--primary" href="http://<?= $item->url; ?>" target="_blank">View <span class="visuallyhidden"><?= $item->title; ?> </span>project<?= $newTabWindowWarning ?></a>
 								<?php endif; ?>

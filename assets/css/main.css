@@ -48,7 +48,7 @@ strong,
 
 small,
 .small {
-  color: black; }
+  font-size: 0.8rem; }
 
 h1, .faux-h1 {
   color: #575757;
@@ -388,21 +388,24 @@ main {
       height: 100%;
       width: auto; } }
 .item__links {
-  padding: 0 0 2rem 0;
-  display: flex;
   justify-content: center; }
   @media (min-width: 64.28571rem) {
     .item__links {
       justify-content: flex-start; } }
-.item__link {
-  flex-grow: 1;
-  margin-right: 28px; }
-  @media (min-width: 64.28571rem) {
-    .item__link {
-      flex-grow: 0; } }
-  .item__link:last-of-type {
-    margin-right: 0; }
 .item p:last-child {
   margin-bottom: 0; }
+
+.btn-row {
+  display: flex;
+  flex-wrap: wrap; }
+  .btn-row .btn {
+    flex-grow: 1;
+    margin-right: 28px;
+    margin-bottom: 28px; }
+    @media (min-width: 64.28571rem) {
+      .btn-row .btn {
+        flex-grow: 0; } }
+    .btn-row .btn:last-of-type {
+      margin-right: 0; }
 
 /*# sourceMappingURL=main.css.map */

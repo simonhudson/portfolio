@@ -15,7 +15,7 @@ strong,
 
 small,
 .small {
-	color: palette(primary, black);
+	font-size: rem($base-font-size * 0.8);
 }
 
 h1, .faux-h1 { @include h1(); }
