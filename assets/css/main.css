@@ -312,9 +312,13 @@ button,
 header {
   background: white;
   border-bottom: 1px solid #efefef;
+  box-shadow: 0 0 5px transparent;
+  transition: all .5s;
   height: 78px;
   position: fixed;
   width: 100%; }
+  header.is-scrolled {
+    box-shadow: 0 0 5px #575757; }
 
 .header__wrap {
   padding: 1rem;

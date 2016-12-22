@@ -1,9 +1,16 @@
 header {
 	background: palette(primary, white);
 	border-bottom: 1px solid #efefef;
+	box-shadow: 0 0 5px transparent;
+	transition: all .5s;
 	height: $headerHeight + $spacing;
 	position: fixed;
 	width: 100%;
+
+	&.is-scrolled {
+		box-shadow: 0 0 5px palette(primary, bodyText);
+	}
+
 }
 
 .header__wrap {

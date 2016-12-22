@@ -6,13 +6,13 @@ include('config/import.inc.php');
 <html>
 	<head>
 		<title><?= $sitename; ?></title>
-		<link href="<?= $paths->css?>main.css" rel="stylesheet" />
+		<link href="<?= $paths->css ?>main.css" rel="stylesheet" />
 	</head>
 	<body>
 
-		<header>
+		<header class="js-header">
 			<div class="wrap header__wrap">
-				<img class="header__logo" src="<?= $paths->imgs?>logo.svg" />
+				<img class="header__logo" src="<?= $paths->imgs ?>logo.svg" />
 				<p class="header__strap"><span>Web Design &amp; Development by </span>Simon Hudson</p>
 			</div>
 		</header>
@@ -35,5 +35,6 @@ include('config/import.inc.php');
 			<?php endforeach; ?>
 		</main>
 
+		<script src="<?= $paths->js ?>main.js"></script>
 	</body>
 </html>
