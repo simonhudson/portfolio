@@ -30,16 +30,16 @@ button,
 	}
 
 	&--primary {
-		background-color: palette(primary, orange);
+		background-color: palette(primary, a);
 
 		&:hover, &:focus {
-			background-color: palette(primary, orange-alt);
+			background-color: palette(primary, a-alt);
 		}
 
 		&.is-hollow {
 			background-color: palette(primary, white);
-			border: 1px solid palette(primary, orange);
-			color: palette(primary, orange);
+			border: 1px solid palette(primary, a);
+			color: palette(primary, a);
 		}
 
 	}
