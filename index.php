@@ -29,7 +29,7 @@ include('functions/import.inc.php');
 						<div class="item__content">
 							<div class="item__info">
 								<h2><?= $item->title; ?></h2>
-								<div class="btn-row item__links">
+								<div class="item__links">
 									<?php if (isset($item->url)): ?>
 										<a class="item__link item__link--project btn btn--primary" href="http://<?= $item->url; ?>" target="_blank">View <span class="visuallyhidden"><?= $item->title; ?> </span>project<?= $newTabWindowWarning ?></a>
 									<?php endif; ?>
@@ -51,7 +51,7 @@ include('functions/import.inc.php');
 			<div class="wrap footer__wrap">
 				<h2 class="faux-h3">Hello, my name's Simon and I build websites.</h2>
 				<p>I am an experienced web designer/front-end developer who specialises in writing lean, standards-compliant <abbr title="eXtensible Hypertext Markup Language">(X)HTML</abbr>, <abbr title="Cascading Style Sheets">CSS</abbr> and JavaScript to create accessible and usable websites. I have a strong understanding of <abbr title="Web Content Accessibility Guidelines">WCAG</abbr> and <abbr title="Web Accessibility Initiative">WAI</abbr> requirements, W3C standards, browser quirks and progressive enhancement/graceful degradation, as well as experience developing for assistive technologies.</p>
-				<div class="btn-row footer__btns">
+				<div class="footer__btns">
 					<a class="btn btn--primary is-hollow" href="<?= $root; ?>Simon_Hudson_CV.pdf" target="_blank">
 						Download my CV
 						<small>(PDF, <?= formatBytes(filesize('Simon_Hudson_CV.pdf')); ?>)</small>
