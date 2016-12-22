@@ -1,18 +1,26 @@
 .item {
 
+	@include bp(5) {
+		@include margin-b();
+		display:flex;
+	}
+
 	&__content {
 		@include padding();
 
-		@include bp(17) {
-			display: flex;
-			flex-wrap: wrap;
+		@include bp(5) {
+			@include padding-x();
 		}
-
 	}
 
 	&__img {
 		height:auto;
 		width:100%;
+
+		@include bp(5) {
+			height: 100%;
+			width: auto;
+		}
 	}
 
 	p:last-child {

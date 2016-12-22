@@ -1,3 +1,11 @@
 main {
 	padding-top: $headerHeight + ($spacing * 2);
 }
+
+.wrap {
+	@include bp(5) {
+		margin-right: auto;
+		margin-left: auto;
+		width: 80%;
+	}
+}

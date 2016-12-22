@@ -11,21 +11,23 @@ include('config/import.inc.php');
 	<body>
 
 		<header>
-			<img class="header__logo" src="<?= $paths->imgs?>logo.svg" />
-			<p class="header__strap"><?= $sitename; ?></p>
+			<div class="wrap header__wrap">
+				<img class="header__logo" src="<?= $paths->imgs?>logo.svg" />
+				<p class="header__strap"><?= $sitename; ?></p>
+			</div>
 		</header>
 
-		<main>
+		<main class="wrap">
 			<h1 class="visuallyhidden"><?= $sitename; ?></h1>
 			<?php foreach($portfolio as $item): ?>
 				<div class="item">
 					<img class="item__img" src="http://placehold.it/350x150" />
 					<div class="item__content">
-						<div>
+						<div class="item__info">
 							<h2><?= $item->title; ?></h2>
 							<a class="btn btn--primary" href="<?= $item->url; ?>">View project</a>
 						</div>
-						<div>
+						<div class="item__text">
 							<p><?= $item->text; ?></p>
 						</div>
 					</div>

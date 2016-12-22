@@ -3,19 +3,10 @@
 // ------------------------------------------------------------------------------------------------------------------------//
 
 $breakpoints: (
-	5: 400px, //iPhone 4, 5, SE are 320px; iPhone 6, 7 are 375px; iPhone 6 Plus, 7 Plus are 414px
-	10: 590px,
-	15: 700px,
-	17: 800px, //iPad portrait is 768px
-	20: 900px,
-	21: 950px,
-	30: 1200px, //iPad landscape is 1024px
-	10hero: 660px,
-	20hero: 960px,
-	30hero: 1200px
+	1: 400px, //iPhone 4, 5, SE are 320px; iPhone 6, 7 are 375px; iPhone 6 Plus, 7 Plus are 414px
+	2: 590px,
+	3: 700px,
+	4: 800px, //iPad portrait is 768px
+	5: 900px,
+	6: 1024px,
 );
-
-// VERY IMPORTANT
-// IF BREAKPOINTS CHANGE - WE MUST INFORM THE BI TEAM
-// SO THAT ADOBE BREAKPOINTS IN T&T CAN ALSO BE UPDATED
-// ====================================================
