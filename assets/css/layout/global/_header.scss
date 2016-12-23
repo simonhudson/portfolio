@@ -47,8 +47,7 @@ header {
 	}
 
 	em {
-		font-family: $base-font-serif;
-		letter-spacing: normal;
+		@include flourish();
 		text-transform: lowercase;
 	}
 

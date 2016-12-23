@@ -28,7 +28,7 @@ include('functions/import.inc.php');
 						<img class="item__img" src="http://placehold.it/350x150" />
 						<div class="item__content">
 							<div class="item__info">
-								<h2><?= $item->title; ?></h2>
+								<h2 class="item__title faux-h5"><?= $item->title; ?></h2>
 								<div class="item__links">
 									<?php if (isset($item->url)): ?>
 										<a class="item__link item__link--project btn btn--primary" href="http://<?= $item->url; ?>" target="_blank">View <span class="visuallyhidden"><?= $item->title; ?> </span>project<?= $newTabWindowWarning ?></a>

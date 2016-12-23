@@ -9,6 +9,13 @@
 
 	}
 
+	&__title {
+		@include padding-l-xsm();
+		@include strong();
+		border-left: 5px solid palette(primary,a);
+		text-transform: uppercase;
+	}
+
 	&__content {
 		@include padding();
 
@@ -16,6 +23,7 @@
 			@include padding-x();
 			padding-right: 0;
 		}
+
 	}
 
 	&__img {
@@ -29,11 +37,16 @@
 	}
 
 	&__links {
+		@include padding-t-sm();
 
 		@include bp(tab-l) {
 			justify-content: flex-start;
 		}
 
+	}
+
+	&__link {
+		@include center-text();
 	}
 
 	p:last-child {

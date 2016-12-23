@@ -6,6 +6,14 @@
 @mixin padding-x() { padding: 0 rem($spacing); }
 @mixin padding-y() { padding: rem($spacing) 0; }
 
+@mixin padding-xsm() { padding: rem($spacing / 4); }
+@mixin padding-t-xsm() { padding: rem($spacing / 4) 0 0 0; }
+@mixin padding-r-xsm() { padding: 0 rem($spacing / 4) 0 0; }
+@mixin padding-b-xsm() { padding: 0 0 rem($spacing / 4) 0; }
+@mixin padding-l-xsm() { padding: 0 0 0 rem($spacing / 4); }
+@mixin padding-x-xsm() { padding: 0 rem($spacing / 4); }
+@mixin padding-y-xsm() { padding: rem($spacing / 4) 0; }
+
 @mixin padding-sm() { padding: rem($spacing / 2); }
 @mixin padding-t-sm() { padding: rem($spacing / 2) 0 0 0; }
 @mixin padding-r-sm() { padding: 0 rem($spacing / 2) 0 0; }
@@ -21,3 +29,11 @@
 @mixin padding-l-lg() { padding: 0 0 0 rem($spacing * 2); }
 @mixin padding-x-lg() { padding: 0 rem($spacing * 2); }
 @mixin padding-y-lg() { padding: rem($spacing * 2) 0; }
+
+@mixin padding-xlg() { padding: rem($spacing * 4); }
+@mixin padding-t-xlg() { padding: rem($spacing * 4) 0 0 0; }
+@mixin padding-r-xlg() { padding: 0 rem($spacing * 4) 0 0; }
+@mixin padding-b-xlg() { padding: 0 0 rem($spacing * 4) 0; }
+@mixin padding-l-xlg() { padding: 0 0 0 rem($spacing * 4); }
+@mixin padding-x-xlg() { padding: 0 rem($spacing * 4); }
+@mixin padding-y-xlg() { padding: rem($spacing * 4) 0; }

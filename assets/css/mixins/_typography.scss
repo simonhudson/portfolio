@@ -6,3 +6,9 @@
 @mixin center-text() {
 	text-align: center;
 }
+
+@mixin flourish() {
+	font-family: $base-font-serif;
+	font-style: italic;
+	letter-spacing: normal;
+}
