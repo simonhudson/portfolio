@@ -3,6 +3,7 @@ button,
 	@include margin-b-sm();
 	@include padding-sm();
 	@include strong();
+	@include transition();
 	border-radius:3px;
 	border:0;
 	color:#fff;
@@ -11,7 +12,6 @@ button,
 	font-weight: 500;
 	line-height: rem($base-font-size);
 	text-transform: uppercase;
-	transition: background-color 0.5s ease-in-out;
 	vertical-align: top;
 	width: 100%;
 

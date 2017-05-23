@@ -31,6 +31,7 @@ label,
 [type="color"],
 textarea,
 select {
+	@include transition();
 	background-color: #fff;
 	border: 1px solid #a8b6d1;
 	border-radius: 5px;
@@ -41,8 +42,6 @@ select {
     height: 2.4375rem;
 	margin: 0 0 rem($base-font-size * 0.5);
     padding: 0.5rem;
-    // box-shadow: inset 0 1px 2px rgba(10, 10, 10, 0.1);
-    transition: box-shadow 0.5s, border-color 0.25s ease-in-out;
 	width: 100%;
     -webkit-appearance: none;
 	-moz-appearance: none;
@@ -50,8 +49,6 @@ select {
 	&:focus {
 		border-color: #26478d;
 		outline: none;
-		// box-shadow: 0 0 5px #26478d;
-		transition: border-color 0.25s ease-in-out;
 	}
 
 	&.has-error {

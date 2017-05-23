@@ -380,6 +380,7 @@ button,
   padding: 1rem;
   font-family: "opensans_semibold", "opensans_regular", arial, helvetica, sans-serif;
   font-weight: normal;
+  transition: all .5s ease-in-out;
   border-radius: 3px;
   border: 0;
   color: #fff;
@@ -388,7 +389,6 @@ button,
   font-weight: 500;
   line-height: 1rem;
   text-transform: uppercase;
-  transition: background-color 0.5s ease-in-out;
   vertical-align: top;
   width: 100%; }
   @media (min-width: 42.85714rem) {
@@ -421,7 +421,7 @@ button,
       color: #ff9800; }
 
 .header {
-  transition: all .5s;
+  transition: all .5s ease-in-out;
   background: white;
   border-bottom: 1px solid #efefef;
   box-shadow: 0 0 5px transparent;
