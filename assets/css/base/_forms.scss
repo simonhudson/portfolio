@@ -78,7 +78,7 @@ select {
 
 		&__item {
 			flex-grow: 1;
-			margin-right: $spacing / 2;
+			margin-right: $spacing-sm;
 
 			&:last-of-type {
 				margin-right:0;

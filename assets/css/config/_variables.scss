@@ -8,6 +8,10 @@ $base-font-weight: 400;
 
 // Spacing
 $spacing: $base-font-size * 2;
+$spacing-xsm: $spacing / 4;
+$spacing-sm: $spacing / 2;
+$spacing-lg: $spacing * 2;
+$spacing-xlg: $spacing * 4;
 
 // Paths
 $img-path: '_assets/imgs/';
