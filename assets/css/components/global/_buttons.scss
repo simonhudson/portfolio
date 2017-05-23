@@ -25,8 +25,8 @@ button,
 		text-decoration: none;
 	}
 
-	&--has-icon { //Use --has-icon for consistency with other classes, .has-icon is legacy
-		background-image: url($img-path+'arrow-white-right.svg');
+	&--has-icon {
+		background-image: url($img-path + 'arrow-white-right.svg');
 		background-position: right 10px center;
 		background-repeat: no-repeat;
 		background-size:rem($base-font-size * 1.4);
