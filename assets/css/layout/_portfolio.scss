@@ -1,30 +1,11 @@
+.portfolio {
+	@include padding-x-sm();
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: $spacing;
+}
+
 .item {
-
-	&__wrap {
-
-		@include bp(tab-l) {
-			@include padding-y-lg();
-			display:flex;
-		}
-
-	}
-
-	&__title {
-		@include padding-l-xsm();
-		@include strong();
-		border-left: 5px solid palette(primary,a);
-		text-transform: uppercase;
-	}
-
-	&__content {
-		@include padding();
-
-		@include bp(tab-l) {
-			@include padding-x();
-			padding-right: 0;
-		}
-
-	}
 
 	&__img {
 		height:auto;
@@ -34,23 +15,65 @@
 			height: 100%;
 			width: auto;
 		}
-	}
 
-	&__links {
-		@include padding-t-sm();
-
-		@include bp(tab-l) {
-			justify-content: flex-start;
-		}
-
-	}
-
-	&__link {
-		@include center-text();
-	}
-
-	p:last-child {
-		margin-bottom: 0;
 	}
 
 }
+
+
+// .item {
+//
+// 	&__wrap {
+//
+// 		@include bp(tab-l) {
+// 			@include padding-y-lg();
+// 			display:flex;
+// 		}
+//
+// 	}
+//
+// 	&__title {
+// 		@include padding-l-xsm();
+// 		@include strong();
+// 		border-left: 5px solid palette(primary,a);
+// 		text-transform: uppercase;
+// 	}
+//
+// 	&__content {
+// 		@include padding();
+//
+// 		@include bp(tab-l) {
+// 			@include padding-x();
+// 			padding-right: 0;
+// 		}
+//
+// 	}
+//
+// 	&__img {
+// 		height:auto;
+// 		width:100%;
+//
+// 		@include bp(tab-l) {
+// 			height: 100%;
+// 			width: auto;
+// 		}
+// 	}
+//
+// 	&__links {
+// 		@include padding-t-sm();
+//
+// 		@include bp(tab-l) {
+// 			justify-content: flex-start;
+// 		}
+//
+// 	}
+//
+// 	&__link {
+// 		@include center-text();
+// 	}
+//
+// 	p:last-child {
+// 		margin-bottom: 0;
+// 	}
+//
+// }
