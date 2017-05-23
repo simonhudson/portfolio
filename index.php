@@ -25,7 +25,9 @@ include('functions/import.inc.php');
 			<?php foreach($portfolio as $item): ?>
 				<div class="item">
 					<div class="wrap item__wrap">
-						<img class="item__img" src="http://placehold.it/350x150" />
+						<div class="item__img">
+							<img src="http://placehold.it/350x150" />
+						</div>
 						<div class="item__content">
 							<div class="item__info">
 								<h2 class="item__title faux-h5"><?= $item->title; ?></h2>
