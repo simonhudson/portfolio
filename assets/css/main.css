@@ -492,7 +492,8 @@ main {
 
 .item {
   padding-bottom: 2rem;
-  flex-grow: 1; }
+  flex-grow: 1;
+  position: relative; }
   @media (min-width: 71.42857rem) {
     .item {
       width: 33.333333%; } }
@@ -509,7 +510,10 @@ main {
     text-transform: uppercase; }
   .item__content {
     padding-right: 2rem;
-    padding-left: 2rem; }
+    padding-left: 2rem;
+    left: 0;
+    position: absolute;
+    top: 0; }
 
 .btn-row {
   display: flex;
