@@ -31,10 +31,10 @@ include('functions/import.inc.php');
 								<h2 class="item__title faux-h5"><?= $item->title; ?></h2>
 								<div class="item__links">
 									<?php if (isset($item->url)): ?>
-										<a class="item__link item__link--project btn btn--primary" href="http://<?= $item->url; ?>" target="_blank">View <span class="visuallyhidden"><?= $item->title; ?> </span>project<?= $newTabWindowWarning ?></a>
+										<a class="item__link item__link--project btn btn--primary" href="http://<?= $item->url; ?>" rel="noopener" target="_blank">View <span class="visuallyhidden"><?= $item->title; ?> </span>project<?= $newTabWindowWarning ?></a>
 									<?php endif; ?>
 									<?php if (isset($item->github)): ?>
-										<a class="item__link item__link--project btn btn--primary" href="http://www.github.com/simonhudson/<?= $item->github; ?>" target="_blank">View <span class="visuallyhidden"><?= $item->title; ?> </span>on Github<?= $newTabWindowWarning ?></a>
+										<a class="item__link item__link--project btn btn--primary" href="http://www.github.com/simonhudson/<?= $item->github; ?>" rel="noopener" target="_blank">View <span class="visuallyhidden"><?= $item->title; ?> </span>on Github<?= $newTabWindowWarning ?></a>
 	                            	<?php endif; ?>
 								</div>
 							</div>
@@ -52,16 +52,16 @@ include('functions/import.inc.php');
 				<h2 class="faux-h3">Hello, my name's Simon and I build websites.</h2>
 				<p>I am an experienced web designer/front-end developer who specialises in writing lean, standards-compliant <abbr title="eXtensible Hypertext Markup Language">(X)HTML</abbr>, <abbr title="Cascading Style Sheets">CSS</abbr> and JavaScript to create accessible and usable websites. I have a strong understanding of <abbr title="Web Content Accessibility Guidelines">WCAG</abbr> and <abbr title="Web Accessibility Initiative">WAI</abbr> requirements, W3C standards, browser quirks and progressive enhancement/graceful degradation, as well as experience developing for assistive technologies.</p>
 				<div class="footer__btns">
-					<a class="btn btn--primary is-hollow" href="<?= $root; ?>Simon_Hudson_CV.pdf" target="_blank">
+					<a class="btn btn--primary is-hollow" href="<?= $root; ?>Simon_Hudson_CV.pdf" rel="noopener" target="_blank">
 						Download my CV
 						<small>(PDF, <?= formatBytes(filesize('Simon_Hudson_CV.pdf')); ?>)</small>
 						<?= $newTabWindowWarning ?>
 					</a>
-					<a class="btn btn--primary is-hollow" href="https://github.com/simonhudson?tab=repositories" target="_blank">
+					<a class="btn btn--primary is-hollow" href="https://github.com/simonhudson?tab=repositories" rel="noopener" target="_blank">
 						View my Github profile
 						<?= $newTabWindowWarning ?>
 					</a>
-					<a class="btn btn--primary is-hollow" href="http://stackoverflow.com/story/simonhudson" target="_blank">
+					<a class="btn btn--primary is-hollow" href="http://stackoverflow.com/story/simonhudson" rel="noopener" target="_blank">
 						View my Stack Overflow Developer Story
 						<?= $newTabWindowWarning ?>
 					</a>

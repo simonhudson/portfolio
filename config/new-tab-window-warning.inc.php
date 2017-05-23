@@ -1,3 +1,3 @@
 <?php
-$newTabWindowWarning = '<span class="visuallyhidden"> (opens in a new tab/window)</span>';
+$newTabWindowWarning = '<span class="visuallyhidden">&nbsp;(opens in a new tab/window)</span>';
 ?>
