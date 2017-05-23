@@ -421,13 +421,14 @@ button,
       color: #ff9800; }
 
 .header {
+  transition: all .5s;
   background: white;
   border-bottom: 1px solid #efefef;
   box-shadow: 0 0 5px transparent;
   height: 78px;
   position: fixed;
-  transition: all .5s;
-  width: 100%; }
+  width: 100%;
+  z-index: 1; }
   .header.is-scrolled {
     box-shadow: 0 0 5px #575757; }
   .header__wrap {
@@ -492,8 +493,7 @@ main {
 
 .item {
   padding-bottom: 2rem;
-  flex-grow: 1;
-  position: relative; }
+  flex-grow: 1; }
   @media (min-width: 71.42857rem) {
     .item {
       width: 33.333333%; } }
@@ -510,10 +510,7 @@ main {
     text-transform: uppercase; }
   .item__content {
     padding-right: 2rem;
-    padding-left: 2rem;
-    left: 0;
-    position: absolute;
-    top: 0; }
+    padding-left: 2rem; }
 
 .btn-row {
   display: flex;
