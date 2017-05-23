@@ -420,7 +420,7 @@ button,
       border: 1px solid #ff9800;
       color: #ff9800; }
 
-header {
+.header {
   background: white;
   border-bottom: 1px solid #efefef;
   box-shadow: 0 0 5px transparent;
@@ -428,50 +428,47 @@ header {
   position: fixed;
   transition: all .5s;
   width: 100%; }
-  header.is-scrolled {
+  .header.is-scrolled {
     box-shadow: 0 0 5px #575757; }
-
-.header__wrap {
-  padding: 1rem;
-  align-items: center;
-  display: flex;
-  flex-wrap: wrap; }
-  @media (min-width: 71.42857rem) {
-    .header__wrap {
-      padding-right: 2rem;
-      padding-left: 2rem;
-      padding-top: 1rem;
-      padding-bottom: 1rem; } }
-
-.header__logo {
-  height: 50px;
-  width: auto; }
-
-.header__strap {
-  font-family: "opensans_semibold", "opensans_regular", arial, helvetica, sans-serif;
-  font-weight: normal;
-  letter-spacing: 1px;
-  margin-bottom: 0;
-  margin-left: 1rem;
-  text-transform: uppercase; }
-  .header__strap span {
-    clip: rect(0 0 0 0);
-    height: 1px;
-    overflow: hidden;
-    position: absolute;
-    width: 1px; }
+  .header__wrap {
+    padding: 1rem;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap; }
     @media (min-width: 71.42857rem) {
-      .header__strap span {
-        clip: rect(0 0 0 0);
-        height: auto;
-        overflow: visible;
-        position: static;
-        width: auto; } }
-  .header__strap em {
-    font-family: georgia, "times new roman", serif;
-    font-style: italic;
-    letter-spacing: normal;
-    text-transform: lowercase; }
+      .header__wrap {
+        padding-right: 2rem;
+        padding-left: 2rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem; } }
+  .header__logo {
+    height: 50px;
+    width: auto; }
+  .header__strap {
+    font-family: "opensans_semibold", "opensans_regular", arial, helvetica, sans-serif;
+    font-weight: normal;
+    letter-spacing: 1px;
+    margin-bottom: 0;
+    margin-left: 1rem;
+    text-transform: uppercase; }
+    .header__strap span {
+      clip: rect(0 0 0 0);
+      height: 1px;
+      overflow: hidden;
+      position: absolute;
+      width: 1px; }
+      @media (min-width: 71.42857rem) {
+        .header__strap span {
+          clip: rect(0 0 0 0);
+          height: auto;
+          overflow: visible;
+          position: static;
+          width: auto; } }
+    .header__strap em {
+      font-family: georgia, "times new roman", serif;
+      font-style: italic;
+      letter-spacing: normal;
+      text-transform: lowercase; }
 
 main {
   padding-top: 106px; }

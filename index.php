@@ -13,7 +13,7 @@ include('functions/import.inc.php');
 	</head>
 	<body>
 
-		<header class="js-header">
+		<header class="js-header header">
 			<div class="wrap header__wrap">
 				<img class="header__logo" src="<?= $paths->imgs ?>logo.svg" />
 				<p class="header__strap"><span>Web Design &amp; Development <em>by</em> </span>Simon Hudson</p>

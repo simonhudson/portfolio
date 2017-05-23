@@ -1,4 +1,4 @@
-header {
+.header {
 	background: palette(primary, white);
 	border-bottom: 1px solid #efefef;
 	box-shadow: 0 0 5px transparent;
@@ -11,45 +11,45 @@ header {
 		box-shadow: 0 0 5px palette(primary, bodyText);
 	}
 
-}
-
-.header__wrap {
-	@include padding-sm();
-	align-items: center;
-	display: flex;
-	flex-wrap: wrap;
-
-	@include bp(tab-l) {
-		@include padding-x();
-		@include padding-y-sm();
-	}
-
-}
-
-.header__logo {
-	height:$headerHeight;
-	width:auto;
-}
-
-.header__strap {
-	@include strong();
-	letter-spacing: 1px;
-	margin-bottom: 0;
-	margin-left: rem($base-font-size);
-	text-transform: uppercase;
-
-	span {
-		@include visuallyhidden();
+	&__wrap {
+		@include padding-sm();
+		align-items: center;
+		display: flex;
+		flex-wrap: wrap;
 
 		@include bp(tab-l) {
-			@include visuallyshown();
+			@include padding-x();
+			@include padding-y-sm();
 		}
 
 	}
 
-	em {
-		@include flourish();
-		text-transform: lowercase;
+	&__logo {
+		height:$headerHeight;
+		width:auto;
+	}
+
+	&__strap {
+		@include strong();
+		letter-spacing: 1px;
+		margin-bottom: 0;
+		margin-left: rem($base-font-size);
+		text-transform: uppercase;
+
+		span {
+			@include visuallyhidden();
+
+			@include bp(tab-l) {
+				@include visuallyshown();
+			}
+
+		}
+
+		em {
+			@include flourish();
+			text-transform: lowercase;
+		}
+
 	}
 
 }
