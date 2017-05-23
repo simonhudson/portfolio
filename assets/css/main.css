@@ -56,7 +56,7 @@ h1, .faux-h1 {
   line-height: 1.2em;
   margin-bottom: 1em;
   font-size: 2rem; }
-  @media (min-width: 73.14286rem) {
+  @media (min-width: 71.42857rem) {
     h1, .faux-h1 {
       font-size: 3rem; } }
 
@@ -66,7 +66,7 @@ h2, .faux-h2 {
   line-height: 1.2em;
   margin-bottom: 1em;
   font-size: 1.8rem; }
-  @media (min-width: 73.14286rem) {
+  @media (min-width: 71.42857rem) {
     h2, .faux-h2 {
       font-size: 1.8rem; } }
 
@@ -76,7 +76,7 @@ h3, .faux-h3 {
   line-height: 1.2em;
   margin-bottom: 1em;
   font-size: 1.6rem; }
-  @media (min-width: 73.14286rem) {
+  @media (min-width: 71.42857rem) {
     h3, .faux-h3 {
       font-size: 1.6rem; } }
 
@@ -86,7 +86,7 @@ h4, .faux-h4 {
   line-height: 1.2em;
   margin-bottom: 1em;
   font-size: 1.4rem; }
-  @media (min-width: 73.14286rem) {
+  @media (min-width: 71.42857rem) {
     h4, .faux-h4 {
       font-size: 1.4rem; } }
 
@@ -96,7 +96,7 @@ h5, .faux-h5 {
   line-height: 1.2em;
   margin-bottom: 1em;
   font-size: 1.2rem; }
-  @media (min-width: 73.14286rem) {
+  @media (min-width: 71.42857rem) {
     h5, .faux-h5 {
       font-size: 1.2rem; } }
 
@@ -436,8 +436,10 @@ header {
   align-items: center;
   display: flex;
   flex-wrap: wrap; }
-  @media (min-width: 73.14286rem) {
+  @media (min-width: 71.42857rem) {
     .header__wrap {
+      padding-right: 2rem;
+      padding-left: 2rem;
       padding-top: 1rem;
       padding-bottom: 1rem; } }
 
@@ -458,7 +460,7 @@ header {
     overflow: hidden;
     position: absolute;
     width: 1px; }
-    @media (min-width: 73.14286rem) {
+    @media (min-width: 71.42857rem) {
       .header__strap span {
         clip: rect(0 0 0 0);
         height: auto;
@@ -474,11 +476,11 @@ header {
 main {
   padding-top: 106px; }
 
-@media (min-width: 73.14286rem) {
+@media (min-width: 71.42857rem) {
   .wrap {
     margin-right: auto;
     margin-left: auto;
-    width: 80%; } }
+    width: 100%; } }
 
 .footer__wrap {
   text-align: center;
@@ -488,19 +490,30 @@ main {
   justify-content: center; }
 
 .portfolio {
-  padding-right: 1rem;
-  padding-left: 1rem;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
   grid-gap: 28px; }
+  @media (min-width: 71.42857rem) {
+    .portfolio {
+      padding-right: 2rem;
+      padding-left: 2rem;
+      padding-bottom: 2rem;
+      grid-template-columns: 1fr 1fr 1fr; } }
 
 .item__img {
+  margin-bottom: 1rem;
   height: auto;
   width: 100%; }
-  @media (min-width: 73.14286rem) {
-    .item__img {
-      height: 100%;
-      width: auto; } }
+.item__title {
+  font-family: "opensans_semibold", "opensans_regular", arial, helvetica, sans-serif;
+  font-weight: normal;
+  text-transform: uppercase; }
+.item__content {
+  padding-right: 2rem;
+  padding-left: 2rem; }
+  @media (min-width: 71.42857rem) {
+    .item__content {
+      padding: 0; } }
 
 .btn-row {
   display: flex;

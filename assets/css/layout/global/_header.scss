@@ -20,6 +20,7 @@ header {
 	flex-wrap: wrap;
 
 	@include bp(tab-l) {
+		@include padding-x();
 		@include padding-y-sm();
 	}
 
