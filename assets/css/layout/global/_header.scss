@@ -2,9 +2,9 @@ header {
 	background: palette(primary, white);
 	border-bottom: 1px solid #efefef;
 	box-shadow: 0 0 5px transparent;
-	transition: all .5s;
 	height: $headerHeight + $spacing;
 	position: fixed;
+	transition: all .5s;
 	width: 100%;
 
 	&.is-scrolled {
