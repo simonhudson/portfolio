@@ -380,15 +380,15 @@ button,
   padding: 1rem;
   font-family: "opensans_semibold", "opensans_regular", arial, helvetica, sans-serif;
   font-weight: normal;
-  border: 0;
   border-radius: 3px;
+  border: 0;
   color: #fff;
   cursor: pointer;
   display: inline-block;
   font-weight: 500;
   line-height: 1rem;
-  transition: background-color 0.5s ease-in-out;
   text-transform: uppercase;
+  transition: background-color 0.5s ease-in-out;
   vertical-align: top;
   width: 100%; }
   @media (min-width: 42.85714rem) {
