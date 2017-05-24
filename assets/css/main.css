@@ -527,20 +527,21 @@ main {
   flex-wrap: wrap; }
 
 .item {
-  padding-bottom: 2rem;
-  flex-grow: 1; }
+  padding-bottom: 2rem; }
+  @media (min-width: 42.85714rem) {
+    .item {
+      width: 50%; } }
   @media (min-width: 71.42857rem) {
     .item {
       width: 33.33333%; } }
   @media (min-width: 42.85714rem) {
     .item__img {
       padding-right: 2rem;
-      padding-left: 2rem;
-      width: 33.33333%; } }
+      padding-left: 2rem; } }
   .item__img img {
     margin-bottom: 1rem;
-    height: auto;
-    width: 100%; }
+    width: 100%;
+    height: auto; }
   .item__title {
     font-family: "opensans_semibold", "opensans_regular", arial, helvetica, sans-serif;
     font-weight: normal;

@@ -5,7 +5,10 @@
 
 .item {
 	@include padding-b();
-	flex-grow: 1;
+
+	@include bp(tab-p) {
+		@include width-half();
+	}
 
 	@include bp(tab-l) {
 		@include width-third();
@@ -15,13 +18,12 @@
 
 		@include bp(tab-p) {
 			@include padding-x();
-			@include width-third();
 		}
 
 		img {
 			@include margin-b-sm();
-			height:auto;
 			@include width-full();
+			height:auto;
 		}
 
 	}
