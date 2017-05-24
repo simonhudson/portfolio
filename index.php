@@ -40,7 +40,10 @@ include('functions/import.inc.php');
 										</a>
 									<?php endif; ?>
 									<?php if (isset($item->github)): ?>
-										<a class="item__link item__link--project" href="http://www.github.com/simonhudson/<?= $item->github; ?>" rel="noopener" target="_blank">View <span class="visuallyhidden"><?= $item->title; ?> </span>on Github<?= $newTabWindowWarning ?></a>
+										<a class="item__link item__link--project" href="http://www.github.com/simonhudson/<?= $item->github; ?>" rel="noopener" target="_blank">
+											<span class="fa fa-github" aria-hidden="true"></span>
+											View <span class="visuallyhidden"><?= $item->title; ?> </span>on Github<?= $newTabWindowWarning ?>
+										</a>
 	                            	<?php endif; ?>
 								</div>
 							</div>

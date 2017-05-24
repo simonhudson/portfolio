@@ -1,6 +1,8 @@
 .footer {
 	@include padding();
 	background: rgba(palette(primary, bodyText), .05);
+	display: flex;
+	flex-wrap: wrap;
 	text-align: center;
 
 	@include bp(tab-l) {
@@ -10,14 +12,15 @@
 
 	&__img, &__links, &__text {
 		@include padding-x();
+		flex-grow: 1;
 	}
 
 	&__img {
 		@include padding-b-sm();
+		text-align: center;
 
 		@include bp(tab-l) {
 			@include width-fifth();
-			text-align: center;
 		}
 
 		img {
@@ -43,7 +46,7 @@
 		@include padding-b();
 
 		@include bp(tab-l) {
-			width: 50%;
+			@include width-half();
 		}
 	}
 
@@ -51,14 +54,13 @@
 		list-style:none;
 
 		@include bp(tab-l) {
-			width:30%;
 		}
 	}
 
 	&__link {
 
 		a {
-			@include padding-y-sm();
+			@include padding-sm();
 			border-bottom: 1px dotted palette(primary, a);
 			display:block;
 

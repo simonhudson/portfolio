@@ -37,4 +37,14 @@
 		@include padding-x();
 	}
 
+	&__links {
+
+		a {
+			@include margin-b-sm();
+			@include strong();
+			display: block;
+		}
+
+	}
+
 }
