@@ -33,10 +33,10 @@ include('functions/import.inc.php');
 								<h2 class="item__title faux-h5"><?= $item->title; ?></h2>
 								<div class="item__links">
 									<?php if (isset($item->url)): ?>
-										<a class="item__link item__link--project btn btn--primary" href="http://<?= $item->url; ?>" rel="noopener" target="_blank">View <span class="visuallyhidden"><?= $item->title; ?> </span>project<?= $newTabWindowWarning ?></a>
+										<a class="item__link item__link--project" href="http://<?= $item->url; ?>" rel="noopener" target="_blank">View <span class="visuallyhidden"><?= $item->title; ?> </span>project<?= $newTabWindowWarning ?></a>
 									<?php endif; ?>
 									<?php if (isset($item->github)): ?>
-										<a class="item__link item__link--project btn btn--primary" href="http://www.github.com/simonhudson/<?= $item->github; ?>" rel="noopener" target="_blank">View <span class="visuallyhidden"><?= $item->title; ?> </span>on Github<?= $newTabWindowWarning ?></a>
+										<a class="item__link item__link--project" href="http://www.github.com/simonhudson/<?= $item->github; ?>" rel="noopener" target="_blank">View <span class="visuallyhidden"><?= $item->title; ?> </span>on Github<?= $newTabWindowWarning ?></a>
 	                            	<?php endif; ?>
 								</div>
 							</div>

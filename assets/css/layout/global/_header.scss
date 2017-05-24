@@ -1,8 +1,7 @@
 .header {
 	@include transition();
-	background: palette(primary, white);
-	border-bottom: 1px solid #efefef;
-	box-shadow: 0 0 5px transparent;
+	background: palette(primary, a);
+	border-bottom: 1px solid palette(primary, white);
 	height: $headerHeight + $spacing;
 	position: fixed;
 	width: 100%;
@@ -32,6 +31,7 @@
 
 	&__strap {
 		@include strong();
+		color: palette(primary, white);
 		letter-spacing: 1px;
 		margin-bottom: 0;
 		margin-left: rem($base-font-size);

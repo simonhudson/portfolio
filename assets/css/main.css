@@ -422,9 +422,8 @@ button,
 
 .header {
   transition: all .5s ease-in-out;
-  background: white;
-  border-bottom: 1px solid #efefef;
-  box-shadow: 0 0 5px transparent;
+  background: #ff9800;
+  border-bottom: 1px solid white;
   height: 78px;
   position: fixed;
   width: 100%;
@@ -448,6 +447,7 @@ button,
   .header__strap {
     font-family: "opensans_semibold", "opensans_regular", arial, helvetica, sans-serif;
     font-weight: normal;
+    color: white;
     letter-spacing: 1px;
     margin-bottom: 0;
     margin-left: 1rem;
