@@ -1,13 +1,57 @@
 .footer {
+	@include padding();
+	background: rgba(palette(primary, bodyText), .05);
+	text-align: center;
 
-	&__wrap {
-		@include center-text();
-		@include padding();
-		border-top: 1px solid palette(primary, a);
+	@include bp(tab-l) {
+		display:flex;
+		text-align: left;
 	}
 
-	&__btns {
-		justify-content: center;
+	&__img, &__links, &__text {
+		@include padding-x();
+	}
+
+	&__img, &__links {
+
+		@include bp(tab-l) {
+			width:25%;
+		}
+
+	}
+
+	&__img {
+		@include padding-b-sm();
+
+		@include bp(tab-l) {
+			text-align: center;
+		}
+
+		img {
+			border: 3px solid palette(primary, white);
+			border-radius: 100%;
+			box-shadow: 0 0 5px palette(primary, bodyText);
+			height: auto;
+			width: 20%;
+
+			@include bp(tab-l) {
+				width:75%;
+			}
+
+		}
+
+	}
+
+	&__text {
+		@include padding-b();
+
+		@include bp(tab-l) {
+			width: 50%;
+		}
+	}
+
+	&__links {
+
 	}
 
 }

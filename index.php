@@ -49,25 +49,28 @@ include('functions/import.inc.php');
 			<?php endforeach; ?>
 		</main>
 
-		<footer>
-			<div class="wrap footer__wrap">
+		<footer class="footer">
+			<div class="footer__img">
+				<img alt="Simon Hudson" src="<?= $paths->imgs ?>self.png"/>
+			</div>
+			<div class="footer__text">
 				<h2 class="faux-h3">Hello, my name's Simon and I build websites.</h2>
 				<p>I am an experienced web designer/front-end developer who specialises in writing lean, standards-compliant <abbr title="eXtensible Hypertext Markup Language">(X)HTML</abbr>, <abbr title="Cascading Style Sheets">CSS</abbr> and JavaScript to create accessible and usable websites. I have a strong understanding of <abbr title="Web Content Accessibility Guidelines">WCAG</abbr> and <abbr title="Web Accessibility Initiative">WAI</abbr> requirements, W3C standards, browser quirks and progressive enhancement/graceful degradation, as well as experience developing for assistive technologies.</p>
-				<div class="footer__btns">
-					<a class="btn btn--primary is-hollow" href="<?= $root; ?>Simon_Hudson_CV.pdf" rel="noopener" target="_blank">
-						Download my CV
-						<small>(PDF, <?= formatBytes(filesize('Simon_Hudson_CV.pdf')); ?>)</small>
-						<?= $newTabWindowWarning ?>
-					</a>
-					<a class="btn btn--primary is-hollow" href="https://github.com/simonhudson?tab=repositories" rel="noopener" target="_blank">
-						View my Github profile
-						<?= $newTabWindowWarning ?>
-					</a>
-					<a class="btn btn--primary is-hollow" href="http://stackoverflow.com/story/simonhudson" rel="noopener" target="_blank">
-						View my Stack Overflow Developer Story
-						<?= $newTabWindowWarning ?>
-					</a>
-				</div>
+			</div>
+			<div class="footer__links">
+				<a class="btn btn--primary is-hollow" href="<?= $root; ?>Simon_Hudson_CV.pdf" rel="noopener" target="_blank">
+					Download my CV
+					<small>(PDF, <?= formatBytes(filesize('Simon_Hudson_CV.pdf')); ?>)</small>
+					<?= $newTabWindowWarning ?>
+				</a>
+				<a class="btn btn--primary is-hollow" href="https://github.com/simonhudson?tab=repositories" rel="noopener" target="_blank">
+					View my Github profile
+					<?= $newTabWindowWarning ?>
+				</a>
+				<a class="btn btn--primary is-hollow" href="http://stackoverflow.com/story/simonhudson" rel="noopener" target="_blank">
+					View my Stack Overflow Developer Story
+					<?= $newTabWindowWarning ?>
+				</a>
 			</div>
 		</footer>
 
