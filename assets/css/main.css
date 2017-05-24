@@ -428,6 +428,23 @@ button,
   height: 78px;
   position: fixed;
   z-index: 1; }
+  .header:before {
+    padding: 1rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: #000;
+    color: #fff;
+    content: 'Default'; }
+    @media (min-width: 42.85714rem) {
+      .header:before {
+        content: 'Tablet P'; } }
+    @media (min-width: 71.42857rem) {
+      .header:before {
+        content: 'Tablet L'; } }
+    @media (min-width: 85.71429rem) {
+      .header:before {
+        content: 'Desktop'; } }
   .header.is-scrolled {
     box-shadow: 0 0 5px #575757; }
   .header__wrap {
@@ -497,26 +514,14 @@ main {
   .footer__img {
     padding-bottom: 1rem;
     text-align: center; }
-    @media (min-width: 71.42857rem) {
-      .footer__img {
-        width: 20%; } }
     .footer__img img {
       width: 50%;
       border: 3px solid white;
       border-radius: 100%;
       box-shadow: 0 0 5px #575757;
       height: auto; }
-      @media (min-width: 42.85714rem) {
-        .footer__img img {
-          width: 25%; } }
-      @media (min-width: 71.42857rem) {
-        .footer__img img {
-          width: 100%; } }
   .footer__text {
     padding-bottom: 2rem; }
-    @media (min-width: 71.42857rem) {
-      .footer__text {
-        width: 50%; } }
   .footer__links {
     list-style: none; }
   .footer__link a {

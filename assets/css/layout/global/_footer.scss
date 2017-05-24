@@ -20,7 +20,6 @@
 		text-align: center;
 
 		@include bp(tab-l) {
-			@include width-fifth();
 		}
 
 		img {
@@ -31,11 +30,11 @@
 			height: auto;
 
 			@include bp(tab-p) {
-				@include width-quarter();
+
 			}
 
 			@include bp(tab-l) {
-				@include width-full();
+
 			}
 
 		}
@@ -46,7 +45,7 @@
 		@include padding-b();
 
 		@include bp(tab-l) {
-			@include width-half();
+
 		}
 	}
 

@@ -7,6 +7,19 @@
 	position: fixed;
 	z-index:index($z-index, 'siteHeader');
 
+	&:before {
+		@include padding-sm();
+		@include position-tr();
+		background: #000;
+		color: #fff;
+		content: 'Default';
+
+		@include bp(tab-p) { content: 'Tablet P'; }
+		@include bp(tab-l) { content: 'Tablet L'; }
+		@include bp(desktop) { content: 'Desktop'; }
+
+	}
+
 	&.is-scrolled {
 		box-shadow: 0 0 5px palette(primary, bodyText);
 	}
