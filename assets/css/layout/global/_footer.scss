@@ -70,6 +70,7 @@
 		.fa {
 			@include margin-r-sm();
 			font-size: rem($base-font-size * 2);
+			vertical-align: middle;
 		}
 
 	}
