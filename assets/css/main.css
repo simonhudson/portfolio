@@ -498,11 +498,14 @@ main {
         width: 20%;
         text-align: center; } }
     .footer__img img {
-      width: 20%;
+      width: 50%;
       border: 3px solid white;
       border-radius: 100%;
       box-shadow: 0 0 5px #575757;
       height: auto; }
+      @media (min-width: 42.85714rem) {
+        .footer__img img {
+          width: 25%; } }
       @media (min-width: 71.42857rem) {
         .footer__img img {
           width: 100%; } }

@@ -21,11 +21,15 @@
 		}
 
 		img {
-			@include width-fifth();
+			@include width-half();
 			border: 3px solid palette(primary, white);
 			border-radius: 100%;
 			box-shadow: 0 0 5px palette(primary, bodyText);
 			height: auto;
+
+			@include bp(tab-p) {
+				@include width-quarter();
+			}
 
 			@include bp(tab-l) {
 				@include width-full();
