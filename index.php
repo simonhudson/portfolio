@@ -9,6 +9,7 @@ include('functions/import.inc.php');
 		<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
 		<meta content="width=device-width, initial-scale=1" name="viewport" />
 		<title><?= $sitename; ?></title>
+		<link href="<?= $paths->libs; ?>font-awesome/css/font-awesome.min.css" rel="stylesheet" />
 		<link href="<?= $paths->css ?>main.css" rel="stylesheet" />
 	</head>
 	<body>
@@ -33,7 +34,10 @@ include('functions/import.inc.php');
 								<h2 class="item__title faux-h5"><?= $item->title; ?></h2>
 								<div class="item__links">
 									<?php if (isset($item->url)): ?>
-										<a class="item__link item__link--project" href="http://<?= $item->url; ?>" rel="noopener" target="_blank">View <span class="visuallyhidden"><?= $item->title; ?> </span>project<?= $newTabWindowWarning ?></a>
+										<a class="item__link item__link--project" href="http://<?= $item->url; ?>" rel="noopener" target="_blank">
+											<span class="fa fa-link" aria-hidden="true"></span>
+											View <span class="visuallyhidden"><?= $item->title; ?> </span>project<?= $newTabWindowWarning ?>
+										</a>
 									<?php endif; ?>
 									<?php if (isset($item->github)): ?>
 										<a class="item__link item__link--project" href="http://www.github.com/simonhudson/<?= $item->github; ?>" rel="noopener" target="_blank">View <span class="visuallyhidden"><?= $item->title; ?> </span>on Github<?= $newTabWindowWarning ?></a>
@@ -60,6 +64,7 @@ include('functions/import.inc.php');
 			<ul class="footer__links">
 				<li class="footer__link">
 					<a href="<?= $root; ?>Simon_Hudson_CV.pdf" rel="noopener" target="_blank">
+						<span class="fa fa-2 fa-file-pdf-o" aria-hidden="true"></span>
 						Download my CV
 						<small>(PDF, <?= formatBytes(filesize('Simon_Hudson_CV.pdf')); ?>)</small>
 						<?= $newTabWindowWarning ?>
@@ -67,13 +72,15 @@ include('functions/import.inc.php');
 				</li>
 				<li class="footer__link">
 					<a href="https://github.com/simonhudson?tab=repositories" rel="noopener" target="_blank">
-						View my Github profile
+						<span class="fa fa-2 fa-github" aria-hidden="true"></span>
+						Github profile
 						<?= $newTabWindowWarning ?>
 					</a>
 				</li>
 				<li class="footer__link">
 					<a href="http://stackoverflow.com/story/simonhudson" rel="noopener" target="_blank">
-						View my Stack Overflow Developer Story
+						<span class="fa fa-2 fa-stack-overflow" aria-hidden="true"></span>
+						Stack Overflow Developer Story
 						<?= $newTabWindowWarning ?>
 					</a>
 				</li>

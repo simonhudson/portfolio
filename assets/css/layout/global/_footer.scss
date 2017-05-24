@@ -57,6 +57,19 @@
 			@include padding-y-sm();
 			border-bottom: 1px dotted palette(primary, a);
 			display:block;
+
+			&:hover,
+			&:focus {
+				@include transition();
+				background: rgba(palette(primary, a), .05);
+				text-decoration: none;
+			}
+
+		}
+
+		.fa {
+			@include margin-r-sm();
+			font-size: rem($base-font-size * 2);
 		}
 
 	}

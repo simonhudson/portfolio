@@ -521,6 +521,13 @@ main {
     padding-bottom: 1rem;
     border-bottom: 1px dotted #ff9800;
     display: block; }
+    .footer__link a:hover, .footer__link a:focus {
+      transition: all .5s ease-in-out;
+      background: rgba(255, 152, 0, 0.05);
+      text-decoration: none; }
+  .footer__link .fa {
+    margin-right: 1rem;
+    font-size: 2rem; }
 
 .portfolio {
   display: flex;
