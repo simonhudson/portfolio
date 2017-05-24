@@ -12,19 +12,12 @@
 		@include padding-x();
 	}
 
-	&__img, &__links {
-
-		@include bp(tab-l) {
-			width:25%;
-		}
-
-	}
-
 	&__img {
 		@include padding-b-sm();
 
 		@include bp(tab-l) {
 			text-align: center;
+			width:20%;
 		}
 
 		img {
@@ -35,7 +28,7 @@
 			width: 20%;
 
 			@include bp(tab-l) {
-				width:75%;
+				width:100%;
 			}
 
 		}
@@ -51,6 +44,20 @@
 	}
 
 	&__links {
+		list-style:none;
+
+		@include bp(tab-l) {
+			width:30%;
+		}
+	}
+
+	&__link {
+
+		a {
+			@include padding-y-sm();
+			border-bottom: 1px dotted palette(primary, a);
+			display:block;
+		}
 
 	}
 

@@ -491,14 +491,12 @@ main {
   .footer__img, .footer__links, .footer__text {
     padding-right: 2rem;
     padding-left: 2rem; }
-  @media (min-width: 71.42857rem) {
-    .footer__img, .footer__links {
-      width: 25%; } }
   .footer__img {
     padding-bottom: 1rem; }
     @media (min-width: 71.42857rem) {
       .footer__img {
-        text-align: center; } }
+        text-align: center;
+        width: 20%; } }
     .footer__img img {
       border: 3px solid white;
       border-radius: 100%;
@@ -507,12 +505,22 @@ main {
       width: 20%; }
       @media (min-width: 71.42857rem) {
         .footer__img img {
-          width: 75%; } }
+          width: 100%; } }
   .footer__text {
     padding-bottom: 2rem; }
     @media (min-width: 71.42857rem) {
       .footer__text {
         width: 50%; } }
+  .footer__links {
+    list-style: none; }
+    @media (min-width: 71.42857rem) {
+      .footer__links {
+        width: 30%; } }
+  .footer__link a {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px dotted #ff9800;
+    display: block; }
 
 .portfolio {
   display: flex;
