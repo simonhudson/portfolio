@@ -8,16 +8,20 @@
 	flex-grow: 1;
 
 	@include bp(tab-l) {
-		width:33.333333%;
+		@include width-third();
 	}
 
 	&__img {
-		@include padding-x();
+
+		@include bp(tab-p) {
+			@include padding-x();
+			@include width-third();
+		}
 
 		img {
 			@include margin-b-sm();
 			height:auto;
-			width:100%;
+			@include width-full();
 		}
 
 	}
@@ -29,12 +33,6 @@
 
 	&__content {
 		@include padding-x();
-
-		//
-		// @include bp(tab-l) {
-		// 	padding:0;
-		// }
-
 	}
 
 }

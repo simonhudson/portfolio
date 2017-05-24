@@ -16,19 +16,19 @@
 		@include padding-b-sm();
 
 		@include bp(tab-l) {
+			@include width-fifth();
 			text-align: center;
-			width:20%;
 		}
 
 		img {
+			@include width-fifth();
 			border: 3px solid palette(primary, white);
 			border-radius: 100%;
 			box-shadow: 0 0 5px palette(primary, bodyText);
 			height: auto;
-			width: 20%;
 
 			@include bp(tab-l) {
-				width:100%;
+				@include width-full();
 			}
 
 		}

@@ -32,6 +32,7 @@ label,
 textarea,
 select {
 	@include transition();
+	@include width-full();
 	background-color: #fff;
 	border: 1px solid #a8b6d1;
 	border-radius: 5px;
@@ -42,7 +43,6 @@ select {
     height: 2.4375rem;
 	margin: 0 0 rem($base-font-size * 0.5);
     padding: 0.5rem;
-	width: 100%;
     -webkit-appearance: none;
 	-moz-appearance: none;
 

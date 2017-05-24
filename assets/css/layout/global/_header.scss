@@ -1,10 +1,10 @@
 .header {
 	@include transition();
+	@include width-full();
 	background: palette(primary, a);
 	border-bottom: 1px solid palette(primary, white);
 	height: $headerHeight + $spacing;
 	position: fixed;
-	width: 100%;
 	z-index:index($z-index, 'siteHeader');
 
 	&.is-scrolled {
