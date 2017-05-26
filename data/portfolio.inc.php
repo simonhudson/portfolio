@@ -7,8 +7,8 @@ $portfolio = (object) array(
      'slug'      => 'experian-creditmatcher',
      'title'     => 'Experian CreditMatcher',
      'text'      =>
-         '<p>I know lying is wrong, but if the elephant man came in now in a blouse with some make up on, and said "how do I look?" Would you say — bearing in mind he\'s depressed and has respiratory problems — would you say "go and take that blusher off you mis-shapen headed elephant tranny"? No. You\'d say "You look nice... John"</p>
-         <p>Minor criticism. I like to keep a bit more distance between the egg and the beans. I may want to mix them but that’s my decision. Use the sausage as a breakwater....but that’s nitpicking, on the whole a very good effort...Seven on ten. Let’s make love.</p>',
+         'I know lying is wrong, but if the elephant man came in now in a blouse with some make up on, and said "how do I look?" Would you say — bearing in mind he\'s depressed and has respiratory problems — would you say "go and take that blusher off you mis-shapen headed elephant tranny"? No. You\'d say "You look nice... John"
+         Minor criticism. I like to keep a bit more distance between the egg and the beans. I may want to mix them but that’s my decision. Use the sausage as a breakwater....but that’s nitpicking, on the whole a very good effort...Seven on ten. Let’s make love.',
      'url'       => 'creditmatcher.experian.co.uk',
      'madewith'  => (object) array(
          'XHTML',
@@ -23,8 +23,8 @@ $portfolio = (object) array(
      'slug'      => 'experian-credit-expert',
      'title'     => 'Experian Credit Expert',
      'text'      =>
-         '<p>I know lying is wrong, but if the elephant man came in now in a blouse with some make up on, and said "how do I look?" Would you say — bearing in mind he\'s depressed and has respiratory problems — would you say "go and take that blusher off you mis-shapen headed elephant tranny"? No. You\'d say "You look nice... John"</p>
-         <p>Minor criticism. I like to keep a bit more distance between the egg and the beans. I may want to mix them but that’s my decision. Use the sausage as a breakwater....but that’s nitpicking, on the whole a very good effort...Seven on ten. Let’s make love.</p>',
+         'I know lying is wrong, but if the elephant man came in now in a blouse with some make up on, and said "how do I look?" Would you say — bearing in mind he\'s depressed and has respiratory problems — would you say "go and take that blusher off you mis-shapen headed elephant tranny"? No. You\'d say "You look nice... John"
+         Minor criticism. I like to keep a bit more distance between the egg and the beans. I may want to mix them but that’s my decision. Use the sausage as a breakwater....but that’s nitpicking, on the whole a very good effort...Seven on ten. Let’s make love.',
      'url'       => 'www.creditexpert.co.uk',
      'madewith'  => (object) array(
          'XHTML',
