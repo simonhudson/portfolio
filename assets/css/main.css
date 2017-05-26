@@ -549,21 +549,14 @@ main {
   @media (min-width: 71.42857rem) {
     .item {
       width: 33.33333%; } }
-  .item__img {
-    position: relative; }
-    .item__img:after {
-      left: 28px;
-      position: absolute;
-      top: 0;
-      content: 'xxx'; }
-    @media (min-width: 42.85714rem) {
-      .item__img {
-        padding-right: 2rem;
-        padding-left: 2rem; } }
-    .item__img img {
-      margin-bottom: 1rem;
-      width: 100%;
-      height: auto; }
+  @media (min-width: 42.85714rem) {
+    .item__img {
+      padding-right: 2rem;
+      padding-left: 2rem; } }
+  .item__img img {
+    margin-bottom: 1rem;
+    width: 100%;
+    height: auto; }
   .item__title {
     font-family: "opensans_semibold", "opensans_regular", arial, helvetica, sans-serif;
     font-weight: normal;
