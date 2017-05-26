@@ -48,7 +48,9 @@ include('functions/import.inc.php');
 								</div>
 							</div>
 							<div class="item__text">
-								<p><?= $item->text; ?></p>
+								<?php foreach($item->text as $textItem): ?>
+									<p><?= $textItem ?></p>
+								<?php endforeach; ?>
 							</div>
 						</div>
 					</div>

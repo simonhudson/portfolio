@@ -567,7 +567,8 @@ main {
   .item__links a {
     margin-bottom: 1rem;
     font-family: "opensans_semibold", "opensans_regular", arial, helvetica, sans-serif;
-    font-weight: normal; }
+    font-weight: normal;
+    display: inline-block; }
 
 .btn-row {
   display: flex;
