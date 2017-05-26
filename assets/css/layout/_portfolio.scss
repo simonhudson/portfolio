@@ -15,6 +15,12 @@
 	}
 
 	&__img {
+		position: relative;
+
+		&:after {
+			@include position-tl(0, $spacing);
+			content: 'xxx';
+		}
 
 		@include bp(tab-p) {
 			@include padding-x();
