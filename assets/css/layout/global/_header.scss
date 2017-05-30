@@ -24,7 +24,7 @@
 	}
 
 	&.is-scrolled {
-		border-bottom-color: lighten(palette(primary, bodyText), 10%);
+		border-bottom-color: lighten(palette(primary, bodyText), 80%);
 		box-shadow: 0 0 5px palette(primary, bodyText);
 	}
 
@@ -35,7 +35,7 @@
 		flex-wrap: wrap;
 
 		@include bp(tab-l) {
-			@include padding-x();
+			@include padding-x-sm();
 			@include padding-y-sm();
 		}
 

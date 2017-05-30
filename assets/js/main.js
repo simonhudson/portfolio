@@ -10,7 +10,7 @@ const headerScroll = () => {
 	const header = document.querySelector('.js-header');
 	if (!header || !checkJs()) return;
 	const headerHeight = header.offsetHeight;
-	const method = (window.scrollY >= headerHeight) ? 'add' : 'remove';
+	const method = (window.scrollY > 0) ? 'add' : 'remove';
 	header.classList[method]('is-scrolled');
 };
 window.addEventListener('scroll', headerScroll);
