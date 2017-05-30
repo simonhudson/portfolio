@@ -423,11 +423,12 @@ button,
 .header {
   transition: all .5s ease-in-out;
   width: 100%;
-  background: #ff9800;
-  border-bottom: 1px solid white;
-  height: 78px;
-  position: fixed;
-  z-index: 1; }
+  background: white;
+  border-bottom: 1px solid transparent;
+  height: 78px; }
+  .has-js .header {
+    position: fixed;
+    z-index: 1; }
   .header:before {
     padding: 1rem;
     position: absolute;
@@ -446,6 +447,7 @@ button,
       .header:before {
         content: 'Desktop'; } }
   .header.is-scrolled {
+    border-bottom-color: #717171;
     box-shadow: 0 0 5px #575757; }
   .header__wrap {
     padding: 1rem;
@@ -464,7 +466,7 @@ button,
   .header__strap {
     font-family: "opensans_semibold", "opensans_regular", arial, helvetica, sans-serif;
     font-weight: normal;
-    color: white;
+    color: #575757;
     letter-spacing: 1px;
     margin-bottom: 0;
     margin-left: 1rem;
@@ -488,8 +490,13 @@ button,
       letter-spacing: normal;
       text-transform: lowercase; }
 
+body {
+  background: white; }
+
 main {
-  padding-top: 106px; }
+  padding-top: 1rem; }
+  .has-js main {
+    padding-top: 78px; }
 
 @media (min-width: 71.42857rem) {
   .wrap {

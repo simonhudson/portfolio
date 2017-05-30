@@ -1,11 +1,14 @@
 .header {
 	@include transition();
 	@include width-full();
-	background: palette(primary, a);
-	border-bottom: 1px solid palette(primary, white);
+	background: palette(primary, white);
+	border-bottom: 1px solid transparent;
 	height: $headerHeight + $spacing;
-	position: fixed;
-	z-index:index($z-index, 'siteHeader');
+
+	.has-js & {
+		position: fixed;
+		z-index:index($z-index, 'siteHeader');
+	}
 
 	&:before {
 		@include padding-sm();
@@ -21,6 +24,7 @@
 	}
 
 	&.is-scrolled {
+		border-bottom-color: lighten(palette(primary, bodyText), 10%);
 		box-shadow: 0 0 5px palette(primary, bodyText);
 	}
 
@@ -44,7 +48,7 @@
 
 	&__strap {
 		@include strong();
-		color: palette(primary, white);
+		color: palette(primary, bodyText);
 		letter-spacing: 1px;
 		margin-bottom: 0;
 		margin-left: rem($base-font-size);
