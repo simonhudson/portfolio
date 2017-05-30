@@ -3,40 +3,22 @@
 	background: rgba(palette(primary, bodyText), .05);
 	display: flex;
 	flex-wrap: wrap;
-	text-align: center;
-
-	@include bp(tab-l) {
-		display:flex;
-		text-align: left;
-	}
-
-	&__img, &__links, &__text {
-		@include padding-x();
-		flex-grow: 1;
-	}
 
 	&__img {
 		@include padding-b-sm();
-		text-align: center;
+		@include width-full();
 
 		@include bp(tab-l) {
 		}
 
 		img {
-			@include width-half();
 			border: 3px solid palette(primary, white);
 			border-radius: 100%;
 			box-shadow: 0 0 5px palette(primary, bodyText);
+			display: inline-block;
 			height: auto;
-
-			@include bp(tab-p) {
-
-			}
-
-			@include bp(tab-l) {
-
-			}
-
+			margin: 0 auto;
+			width:rem($base-font-size * 15);
 		}
 
 	}
@@ -60,20 +42,19 @@
 
 		a {
 			@include padding-sm();
-			border-bottom: 1px dotted palette(primary, a);
 			display:block;
 
 			&:hover,
 			&:focus {
 				@include transition();
-				background: rgba(palette(primary, a), .05);
+				background: rgba(palette(secondary, a), .05);
 				text-decoration: none;
 			}
 
 		}
 
 		.fa {
-			@include margin-r-sm();
+			@include margin-r-xsm();
 			font-size: rem($base-font-size * 2);
 			vertical-align: middle;
 		}
