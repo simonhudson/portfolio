@@ -429,23 +429,6 @@ button,
   .has-js .header {
     position: fixed;
     z-index: 1; }
-  .header:before {
-    padding: 2rem;
-    position: absolute;
-    right: 0;
-    top: 0;
-    background: #000;
-    color: #fff;
-    content: 'Default'; }
-    @media (min-width: 42.85714rem) {
-      .header:before {
-        content: 'Tablet P'; } }
-    @media (min-width: 71.42857rem) {
-      .header:before {
-        content: 'Tablet L'; } }
-    @media (min-width: 85.71429rem) {
-      .header:before {
-        content: 'Desktop'; } }
   .header.is-scrolled {
     border-bottom-color: white;
     box-shadow: 0 0 5px #575757; }
