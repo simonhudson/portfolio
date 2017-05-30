@@ -34,7 +34,7 @@
 	}
 
 	&__content {
-		@include padding-x();
+		@include padding-x-sm();
 	}
 
 	&__links {

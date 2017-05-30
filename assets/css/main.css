@@ -569,8 +569,8 @@ main {
     font-weight: normal;
     text-transform: uppercase; }
   .item__content {
-    padding-right: 4rem;
-    padding-left: 4rem; }
+    padding-right: 2rem;
+    padding-left: 2rem; }
   .item__links a {
     margin-bottom: 2rem;
     font-family: "opensans_semibold", "opensans_regular", arial, helvetica, sans-serif;
