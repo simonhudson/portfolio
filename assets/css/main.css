@@ -125,7 +125,7 @@ ul {
 
 a,
 .text-link {
-  color: #e65100;
+  color: #bb0048;
   text-decoration: none; }
   a:hover,
   .text-link:hover {
@@ -466,7 +466,7 @@ button,
   .header__strap {
     font-family: "opensans_semibold", "opensans_regular", arial, helvetica, sans-serif;
     font-weight: normal;
-    color: #575757;
+    color: #bb0048;
     letter-spacing: 1px;
     margin-bottom: 0;
     margin-left: 1rem;
@@ -476,7 +476,8 @@ button,
       height: 1px;
       overflow: hidden;
       position: absolute;
-      width: 1px; }
+      width: 1px;
+      color: #575757; }
       @media (min-width: 71.42857rem) {
         .header__strap span {
           clip: rect(0 0 0 0);
