@@ -40,7 +40,7 @@
 	&__links {
 
 		a {
-			@include margin-b-sm();
+			@include margin-b-xsm();
 			@include strong();
 			@include uppercase();
 			display: inline-block;

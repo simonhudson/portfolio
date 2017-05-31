@@ -555,7 +555,7 @@ main {
     padding-right: 2rem;
     padding-left: 2rem; }
   .item__links a {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     font-family: "opensans_semibold", "opensans_regular", arial, helvetica, sans-serif;
     font-weight: normal;
     text-transform: uppercase;
