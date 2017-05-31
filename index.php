@@ -35,13 +35,13 @@ include('functions/import.inc.php');
 								<div class="item__links">
 									<?php if (isset($item->url)): ?>
 										<a class="item__link item__link--project" href="http://<?= $item->url; ?>" rel="noopener" target="_blank">
-											<span class="fa fa-link" aria-hidden="true"></span>
+											<?= icon('link') ?>
 											View <span class="visuallyhidden"><?= $item->title; ?> </span>project<?= $newTabWindowWarning ?>
 										</a>
 									<?php endif; ?>
 									<?php if (isset($item->github)): ?>
 										<a class="item__link item__link--project" href="http://www.github.com/simonhudson/<?= $item->github; ?>" rel="noopener" target="_blank">
-											<span class="fa fa-github" aria-hidden="true"></span>
+											<?= icon('github') ?>
 											View <span class="visuallyhidden"><?= $item->title; ?> </span>on Github<?= $newTabWindowWarning ?>
 										</a>
 	                            	<?php endif; ?>
@@ -69,7 +69,7 @@ include('functions/import.inc.php');
 			<ul class="about__links">
 				<li class="about__link">
 					<a href="<?= $root; ?>Simon_Hudson_CV.pdf" rel="noopener" target="_blank">
-						<span class="fa fa-2 fa-file-pdf-o" aria-hidden="true"></span>
+						<?= icon('file-pdf-o'); ?>
 						Download my CV
 						<small>(PDF, <?= formatBytes(filesize('Simon_Hudson_CV.pdf')); ?>)</small>
 						<?= $newTabWindowWarning ?>
@@ -77,14 +77,14 @@ include('functions/import.inc.php');
 				</li>
 				<li class="about__link">
 					<a href="https://github.com/simonhudson?tab=repositories" rel="noopener" target="_blank">
-						<span class="fa fa-2 fa-github" aria-hidden="true"></span>
+						<?= icon('github') ?>
 						Github profile
 						<?= $newTabWindowWarning ?>
 					</a>
 				</li>
 				<li class="about__link">
 					<a href="http://stackoverflow.com/story/simonhudson" rel="noopener" target="_blank">
-						<span class="fa fa-2 fa-stack-overflow" aria-hidden="true"></span>
+						<?= icon('stack-overflow'); ?>
 						Stack Overflow Developer Story
 						<?= $newTabWindowWarning ?>
 					</a>
