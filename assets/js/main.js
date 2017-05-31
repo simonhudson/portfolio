@@ -6,9 +6,9 @@ hasJs();
 const checkJs = () => document.querySelector('html').classList.contains('has-js');
 
 // Set scrolled state
-const isScrolled = () => {
+const setScrolledState = () => {
 	const html = document.querySelector('html');
 	const method = (window.scrollY > 0) ? 'add' : 'remove';
 	html.classList[method]('is-scrolled');
 };
-window.addEventListener('scroll', isScrolled);
+window.addEventListener('scroll', setScrolledState);
