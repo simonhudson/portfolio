@@ -421,8 +421,7 @@ button,
   transition: all .5s ease-in-out;
   width: 100%;
   background: white;
-  border-bottom: 1px solid transparent;
-  height: 78px; }
+  border-bottom: 1px solid transparent; }
   @media (min-width: 768px) {
     .header {
       height: 106px; } }
@@ -441,11 +440,7 @@ button,
       .header__wrap {
         padding-right: 2rem;
         padding-left: 2rem;
-        padding-top: 2rem;
-        padding-bottom: 2rem; } }
-  .header__logo {
-    height: 50px;
-    width: auto; }
+        padding-top: 2rem; } }
   .header__strap {
     font-family: "opensans_semibold", "opensans_regular", arial, helvetica, sans-serif;
     font-weight: normal;

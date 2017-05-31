@@ -3,7 +3,6 @@
 	@include width-full();
 	background: palette(primary, white);
 	border-bottom: 1px solid transparent;
-	height: $headerHeight + $spacing-sm;
 
 	@include bp(tab-p) {
 		height: $headerHeight + $spacing;
@@ -27,14 +26,9 @@
 
 		@include bp(tab-p) {
 			@include padding-x-sm();
-			@include padding-y-sm();
+			@include padding-t-sm();
 		}
 
-	}
-
-	&__logo {
-		height:$headerHeight;
-		width:auto;
 	}
 
 	&__strap {
