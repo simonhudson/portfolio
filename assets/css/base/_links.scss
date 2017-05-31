@@ -7,8 +7,8 @@ a,
 		text-decoration: underline;
 	}
 
-	&:focus {
-		@include accessibleOutline();
-	}
+	// &:focus {
+	// 	@include accessibleOutline();
+	// }
 
 }

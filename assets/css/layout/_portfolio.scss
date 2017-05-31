@@ -29,6 +29,7 @@
 	}
 
 	&__title {
+		@include margin-b-xsm();
 		@include strong();
 		@include uppercase();
 	}
@@ -38,12 +39,17 @@
 	}
 
 	&__links {
+		@include margin-b-sm();
 
 		a {
-			@include margin-b-xsm();
+			@include padding-y-xsm();
 			@include strong();
-			@include uppercase();
-			display: inline-block;
+			border-bottom: 1px dotted rgba(palette(primary, bodyText), .25);
+			display: block;
+		}
+
+		[class*="fa"] {
+			margin-right: 3px;
 		}
 
 	}

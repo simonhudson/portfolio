@@ -130,9 +130,6 @@ a,
   a:hover,
   .text-link:hover {
     text-decoration: underline; }
-  a:focus,
-  .text-link:focus {
-    outline: 5px solid orange; }
 
 .visuallyhidden {
   clip: rect(0 0 0 0);
@@ -548,18 +545,24 @@ main {
     width: 100%;
     height: auto; }
   .item__title {
+    margin-bottom: 1rem;
     font-family: "opensans_semibold", "opensans_regular", arial, helvetica, sans-serif;
     font-weight: normal;
     text-transform: uppercase; }
   .item__content {
     padding-right: 2rem;
     padding-left: 2rem; }
-  .item__links a {
-    margin-bottom: 1rem;
-    font-family: "opensans_semibold", "opensans_regular", arial, helvetica, sans-serif;
-    font-weight: normal;
-    text-transform: uppercase;
-    display: inline-block; }
+  .item__links {
+    margin-bottom: 2rem; }
+    .item__links a {
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      font-family: "opensans_semibold", "opensans_regular", arial, helvetica, sans-serif;
+      font-weight: normal;
+      border-bottom: 1px dotted rgba(87, 87, 87, 0.25);
+      display: block; }
+    .item__links [class*="fa"] {
+      margin-right: 3px; }
 
 .btn-row {
   display: flex;
