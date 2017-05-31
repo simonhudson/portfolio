@@ -58,16 +58,16 @@ include('functions/import.inc.php');
 			<?php endforeach; ?>
 		</main>
 
-		<footer class="footer">
-			<div class="footer__img">
+		<footer class="about">
+			<div class="about__img">
 				<img alt="Simon Hudson" src="<?= $paths->imgs ?>self.png"/>
 			</div>
-			<div class="footer__text">
+			<div class="about__text">
 				<h2 class="faux-h3">Hello, my name's Simon and I build websites.</h2>
 				<p>I am an experienced web designer/front-end developer who specialises in writing lean, standards-compliant <abbr title="eXtensible Hypertext Markup Language">(X)HTML</abbr>, <abbr title="Cascading Style Sheets">CSS</abbr> and JavaScript to create accessible and usable websites. I have a strong understanding of <abbr title="Web Content Accessibility Guidelines">WCAG</abbr> and <abbr title="Web Accessibility Initiative">WAI</abbr> requirements, W3C standards, browser quirks and progressive enhancement/graceful degradation, as well as experience developing for assistive technologies.</p>
 			</div>
-			<ul class="footer__links">
-				<li class="footer__link">
+			<ul class="about__links">
+				<li class="about__link">
 					<a href="<?= $root; ?>Simon_Hudson_CV.pdf" rel="noopener" target="_blank">
 						<span class="fa fa-2 fa-file-pdf-o" aria-hidden="true"></span>
 						Download my CV
@@ -75,14 +75,14 @@ include('functions/import.inc.php');
 						<?= $newTabWindowWarning ?>
 					</a>
 				</li>
-				<li class="footer__link">
+				<li class="about__link">
 					<a href="https://github.com/simonhudson?tab=repositories" rel="noopener" target="_blank">
 						<span class="fa fa-2 fa-github" aria-hidden="true"></span>
 						Github profile
 						<?= $newTabWindowWarning ?>
 					</a>
 				</li>
-				<li class="footer__link">
+				<li class="about__link">
 					<a href="http://stackoverflow.com/story/simonhudson" rel="noopener" target="_blank">
 						<span class="fa fa-2 fa-stack-overflow" aria-hidden="true"></span>
 						Stack Overflow Developer Story

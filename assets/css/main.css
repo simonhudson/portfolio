@@ -488,15 +488,15 @@ main {
     margin-right: auto;
     margin-left: auto; } }
 
-.footer {
+.about {
   padding: 4rem;
   background: rgba(87, 87, 87, 0.05);
   display: flex;
   flex-wrap: wrap; }
-  .footer__img {
+  .about__img {
     padding-bottom: 2rem;
     width: 100%; }
-    .footer__img img {
+    .about__img img {
       border: 3px solid white;
       border-radius: 100%;
       box-shadow: 0 0 5px #575757;
@@ -504,18 +504,18 @@ main {
       height: auto;
       margin: 0 auto;
       width: 15rem; }
-  .footer__text {
+  .about__text {
     padding-bottom: 4rem; }
-  .footer__links {
+  .about__links {
     list-style: none; }
-  .footer__link a {
+  .about__link a {
     padding: 2rem;
     display: block; }
-    .footer__link a:hover, .footer__link a:focus {
+    .about__link a:hover, .about__link a:focus {
       transition: all .5s ease-in-out;
       background: rgba(187, 0, 72, 0.05);
       text-decoration: none; }
-  .footer__link .fa {
+  .about__link .fa {
     margin-right: 1rem;
     font-size: 2rem;
     vertical-align: middle; }
