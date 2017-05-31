@@ -4,10 +4,15 @@ body {
 }
 
 main {
+	@include transition();
 	@include padding-t-sm();
 
 	.has-js & {
-		padding-top: $headerHeight + $spacing;
+		padding-top: $headerHeight + $spacing-sm;
+
+		@include bp(tab-p) {
+			padding-top: $headerHeight + $spacing;
+		}
 	}
 
 }

@@ -3,7 +3,11 @@
 	@include width-full();
 	background: palette(primary, white);
 	border-bottom: 1px solid transparent;
-	height: $headerHeight + $spacing;
+	height: $headerHeight + $spacing-sm;
+
+	@include bp(tab-p) {
+		height: $headerHeight + $spacing;
+	}
 
 	.has-js & {
 		position: fixed;
@@ -29,12 +33,12 @@
 	}
 
 	&__wrap {
-		@include padding-sm();
+		@include padding-xsm();
 		align-items: center;
 		display: flex;
 		flex-wrap: wrap;
 
-		@include bp(tab-l) {
+		@include bp(tab-p) {
 			@include padding-x-sm();
 			@include padding-y-sm();
 		}
@@ -58,7 +62,7 @@
 			@include visuallyhidden();
 			color: palette(primary, bodyText);
 
-			@include bp(tab-l) {
+			@include bp(tab-p) {
 				@include visuallyshown();
 			}
 
