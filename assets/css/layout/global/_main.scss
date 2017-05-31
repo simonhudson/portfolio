@@ -1,5 +1,5 @@
 body {
-	// background: radial-gradient(at 50% 0%, #dedede 5%, palette(primary, white));
+	@include transition();
 	background: palette(primary, white);
 }
 

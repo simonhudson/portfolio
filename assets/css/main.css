@@ -429,7 +429,7 @@ button,
   .has-js .header {
     position: fixed;
     z-index: 1; }
-  .header.is-scrolled {
+  .is-scrolled .header {
     border-bottom-color: white;
     box-shadow: 0 0 5px #575757; }
   .header__wrap {
@@ -475,6 +475,7 @@ button,
       text-transform: lowercase; }
 
 body {
+  transition: all .5s ease-in-out;
   background: white; }
 
 main {
