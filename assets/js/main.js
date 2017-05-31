@@ -1,14 +1,14 @@
-// Add hs-js class to page
-const hasJs = () => document.querySelector('html').classList.add('has-js');
+// Add has-js class to page
+function hasJs() {
+	document.querySelector('html').classList.add('has-js');
+}
 hasJs();
 
-// Check JS
-const checkJs = () => document.querySelector('html').classList.contains('has-js');
-
 // Set scrolled state
-const setScrolledState = () => {
-	const html = document.querySelector('html');
-	const method = (window.scrollY > 0) ? 'add' : 'remove';
+function setScrolledState() {
+	var html = document.querySelector('html');
+	var top = typeof window.scrollY === 'undefined' ? window.pageYOffset : window.scrollY;
+	var method = (top > 0) ? 'add' : 'remove';
 	html.classList[method]('is-scrolled');
-};
+}
 window.addEventListener('scroll', setScrolledState);
