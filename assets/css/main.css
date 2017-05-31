@@ -377,10 +377,11 @@ a,
 button,
 .btn {
   margin-bottom: 2rem;
-  padding: 2rem;
+  padding: 1rem;
   font-family: "opensans_semibold", "opensans_regular", arial, helvetica, sans-serif;
   font-weight: normal;
   transition: all .5s ease-in-out;
+  text-transform: uppercase;
   width: 100%;
   border-radius: 3px;
   border: 0;
@@ -389,7 +390,6 @@ button,
   display: inline-block;
   font-weight: 500;
   line-height: 1rem;
-  text-transform: uppercase;
   vertical-align: top; }
   @media (min-width: 768px) {
     button,
@@ -409,16 +409,16 @@ button,
     padding-right: 3.21429rem; }
   button--primary,
   .btn--primary {
-    background-color: #ff9800; }
+    background-color: #bb0048; }
     button--primary:hover, button--primary:focus,
     .btn--primary:hover,
     .btn--primary:focus {
-      background-color: #e65100; }
+      background-color: #880034; }
     button--primary.is-hollow,
     .btn--primary.is-hollow {
       background-color: white;
-      border: 1px solid #ff9800;
-      color: #ff9800; }
+      border: 1px solid #bb0048;
+      color: #bb0048; }
 
 .header {
   transition: all .5s ease-in-out;
@@ -452,11 +452,11 @@ button,
   .header__strap {
     font-family: "opensans_semibold", "opensans_regular", arial, helvetica, sans-serif;
     font-weight: normal;
+    text-transform: uppercase;
     color: #bb0048;
     letter-spacing: 1px;
     margin-bottom: 0;
-    margin-left: 1rem;
-    text-transform: uppercase; }
+    margin-left: 1rem; }
     .header__strap span {
       clip: rect(0 0 0 0);
       height: 1px;
@@ -558,6 +558,7 @@ main {
     margin-bottom: 2rem;
     font-family: "opensans_semibold", "opensans_regular", arial, helvetica, sans-serif;
     font-weight: normal;
+    text-transform: uppercase;
     display: inline-block; }
 
 .btn-row {

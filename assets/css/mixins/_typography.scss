@@ -12,3 +12,7 @@
 	font-style: italic;
 	letter-spacing: normal;
 }
+
+@mixin uppercase() {
+	text-transform: uppercase;
+}

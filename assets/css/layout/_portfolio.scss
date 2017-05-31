@@ -30,7 +30,7 @@
 
 	&__title {
 		@include strong();
-		text-transform: uppercase;
+		@include uppercase();
 	}
 
 	&__content {
@@ -42,6 +42,7 @@
 		a {
 			@include margin-b-sm();
 			@include strong();
+			@include uppercase();
 			display: inline-block;
 		}
 

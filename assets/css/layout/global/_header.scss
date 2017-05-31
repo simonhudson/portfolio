@@ -52,11 +52,11 @@
 
 	&__strap {
 		@include strong();
-		color: palette(secondary, a);
+		@include uppercase();
+		color: palette(primary, a);
 		letter-spacing: 1px;
 		margin-bottom: 0;
 		margin-left: rem($base-font-size);
-		text-transform: uppercase;
 
 		span {
 			@include visuallyhidden();

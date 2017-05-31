@@ -47,7 +47,7 @@
 			&:hover,
 			&:focus {
 				@include transition();
-				background: rgba(palette(secondary, a), .05);
+				background: rgba(palette(primary, a), .05);
 				text-decoration: none;
 			}
 
