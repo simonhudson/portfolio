@@ -5,7 +5,7 @@ hasJs();
 // Check JS
 const checkJs = () => document.querySelector('html').classList.contains('has-js');
 
-// Set scrolled header
+// Set scrolled state
 const isScrolled = () => {
 	const html = document.querySelector('html');
 	const method = (window.scrollY > 0) ? 'add' : 'remove';
