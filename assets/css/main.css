@@ -441,6 +441,11 @@ button,
         padding-right: 2rem;
         padding-left: 2rem;
         padding-top: 2rem; } }
+  .header__logo {
+    height: 40px; }
+    @media (min-width: 768px) {
+      .header__logo {
+        height: auto; } }
   .header__strap {
     font-family: "opensans_semibold", "opensans_regular", arial, helvetica, sans-serif;
     font-weight: normal;
@@ -477,7 +482,7 @@ main {
   transition: all .5s ease-in-out;
   padding-top: 2rem; }
   .has-js main {
-    padding-top: 78px; }
+    padding-top: 68.2px; }
     @media (min-width: 768px) {
       .has-js main {
         padding-top: 106px; } }
