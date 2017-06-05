@@ -422,9 +422,6 @@ button,
   width: 100%;
   background: white;
   border-bottom: 1px solid transparent; }
-  @media (min-width: 768px) {
-    .header {
-      height: 106px; } }
   .has-js .header {
     position: fixed;
     z-index: 1; }
@@ -433,15 +430,16 @@ button,
     box-shadow: 0 0 5px #575757; }
   .header__wrap {
     padding: 1rem;
+    transition: all .5s ease-in-out;
     align-items: center;
     display: flex;
     flex-wrap: wrap; }
     @media (min-width: 768px) {
       .header__wrap {
         padding-right: 2rem;
-        padding-left: 2rem;
-        padding-top: 2rem; } }
+        padding-left: 2rem; } }
   .header__logo {
+    transition: all .5s ease-in-out;
     height: 40px; }
     @media (min-width: 768px) {
       .header__logo {

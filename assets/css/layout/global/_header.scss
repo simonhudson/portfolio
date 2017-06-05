@@ -4,10 +4,6 @@
 	background: palette(primary, white);
 	border-bottom: 1px solid transparent;
 
-	@include bp(tab-p) {
-		height: $headerHeight + $spacing;
-	}
-
 	.has-js & {
 		position: fixed;
 		z-index:index($z-index, 'siteHeader');
@@ -20,18 +16,20 @@
 
 	&__wrap {
 		@include padding-xsm();
+		@include transition();
 		align-items: center;
 		display: flex;
 		flex-wrap: wrap;
 
 		@include bp(tab-p) {
 			@include padding-x-sm();
-			@include padding-t-sm();
+			// @include padding-t-sm();
 		}
 
 	}
 
 	&__logo {
+		@include transition();
 		height: 40px;
 
 		@include bp(tab-p) {
