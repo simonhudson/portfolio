@@ -379,6 +379,7 @@ a,
   transition: all .5s ease-in-out;
   text-transform: uppercase;
   width: 100%;
+  background-color: #bb0048;
   border-radius: 3px;
   border: 0;
   color: #fff;
@@ -391,22 +392,21 @@ a,
     .btn {
       width: auto; } }
   .btn:hover, .btn:focus {
+    background-color: #880034;
     color: #fff;
     text-decoration: none; }
+  .btn--is-hollow {
+    background-color: white;
+    border: 1px solid #bb0048;
+    color: #bb0048; }
   .btn--has-icon {
     background-image: url("_assets/imgs/arrow-white-right.svg");
     background-position: right 10px center;
     background-repeat: no-repeat;
     background-size: 1.4rem;
     padding-right: 3.21429rem; }
-  .btn--primary {
-    background-color: #bb0048; }
-    .btn--primary:hover, .btn--primary:focus {
-      background-color: #880034; }
-    .btn--primary.is-hollow {
-      background-color: white;
-      border: 1px solid #bb0048;
-      color: #bb0048; }
+  .btn--secondary {
+    background: #e65100; }
 
 .header {
   transition: all .5s ease-in-out;

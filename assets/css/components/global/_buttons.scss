@@ -1,16 +1,15 @@
 // Buttons
 //
-// Various button styles
+// Button styles
 //
 // Markup:
 // <a class="btn {{modifier_class}}">Link Button</a>
 // <button class="btn {{modifier_class}}">Button Element</button>
 // <input class="btn {{modifier_class}}" type="button" value="Input Button" />
 //
-// :hover - When user hovers over button.
-// :focus - When button is focused.
-// .btn--primary - Primary button.
+// .btn--secondary - Secondary button.
 // .btn--has-icon - Button with icon.
+// .btn--is-hollow - Hollow button.
 //
 // Styleguide Components.button
 
@@ -21,6 +20,7 @@
 	@include transition();
 	@include uppercase();
 	@include width-full();
+	background-color: palette(primary, a);
 	border-radius:3px;
 	border:0;
 	color:#fff;
@@ -36,8 +36,15 @@
 
 	&:hover,
 	&:focus {
+		background-color: darken(palette(primary, a), 10%);
 		color:#fff;
 		text-decoration: none;
+	}
+
+	&--is-hollow {
+		background-color: palette(primary, white);
+		border: 1px solid palette(primary, a);
+		color: palette(primary, a);
 	}
 
 	&--has-icon {
@@ -48,19 +55,8 @@
 		padding-right:rem(45px);
 	}
 
-	&--primary {
-		background-color: palette(primary, a);
-
-		&:hover, &:focus {
-			background-color: darken(palette(primary, a), 10%);
-		}
-
-		&.is-hollow {
-			background-color: palette(primary, white);
-			border: 1px solid palette(primary, a);
-			color: palette(primary, a);
-		}
-
+	&--secondary {
+		background: palette(primary, a-alt);
 	}
 
 }
