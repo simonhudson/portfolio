@@ -1,3 +1,15 @@
+// Typography
+//
+// Base typography styling
+//
+// Markup:
+// <p>This is a paragraph</p>
+// <h1 class="body-text">Heading made to look like a paragraph</h1>
+// <p><strong>Strong element</strong></p>
+// <p class="strong">Paragraph with 'strong' class</p>
+//
+// Styleguide Base.Typography
+
 html {
 	color: palette(primary, bodyText);
 }

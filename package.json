@@ -1,0 +1,26 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "onchange 'assets/css/**/*.sass' -- npm run kss",
+    "kss": "kss --config kss-config.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/simonhudson/portfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/simonhudson/portfolio/issues"
+  },
+  "homepage": "https://github.com/simonhudson/portfolio#readme",
+  "devDependencies": {
+    "kss": "^3.0.0-beta.18",
+    "michelangelo": "^0.5.1",
+    "onchange": "^3.2.1"
+  }
+}
