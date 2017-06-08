@@ -1,4 +1,19 @@
-button,
+// Buttons
+//
+// Various button styles
+//
+// Markup:
+// <a class="btn {{modifier_class}}">Link Button</a>
+// <button class="btn {{modifier_class}}">Button Element</button>
+// <input class="btn {{modifier_class}}" type="button" value="Input Button" />
+//
+// :hover - When user hovers over button.
+// :focus - When button is focused.
+// .btn--primary - Primary button.
+// .btn--has-icon - Button with icon.
+//
+// Styleguide Components.button
+
 .btn {
 	@include margin-b-sm();
 	@include padding-xsm();

@@ -109,7 +109,7 @@ h6, .faux-h6 {
 
 ul,
 ol {
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
   padding-left: 1.25rem; }
   ul ul,
   ul ol,
@@ -371,7 +371,6 @@ a,
 .center-text {
   text-align: center; }
 
-button,
 .btn {
   margin-bottom: 2rem;
   padding: 1rem;
@@ -389,29 +388,21 @@ button,
   line-height: 1rem;
   vertical-align: top; }
   @media (min-width: 768px) {
-    button,
     .btn {
       width: auto; } }
-  button:hover, button:focus,
-  .btn:hover,
-  .btn:focus {
+  .btn:hover, .btn:focus {
     color: #fff;
     text-decoration: none; }
-  button--has-icon,
   .btn--has-icon {
     background-image: url("_assets/imgs/arrow-white-right.svg");
     background-position: right 10px center;
     background-repeat: no-repeat;
     background-size: 1.4rem;
     padding-right: 3.21429rem; }
-  button--primary,
   .btn--primary {
     background-color: #bb0048; }
-    button--primary:hover, button--primary:focus,
-    .btn--primary:hover,
-    .btn--primary:focus {
+    .btn--primary:hover, .btn--primary:focus {
       background-color: #880034; }
-    button--primary.is-hollow,
     .btn--primary.is-hollow {
       background-color: white;
       border: 1px solid #bb0048;

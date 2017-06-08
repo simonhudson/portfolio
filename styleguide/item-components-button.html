@@ -63,38 +63,65 @@
           the "root" element comes first in this loop, and can be detected using
           the "#if @first" block as seen below.
         -->
-            <header class="kss-section kss-section--depth-2" id="kssref-base-typography">
+            <header class="kss-section kss-section--depth-2" id="kssref-components-button">
 
             <article class="kss-section__content">
 
-              <a class="kss-section__permalink" href="#kssref-base-typography">
+              <a class="kss-section__permalink" href="#kssref-components-button">
                 <h2 class="kss-section__item kss-section__item--depth-2">
-                  <span class="kss-section__ref">1.3</span>
-                  <span class="kss-section__name">Typography</span>
+                  <span class="kss-section__ref">2.1</span>
+                  <span class="kss-section__name">Buttons</span>
                 </h2>
               </a>
 
-                <div class="kss-section__description"><p>Base typography styling</p>
+                <div class="kss-section__description"><p>Various button styles</p>
 </div>
 
             </article>
 
               <article class="kss-section__modifiers">
-                <h1 class="kss-modifiers__heading">Example</h1>
+                <h1 class="kss-modifiers__heading">Examples</h1>
 
+                  <h2 class="kss-modifiers__name">Default styling</h2>
 
-                <div class="kss-modifiers__example"><p>This is a paragraph</p>
-<h1 class="body-text">Heading made to look like a paragraph</h1>
-<p><strong>Strong element</strong></p>
-<p class="strong">Paragraph with 'strong' class</p></div>
+                <div class="kss-modifiers__example"><a class="btn [modifier class]">Link Button</a>
+<button class="btn [modifier class]">Button Element</button>
+<input class="btn [modifier class]" type="button" value="Input Button" /></div>
 
+                  <h2 class="kss-modifiers__name">:hover</h2>
+
+                  <p class="kss-modifiers__description">When user hovers over button.</p>
+
+                  <div class="kss-modifiers__example"><a class="btn pseudo-class-hover">Link Button</a>
+<button class="btn pseudo-class-hover">Button Element</button>
+<input class="btn pseudo-class-hover" type="button" value="Input Button" /></div>
+                  <h2 class="kss-modifiers__name">:focus</h2>
+
+                  <p class="kss-modifiers__description">When button is focused.</p>
+
+                  <div class="kss-modifiers__example"><a class="btn pseudo-class-focus">Link Button</a>
+<button class="btn pseudo-class-focus">Button Element</button>
+<input class="btn pseudo-class-focus" type="button" value="Input Button" /></div>
+                  <h2 class="kss-modifiers__name">.btn--primary</h2>
+
+                  <p class="kss-modifiers__description">Primary button.</p>
+
+                  <div class="kss-modifiers__example"><a class="btn btn--primary">Link Button</a>
+<button class="btn btn--primary">Button Element</button>
+<input class="btn btn--primary" type="button" value="Input Button" /></div>
+                  <h2 class="kss-modifiers__name">.btn--has-icon</h2>
+
+                  <p class="kss-modifiers__description">Button with icon.</p>
+
+                  <div class="kss-modifiers__example"><a class="btn btn--has-icon">Link Button</a>
+<button class="btn btn--has-icon">Button Element</button>
+<input class="btn btn--has-icon" type="button" value="Input Button" /></div>
               </article>
 
                 <article class="kss-section__markup">
-                  <pre><code class="language-markup">&lt;p&gt;This is a paragraph&lt;/p&gt;
-&lt;h1 class&#x3D;&quot;body-text&quot;&gt;Heading made to look like a paragraph&lt;/h1&gt;
-&lt;p&gt;&lt;strong&gt;Strong element&lt;/strong&gt;&lt;/p&gt;
-&lt;p class&#x3D;&quot;strong&quot;&gt;Paragraph with &#x27;strong&#x27; class&lt;/p&gt;</code></pre>
+                  <pre><code class="language-markup">&lt;a class&#x3D;&quot;btn [modifier class]&quot;&gt;Link Button&lt;/a&gt;
+&lt;button class&#x3D;&quot;btn [modifier class]&quot;&gt;Button Element&lt;/button&gt;
+&lt;input class&#x3D;&quot;btn [modifier class]&quot; type&#x3D;&quot;button&quot; value&#x3D;&quot;Input Button&quot; /&gt;</code></pre>
                 </article>
 
             </header>
