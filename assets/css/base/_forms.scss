@@ -5,10 +5,12 @@
 // Markup:
 // <form>
 // <fieldset>
-// <label for="1">Label</label>
-// <input id="1" type="text" />
-// <label for="2">Select label</label>
-// <select id="2">
+// <label for="lorem">Label</label>
+// <input id="lorem" type="text" />
+// <label class="input-error-label" for="ipsum">Label<span class="input-error-msg">Please fill in this field</span></label>
+// <input class="input-error" id="ipsum" type="text" />
+// <label for="dolor">Select label</label>
+// <select id="dolor">
 // <option>Value 1</option>
 // <option>Value 2</option>
 // <option>Value 3</option>
@@ -30,7 +32,7 @@ legend {
 
 label,
 .faux-label,
-.input-error-msg {
+.input-error-label {
 	@include strong();
 	display:block;
     font-size: rem($base-font-size);
@@ -78,11 +80,6 @@ select {
 		outline: none;
 	}
 
-	&.has-error {
-		background: palette(alerts, error, 0.05);
-		border-color: palette(alerts, error);
-	}
-
 }
 
 select {
@@ -114,7 +111,14 @@ select {
 
 }
 
-.input-error-msg {
-	color: palette(alerts, error);
-	font-weight: $base-font-weight;
+.input-error {
+	background: palette(alerts, error, 0.05);
+	border-color: palette(alerts, error);
+
+	&-msg {
+		color: palette(alerts, error);
+		display: block;
+		font-weight: $base-font-weight;
+	}
+
 }

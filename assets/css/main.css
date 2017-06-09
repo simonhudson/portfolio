@@ -146,7 +146,7 @@ legend {
 
 label,
 .faux-label,
-.input-error-msg {
+.input-error-label {
   font-family: "opensans_semibold", "opensans_regular", arial, helvetica, sans-serif;
   font-weight: normal;
   display: block;
@@ -220,24 +220,6 @@ select {
   select:focus {
     border-color: #26478d;
     outline: none; }
-  [type="text"].has-error,
-  [type="password"].has-error,
-  [type="date"].has-error,
-  [type="datetime"].has-error,
-  [type="datetime-local"].has-error,
-  [type="month"].has-error,
-  [type="week"].has-error,
-  [type="email"].has-error,
-  [type="number"].has-error,
-  [type="search"].has-error,
-  [type="tel"].has-error,
-  [type="time"].has-error,
-  [type="url"].has-error,
-  [type="color"].has-error,
-  textarea.has-error,
-  select.has-error {
-    background: rgba(255, 0, 0, 0.05);
-    border-color: red; }
 
 select {
   background-image: url("_assets/imgs/caret-grey-down.svg");
@@ -257,9 +239,13 @@ select {
       .input-row__item:last-of-type {
         margin-right: 0; } }
 
-.input-error-msg {
-  color: red;
-  font-weight: 400; }
+.input-error {
+  background: rgba(255, 0, 0, 0.05);
+  border-color: red; }
+  .input-error-msg {
+    color: red;
+    display: block;
+    font-weight: 400; }
 
 .visuallyhidden {
   clip: rect(0 0 0 0);

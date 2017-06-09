@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch": "onchange 'assets/css/**/*.sass' -- npm run kss",
-    "kss": "kss --config kss-config.json"
+    "kss": "kss --config kss-config.json",
+    "watch": "onchange 'assets/css/**/*.scss' -- npm run kss"
   },
   "repository": {
     "type": "git",
