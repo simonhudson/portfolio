@@ -1,7 +1,7 @@
 <?php
-include('data/portfolio.inc.php');
 include('config/import.inc.php');
 include('functions/import.inc.php');
+include('data/portfolio.inc.php');
 ?>
 <!doctype html>
 <html>
@@ -35,14 +35,14 @@ include('functions/import.inc.php');
 								<div class="item__links">
 									<?php if (isset($item->url)): ?>
 										<a class="item__link item__link--project" href="http://<?= $item->url; ?>" rel="noopener" target="_blank">
-											<?= icon('link') ?>
-											View <span class="visuallyhidden"><?= $item->title; ?> </span>project<?= $newTabWindowWarning ?>
+											<?= icon('link'); ?>
+											View <span class="visuallyhidden"><?= $item->title; ?> </span>project<?= newTabWindowWarning(); ?>
 										</a>
 									<?php endif; ?>
 									<?php if (isset($item->github)): ?>
 										<a class="item__link item__link--project" href="http://www.github.com/simonhudson/<?= $item->github; ?>" rel="noopener" target="_blank">
-											<?= icon('github') ?>
-											View <span class="visuallyhidden"><?= $item->title; ?> </span>on Github<?= $newTabWindowWarning ?>
+											<?= icon('github'); ?>
+											View <span class="visuallyhidden"><?= $item->title; ?> </span>on Github<?= newTabWindowWarning(); ?>
 										</a>
 	                            	<?php endif; ?>
 								</div>
@@ -72,21 +72,21 @@ include('functions/import.inc.php');
 						<?= icon('file-pdf-o'); ?>
 						Download my CV
 						<small>(PDF, <?= formatBytes(filesize('Simon_Hudson_CV.pdf')); ?>)</small>
-						<?= $newTabWindowWarning ?>
+						<?= newTabWindowWarning(); ?>
 					</a>
 				</li>
 				<li class="about__link">
 					<a href="https://github.com/simonhudson?tab=repositories" rel="noopener" target="_blank">
-						<?= icon('github') ?>
+						<?= icon('github'); ?>
 						Github profile
-						<?= $newTabWindowWarning ?>
+						<?= newTabWindowWarning(); ?>
 					</a>
 				</li>
 				<li class="about__link">
 					<a href="http://stackoverflow.com/story/simonhudson" rel="noopener" target="_blank">
 						<?= icon('stack-overflow'); ?>
 						Stack Overflow Developer Story
-						<?= $newTabWindowWarning ?>
+						<?= newTabWindowWarning(); ?>
 					</a>
 				</li>
 			</ul>

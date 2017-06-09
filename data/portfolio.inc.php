@@ -1,5 +1,4 @@
 <?php
-include('./config/new-tab-window-warning.inc.php');
 
 $portfolio = (object) array(
 
@@ -41,7 +40,7 @@ $portfolio = (object) array(
         'title'     => 'Last.fm',
         'client'    => 'Personal project',
         'text'      => (object) array(
-            'Making use of the <a href="http://www.last.fm/" rel="noopener" target="_blank">Last.fm'.$newTabWindowWarning.'</a> API, this tool simply provides a real-time display of a users\' most recently played tracks, or their top artists of all time, based on track plays. This data is then displayed as thumbnails, which click through to the relevant track/artist page on the Last.fm website.'
+            'Making use of the <a href="http://www.last.fm/" rel="noopener" target="_blank">Last.fm'.newTabWindowWarning().'</a> API, this tool simply provides a real-time display of a users\' most recently played tracks, or their top artists of all time, based on track plays. This data is then displayed as thumbnails, which click through to the relevant track/artist page on the Last.fm website.'
         ),
         'url'       => 'lastfm.heyhudson.com',
         'github'    => 'lastfm',
@@ -91,7 +90,7 @@ $portfolio = (object) array(
         'title'     => 'NHS Choices',
         'client'    => 'Capita',
         'text'      => (object) array(
-            'Working on one of the largest websites in Europe, it was my responsibility to create front-end code to the highest standards and then liaise with the back-end developers to ensure it was integrated properly into the solution.</p><p>As a public health information site, accessibility was at the forefront of everything we did, and as such my knowledge of progressive enhancement & graceful degradation, assistive technologies and cross-browser compatibility was increased hugely, helped in no small part by regular contact with third parties, such as the <a href="http://www.rnib.org.uk/" rel="noopener" target="_blank">R.N.I.B'.$newTabWindowWarning.'</a> and <a href="https://www.abilitynet.org.uk/" rel="noopener" target="_blank">AbilityNet'.$newTabWindowWarning.'</a>.'
+            'Working on one of the largest websites in Europe, it was my responsibility to create front-end code to the highest standards and then liaise with the back-end developers to ensure it was integrated properly into the solution.</p><p>As a public health information site, accessibility was at the forefront of everything we did, and as such my knowledge of progressive enhancement & graceful degradation, assistive technologies and cross-browser compatibility was increased hugely, helped in no small part by regular contact with third parties, such as the <a href="http://www.rnib.org.uk/" rel="noopener" target="_blank">R.N.I.B'.newTabWindowWarning().'</a> and <a href="https://www.abilitynet.org.uk/" rel="noopener" target="_blank">AbilityNet'.newTabWindowWarning().'</a>.'
         ),
         'url'       => 'www.nhs.uk',
         'madewith'  => (object) array(
@@ -126,7 +125,7 @@ $portfolio = (object) array(
         'client'    => 'Capita',
         'text'      => (object) array(
             'One of the largest pieces of work I was involved in whilst working for NHS Choices was the rebuild of the site&apos;s media library.',
-            'As well as being solely responsible for the front-end development, I also had to very quickly familiarise myself with the technical aspects of the <a href="https://www.brightcove.com" rel="noopener" target="_blank">new media provider'.$newTabWindowWarning.'</a> we were switching to. This involved me learning their proprietary markup language, <abbr title="Brightcove Experience Markup Language">BEML</abbr>, and also working with the back-end developers to make best use of their API.'
+            'As well as being solely responsible for the front-end development, I also had to very quickly familiarise myself with the technical aspects of the <a href="https://www.brightcove.com" rel="noopener" target="_blank">new media provider'.newTabWindowWarning().'</a> we were switching to. This involved me learning their proprietary markup language, <abbr title="Brightcove Experience Markup Language">BEML</abbr>, and also working with the back-end developers to make best use of their API.'
         ),
         'url'       => 'www.nhs.uk/video',
         'madewith' => (object) array(
