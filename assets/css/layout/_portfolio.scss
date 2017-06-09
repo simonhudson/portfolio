@@ -1,3 +1,34 @@
+// Portfolio item
+//
+// Markup
+// <div class="item">
+// <div class="wrap item__wrap">
+// <div class="item__img">
+// <img src="http://placehold.it/350x150" />
+// </div>
+// <div class="item__content">
+// <div class="item__info">
+// <h2 class="item__title faux-h5">Title</h2>
+// <div class="item__links">
+// <a class="item__link item__link--project" href="#" rel="noopener" target="_blank">
+// <span class="fa fa-2 fa-link" aria-hidden="true"></span>
+// View <span class="visuallyhidden">Title </span>project<span class="visuallyhidden">&nbsp;(opens in a new tab/window)</span>
+// </a>
+// <a class="item__link item__link--project" href="#" rel="noopener" target="_blank">
+// <span class="fa fa-2 fa-github" aria-hidden="true"></span>
+// View <span class="visuallyhidden">Title </span>on Github<span class="visuallyhidden">&nbsp;(opens in a new tab/window)</span>
+// </a>
+// </div>
+// </div>
+// <div class="item__text">
+// <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nulla risus, feugiat congue imperdiet sit amet, congue ac tortor. Fusce facilisis elementum sapien, ornare ultricies lorem laoreet a. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut quis tempus quam.</p>
+// </div>
+// </div>
+// </div>
+// </div>
+//
+// Styleguide Portfolio
+
 .portfolio {
 	display: flex;
 	flex-wrap:wrap;
@@ -42,9 +73,9 @@
 		@include margin-b-xsm();
 
 		a {
+			@include link();
 			@include padding-y-xsm();
 			@include strong();
-			border-bottom: 1px dotted rgba(palette(primary, bodyText), .25);
 			display: block;
 		}
 

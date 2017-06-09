@@ -125,11 +125,16 @@ ul {
 
 a,
 .text-link {
+  transition: all .5s ease-in-out;
+  border-bottom: 1px dotted #ebebeb;
   color: #bb0048;
   text-decoration: none; }
-  a:hover,
-  .text-link:hover {
-    text-decoration: underline; }
+  a:hover, a:focus,
+  .text-link:hover,
+  .text-link:focus {
+    color: #bb0048;
+    border-color: #bb0048;
+    text-decoration: none; }
 
 fieldset {
   border: 0; }
@@ -661,12 +666,19 @@ main {
   .item__links {
     margin-bottom: 1rem; }
     .item__links a {
+      transition: all .5s ease-in-out;
+      border-bottom: 1px dotted #ebebeb;
+      color: #bb0048;
+      text-decoration: none;
       padding-top: 1rem;
       padding-bottom: 1rem;
       font-family: "opensans_semibold", "opensans_regular", arial, helvetica, sans-serif;
       font-weight: normal;
-      border-bottom: 1px dotted rgba(87, 87, 87, 0.25);
       display: block; }
+      .item__links a:hover, .item__links a:focus {
+        color: #bb0048;
+        border-color: #bb0048;
+        text-decoration: none; }
     .item__links [class*="fa"] {
       margin-right: 3px; }
 
