@@ -52,7 +52,7 @@
 		}
 
 		img {
-			@include margin-b-sm();
+			@include margin-b-xsm();
 			@include width-full();
 			height:auto;
 		}
