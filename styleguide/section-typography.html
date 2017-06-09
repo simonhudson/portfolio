@@ -63,7 +63,7 @@
             </a>
           </li>
           <li class="kss-nav__item">
-            <a class="" href="section-typography.html">
+            <a class="kss-state-active" href="section-typography.html">
               <span class="kss-nav__ref">5</span>
               <span class="kss-nav__name">Typography</span>
             </a>
@@ -81,58 +81,66 @@
           the "root" element comes first in this loop, and can be detected using
           the "#if @first" block as seen below.
         -->
-            <header class="kss-section kss-section--depth-2" id="kssref-components-button">
+            <header class="kss-section kss-section--depth-1" id="kssref-typography">
 
             <article class="kss-section__content">
 
-              <a class="kss-section__permalink" href="#kssref-components-button">
-                <h2 class="kss-section__item kss-section__item--depth-2">
-                  <span class="kss-section__ref">1.1</span>
-                  <span class="kss-section__name">Buttons</span>
-                </h2>
+              <a class="kss-section__permalink" href="#kssref-typography">
+                <h1 class="kss-section__item kss-section__item--depth-1">
+                  <span class="kss-section__ref">5</span>
+                  <span class="kss-section__name">Typography</span>
+                </h1>
               </a>
 
-                <div class="kss-section__description"><p>Button styles</p>
+                <div class="kss-section__description"><p>Typography styling</p>
 </div>
 
             </article>
 
               <article class="kss-section__modifiers">
-                <h1 class="kss-modifiers__heading">Examples</h1>
+                <h1 class="kss-modifiers__heading">Example</h1>
 
-                  <h2 class="kss-modifiers__name">Default styling</h2>
 
-                <div class="kss-modifiers__example"><a class="btn [modifier class]">Link Button</a>
-<button class="btn [modifier class]">Button Element</button>
-<input class="btn [modifier class]" type="button" value="Input Button" /></div>
+                <div class="kss-modifiers__example"><p>This is a paragraph</p>
+<h1 class="body-text">Heading made to look like a paragraph</h1>
+<p><strong>Strong element</strong></p>
+<p class="strong">Paragraph with .strong class</p>
+<p><small>Small element</small></p>
+<p class="small">Paragraph with .small class</p>
+<h1>Heading level 1</h1>
+<p class="faux-h1">Paragraph with .faux-h1 class</p>
+<h2>Heading level 2</h2>
+<p class="faux-h2">Paragraph with .faux-h2 class</p>
+<h3>Heading level 3</h3>
+<p class="faux-h3">Paragraph with .faux-h3 class</p>
+<h4>Heading level 4</h4>
+<p class="faux-h4">Paragraph with .faux-h4 class</p>
+<h5>Heading level 5</h5>
+<p class="faux-h5">Paragraph with .faux-h5 class</p>
+<h6>Heading level 6</h6>
+<p class="faux-h6">Paragraph with .faux-h6 class</p></div>
 
-                  <h2 class="kss-modifiers__name">.btn--secondary</h2>
-
-                  <p class="kss-modifiers__description">Secondary button.</p>
-
-                  <div class="kss-modifiers__example"><a class="btn btn--secondary">Link Button</a>
-<button class="btn btn--secondary">Button Element</button>
-<input class="btn btn--secondary" type="button" value="Input Button" /></div>
-                  <h2 class="kss-modifiers__name">.btn--has-icon</h2>
-
-                  <p class="kss-modifiers__description">Button with icon.</p>
-
-                  <div class="kss-modifiers__example"><a class="btn btn--has-icon">Link Button</a>
-<button class="btn btn--has-icon">Button Element</button>
-<input class="btn btn--has-icon" type="button" value="Input Button" /></div>
-                  <h2 class="kss-modifiers__name">.btn--is-hollow</h2>
-
-                  <p class="kss-modifiers__description">Hollow button.</p>
-
-                  <div class="kss-modifiers__example"><a class="btn btn--is-hollow">Link Button</a>
-<button class="btn btn--is-hollow">Button Element</button>
-<input class="btn btn--is-hollow" type="button" value="Input Button" /></div>
               </article>
 
                 <article class="kss-section__markup">
-                  <pre><code class="language-markup">&lt;a class&#x3D;&quot;btn [modifier class]&quot;&gt;Link Button&lt;/a&gt;
-&lt;button class&#x3D;&quot;btn [modifier class]&quot;&gt;Button Element&lt;/button&gt;
-&lt;input class&#x3D;&quot;btn [modifier class]&quot; type&#x3D;&quot;button&quot; value&#x3D;&quot;Input Button&quot; /&gt;</code></pre>
+                  <pre><code class="language-markup">&lt;p&gt;This is a paragraph&lt;/p&gt;
+&lt;h1 class&#x3D;&quot;body-text&quot;&gt;Heading made to look like a paragraph&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Strong element&lt;/strong&gt;&lt;/p&gt;
+&lt;p class&#x3D;&quot;strong&quot;&gt;Paragraph with .strong class&lt;/p&gt;
+&lt;p&gt;&lt;small&gt;Small element&lt;/small&gt;&lt;/p&gt;
+&lt;p class&#x3D;&quot;small&quot;&gt;Paragraph with .small class&lt;/p&gt;
+&lt;h1&gt;Heading level 1&lt;/h1&gt;
+&lt;p class&#x3D;&quot;faux-h1&quot;&gt;Paragraph with .faux-h1 class&lt;/p&gt;
+&lt;h2&gt;Heading level 2&lt;/h2&gt;
+&lt;p class&#x3D;&quot;faux-h2&quot;&gt;Paragraph with .faux-h2 class&lt;/p&gt;
+&lt;h3&gt;Heading level 3&lt;/h3&gt;
+&lt;p class&#x3D;&quot;faux-h3&quot;&gt;Paragraph with .faux-h3 class&lt;/p&gt;
+&lt;h4&gt;Heading level 4&lt;/h4&gt;
+&lt;p class&#x3D;&quot;faux-h4&quot;&gt;Paragraph with .faux-h4 class&lt;/p&gt;
+&lt;h5&gt;Heading level 5&lt;/h5&gt;
+&lt;p class&#x3D;&quot;faux-h5&quot;&gt;Paragraph with .faux-h5 class&lt;/p&gt;
+&lt;h6&gt;Heading level 6&lt;/h6&gt;
+&lt;p class&#x3D;&quot;faux-h6&quot;&gt;Paragraph with .faux-h6 class&lt;/p&gt;</code></pre>
                 </article>
 
             </header>

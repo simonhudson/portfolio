@@ -1,3 +1,25 @@
+// Forms
+//
+// Form element styling
+//
+// Markup:
+// <form>
+// <fieldset>
+// <label for="1">Label</label>
+// <input id="1" type="text" />
+// <label for="2">Select label</label>
+// <select id="2">
+// <option>Value 1</option>
+// <option>Value 2</option>
+// <option>Value 3</option>
+// <option>Value 4</option>
+// <option>Value 5</option>
+// </select>
+// </fieldset>
+// </form>
+//
+// Styleguide Components.Forms
+
 fieldset {
 	border:0;
 }
@@ -9,10 +31,11 @@ legend {
 label,
 .faux-label,
 .input-error-msg {
-	display: block;
-    font-size: rem($base-font-size * 0.875);
+	@include strong();
+	display:block;
+    font-size: rem($base-font-size);
     font-weight: 500;
-	margin-bottom:0.5em;
+	margin-bottom: 0.5em;
 }
 
 [type="text"],
@@ -46,6 +69,10 @@ select {
     -webkit-appearance: none;
 	-moz-appearance: none;
 
+	@include bp(tab-p) {
+		width: auto;
+	}
+
 	&:focus {
 		border-color: #26478d;
 		outline: none;
@@ -60,10 +87,10 @@ select {
 
 select {
 	background-image: url($img-path+'caret-grey-down.svg');
-	background-size: 9px 6px;
-	background-position: right -1rem center;
 	background-origin: content-box;
+	background-position: right -1rem center;
 	background-repeat: no-repeat;
+	background-size: 9px 6px;
 	padding-right: 1.5rem;
 }
 

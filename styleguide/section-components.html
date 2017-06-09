@@ -39,29 +39,47 @@
           </a>
         </li>
           <li class="kss-nav__item">
-            <a class="" href="section-base.html">
-              <span class="kss-nav__ref">1</span>
-              <span class="kss-nav__name">Base</span>
-            </a>
-          </li>
-          <li class="kss-nav__item">
             <a class="kss-state-active" href="section-components.html">
-              <span class="kss-nav__ref">2</span>
+              <span class="kss-nav__ref">1</span>
               <span class="kss-nav__name">Components</span>
             </a>
                 <ul class="kss-nav__subnav">
                     <li class="kss-nav__item ">
                       <a href="section-components.html#kssref-components-button">
-                        <span class="kss-nav__ref">2.1</span>
+                        <span class="kss-nav__ref">1.1</span>
                         <span class="kss-nav__name">Buttons</span>
+                      </a>
+                    </li>
+                    <li class="kss-nav__item ">
+                      <a href="section-components.html#kssref-components-forms">
+                        <span class="kss-nav__ref">1.2</span>
+                        <span class="kss-nav__name">Forms</span>
                       </a>
                     </li>
                 </ul>
           </li>
           <li class="kss-nav__item">
-            <a class="" href="section-palette.html">
+            <a class="" href="section-links.html">
+              <span class="kss-nav__ref">2</span>
+              <span class="kss-nav__name">Links</span>
+            </a>
+          </li>
+          <li class="kss-nav__item">
+            <a class="" href="section-lists.html">
               <span class="kss-nav__ref">3</span>
+              <span class="kss-nav__name">Lists</span>
+            </a>
+          </li>
+          <li class="kss-nav__item">
+            <a class="" href="section-palette.html">
+              <span class="kss-nav__ref">4</span>
               <span class="kss-nav__name">Palette</span>
+            </a>
+          </li>
+          <li class="kss-nav__item">
+            <a class="" href="section-typography.html">
+              <span class="kss-nav__ref">5</span>
+              <span class="kss-nav__name">Typography</span>
             </a>
           </li>
       </ul>
@@ -83,7 +101,7 @@
 
               <a class="kss-section__permalink" href="#kssref-components">
                 <h1 class="kss-section__item kss-section__item--depth-1">
-                  <span class="kss-section__ref">2</span>
+                  <span class="kss-section__ref">1</span>
                   <span class="kss-section__name">Components</span>
                 </h1>
               </a>
@@ -101,7 +119,7 @@
 
               <a class="kss-section__permalink" href="#kssref-components-button">
                 <h2 class="kss-section__item kss-section__item--depth-2">
-                  <span class="kss-section__ref">2.1</span>
+                  <span class="kss-section__ref">1.1</span>
                   <span class="kss-section__name">Buttons</span>
                 </h2>
               </a>
@@ -147,6 +165,61 @@
                   <pre><code class="language-markup">&lt;a class&#x3D;&quot;btn [modifier class]&quot;&gt;Link Button&lt;/a&gt;
 &lt;button class&#x3D;&quot;btn [modifier class]&quot;&gt;Button Element&lt;/button&gt;
 &lt;input class&#x3D;&quot;btn [modifier class]&quot; type&#x3D;&quot;button&quot; value&#x3D;&quot;Input Button&quot; /&gt;</code></pre>
+                </article>
+
+            </section>
+            <section class="kss-section kss-section--depth-2" id="kssref-components-forms">
+
+            <article class="kss-section__content">
+
+              <a class="kss-section__permalink" href="#kssref-components-forms">
+                <h2 class="kss-section__item kss-section__item--depth-2">
+                  <span class="kss-section__ref">1.2</span>
+                  <span class="kss-section__name">Forms</span>
+                </h2>
+              </a>
+
+                <div class="kss-section__description"><p>Form element styling</p>
+</div>
+
+            </article>
+
+              <article class="kss-section__modifiers">
+                <h1 class="kss-modifiers__heading">Example</h1>
+
+
+                <div class="kss-modifiers__example"><form>
+<fieldset>
+<label for="1">Label</label>
+<input id="1" type="text" />
+<label for="2">Select label</label>
+<select id="2">
+<option>Value 1</option>
+<option>Value 2</option>
+<option>Value 3</option>
+<option>Value 4</option>
+<option>Value 5</option>
+</select>
+</fieldset>
+</form></div>
+
+              </article>
+
+                <article class="kss-section__markup">
+                  <pre><code class="language-markup">&lt;form&gt;
+&lt;fieldset&gt;
+&lt;label for&#x3D;&quot;1&quot;&gt;Label&lt;/label&gt;
+&lt;input id&#x3D;&quot;1&quot; type&#x3D;&quot;text&quot; /&gt;
+&lt;label for&#x3D;&quot;2&quot;&gt;Select label&lt;/label&gt;
+&lt;select id&#x3D;&quot;2&quot;&gt;
+&lt;option&gt;Value 1&lt;/option&gt;
+&lt;option&gt;Value 2&lt;/option&gt;
+&lt;option&gt;Value 3&lt;/option&gt;
+&lt;option&gt;Value 4&lt;/option&gt;
+&lt;option&gt;Value 5&lt;/option&gt;
+&lt;/select&gt;
+&lt;/fieldset&gt;
+&lt;/form&gt;</code></pre>
                 </article>
 
             </section>
