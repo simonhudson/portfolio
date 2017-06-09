@@ -16,3 +16,7 @@
 @mixin uppercase() {
 	text-transform: uppercase;
 }
+
+@mixin small() {
+	font-size: rem($base-font-size * 0.85);
+}

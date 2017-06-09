@@ -69,6 +69,27 @@
 		@include padding-x-sm();
 	}
 
+	&__made-with {
+		@include margin-b-xsm();
+		list-style: none;
+		padding: 0;
+
+		li {
+			@include small();
+			display: inline;
+
+			&:after {
+				content: ',';
+			}
+
+			&:last-of-type:after {
+				content: '';
+			}
+
+		}
+
+	}
+
 	&__links {
 		@include margin-b-xsm();
 

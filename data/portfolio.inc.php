@@ -13,7 +13,7 @@ $portfolio = (object) array(
      'madewith'  => (object) array(
          'XHTML',
          'CSS',
-         'JavaScript/jQuery',
+         'JavaScript (ES6)',
          'NodeJS',
          'Handlebars',
          'Amazon Web Services'

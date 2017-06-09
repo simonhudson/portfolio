@@ -663,6 +663,17 @@ main {
   .item__content {
     padding-right: 2rem;
     padding-left: 2rem; }
+  .item__made-with {
+    margin-bottom: 1rem;
+    list-style: none;
+    padding: 0; }
+    .item__made-with li {
+      font-size: 0.85rem;
+      display: inline; }
+      .item__made-with li:after {
+        content: ','; }
+      .item__made-with li:last-of-type:after {
+        content: ''; }
   .item__links {
     margin-bottom: 1rem; }
     .item__links a {

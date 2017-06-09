@@ -32,6 +32,11 @@ include('data/portfolio.inc.php');
 						<div class="item__content">
 							<div class="item__info">
 								<h2 class="item__title faux-h5"><?= $item->title; ?></h2>
+								<ul class="item__made-with">
+									<?php foreach($item->madewith as $madeWithItem): ?>
+										<li><?= $madeWithItem ?></li>
+									<?php endforeach; ?>
+								</ul>
 								<div class="item__links">
 									<?php if (isset($item->url)): ?>
 										<a class="item__link item__link--project" href="http://<?= $item->url; ?>" rel="noopener" target="_blank">
