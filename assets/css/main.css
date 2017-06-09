@@ -592,10 +592,10 @@ main {
   transition: all .5s ease-in-out;
   padding-top: 2rem; }
   .has-js main {
-    padding-top: 68.2px; }
+    padding-top: 69px; }
     @media (min-width: 768px) {
       .has-js main {
-        padding-top: 106px; } }
+        padding-top: 87px; } }
 
 @media (min-width: 1024px) {
   .wrap {
