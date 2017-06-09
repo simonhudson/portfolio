@@ -45,7 +45,7 @@
             </a>
           </li>
           <li class="kss-nav__item">
-            <a class="" href="section-forms.html">
+            <a class="kss-state-active" href="section-forms.html">
               <span class="kss-nav__ref">2</span>
               <span class="kss-nav__name">Forms</span>
             </a>
@@ -69,7 +69,7 @@
             </a>
           </li>
           <li class="kss-nav__item">
-            <a class="kss-state-active" href="section-portfolio.html">
+            <a class="" href="section-portfolio.html">
               <span class="kss-nav__ref">6</span>
               <span class="kss-nav__name">Portfolio item</span>
             </a>
@@ -93,46 +93,63 @@
           the "root" element comes first in this loop, and can be detected using
           the "#if @first" block as seen below.
         -->
-            <header class="kss-section kss-section--depth-1" id="kssref-portfolio">
+            <header class="kss-section kss-section--depth-1" id="kssref-forms">
 
             <article class="kss-section__content">
 
-              <a class="kss-section__permalink" href="#kssref-portfolio">
+              <a class="kss-section__permalink" href="#kssref-forms">
                 <h1 class="kss-section__item kss-section__item--depth-1">
-                  <span class="kss-section__ref">6</span>
-                  <span class="kss-section__name">Portfolio item</span>
+                  <span class="kss-section__ref">2</span>
+                  <span class="kss-section__name">Forms</span>
                 </h1>
               </a>
 
-                <div class="kss-section__description"><p>Markup</p>
-<div class="item">
-<div class="wrap item__wrap">
-<div class="item__img">
-<img src="http://placehold.it/350x150" />
+                <div class="kss-section__description"><p>Form element styling</p>
 </div>
-<div class="item__content">
-<div class="item__info">
-<h2 class="item__title faux-h5">Title</h2>
-<div class="item__links">
-<a class="item__link item__link--project" href="#" rel="noopener" target="_blank">
-<span class="fa fa-2 fa-link" aria-hidden="true"></span>
-View <span class="visuallyhidden">Title </span>project<span class="visuallyhidden">&nbsp;(opens in a new tab/window)</span>
-</a>
-<a class="item__link item__link--project" href="#" rel="noopener" target="_blank">
-<span class="fa fa-2 fa-github" aria-hidden="true"></span>
-View <span class="visuallyhidden">Title </span>on Github<span class="visuallyhidden">&nbsp;(opens in a new tab/window)</span>
-</a>
-</div>
-</div>
-<div class="item__text">
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nulla risus, feugiat congue imperdiet sit amet, congue ac tortor. Fusce facilisis elementum sapien, ornare ultricies lorem laoreet a. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut quis tempus quam.</p>
-</div>
-</div>
-</div>
-</div></div>
 
             </article>
 
+              <article class="kss-section__modifiers">
+                <h1 class="kss-modifiers__heading">Example</h1>
+
+
+                <div class="kss-modifiers__example"><form>
+<fieldset>
+<label for="lorem">Label</label>
+<input id="lorem" type="text" />
+<label class="input-error-label" for="ipsum">Label<span class="input-error-msg">Please fill in this field</span></label>
+<input class="input-error" id="ipsum" type="text" />
+<label for="dolor">Select label</label>
+<select id="dolor">
+<option>Value 1</option>
+<option>Value 2</option>
+<option>Value 3</option>
+<option>Value 4</option>
+<option>Value 5</option>
+</select>
+</fieldset>
+</form></div>
+
+              </article>
+
+                <article class="kss-section__markup">
+                  <pre><code class="language-markup">&lt;form&gt;
+&lt;fieldset&gt;
+&lt;label for&#x3D;&quot;lorem&quot;&gt;Label&lt;/label&gt;
+&lt;input id&#x3D;&quot;lorem&quot; type&#x3D;&quot;text&quot; /&gt;
+&lt;label class&#x3D;&quot;input-error-label&quot; for&#x3D;&quot;ipsum&quot;&gt;Label&lt;span class&#x3D;&quot;input-error-msg&quot;&gt;Please fill in this field&lt;/span&gt;&lt;/label&gt;
+&lt;input class&#x3D;&quot;input-error&quot; id&#x3D;&quot;ipsum&quot; type&#x3D;&quot;text&quot; /&gt;
+&lt;label for&#x3D;&quot;dolor&quot;&gt;Select label&lt;/label&gt;
+&lt;select id&#x3D;&quot;dolor&quot;&gt;
+&lt;option&gt;Value 1&lt;/option&gt;
+&lt;option&gt;Value 2&lt;/option&gt;
+&lt;option&gt;Value 3&lt;/option&gt;
+&lt;option&gt;Value 4&lt;/option&gt;
+&lt;option&gt;Value 5&lt;/option&gt;
+&lt;/select&gt;
+&lt;/fieldset&gt;
+&lt;/form&gt;</code></pre>
+                </article>
 
             </header>
     </section>
