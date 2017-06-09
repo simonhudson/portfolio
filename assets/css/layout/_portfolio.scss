@@ -77,9 +77,19 @@
 			@include padding-y-xsm();
 			@include strong();
 			display: block;
+
+			&:hover, &:focus {
+
+				[class*="fa"] {
+					margin-right: 10px;
+				}
+
+			}
+
 		}
 
 		[class*="fa"] {
+			@include transition();
 			margin-right: 3px;
 		}
 

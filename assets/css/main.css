@@ -679,7 +679,10 @@ main {
         color: #bb0048;
         border-color: #bb0048;
         text-decoration: none; }
+      .item__links a:hover [class*="fa"], .item__links a:focus [class*="fa"] {
+        margin-right: 10px; }
     .item__links [class*="fa"] {
+      transition: all .5s ease-in-out;
       margin-right: 3px; }
 
 .btn-row {
