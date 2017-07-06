@@ -1,6 +1,6 @@
 <?php
-include('config/import.inc.php');
-include('functions/import.inc.php');
+include('config/_import.inc.php');
+include('functions/_import.inc.php');
 include('data/portfolio.inc.php');
 ?>
 <!doctype html>
