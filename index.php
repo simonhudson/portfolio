@@ -1,7 +1,7 @@
 <?php
 include('config/_import.inc.php');
 include('functions/_import.inc.php');
-include('data/portfolio.inc.php');
+include('data/_import.inc.php');
 ?>
 <!doctype html>
 <html>
