@@ -46,6 +46,7 @@
 	}
 
 	&__info {
+		@include margin-b-xsm();
 		@include padding-y-xsm();
 		border-top: 1px solid rgba(palette(primary, bodyText), .10);
 		border-bottom: 1px solid rgba(palette(primary, bodyText), .10);
@@ -102,6 +103,11 @@
 			@include link();
 			@include strong();
 			display: block;
+		}
+
+		[class*="fa"] {
+			@include margin-t-xsm();
+			font-size: rem($base-font-size * 1.6);
 		}
 
 	}

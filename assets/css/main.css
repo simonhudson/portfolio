@@ -646,6 +646,7 @@ main {
     .item {
       width: 33.33333%; } }
   .item__info {
+    margin-bottom: 1rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
     border-top: 1px solid rgba(87, 87, 87, 0.1);
@@ -687,6 +688,9 @@ main {
     .item__links a:hover, .item__links a:focus {
       color: #bb0048;
       text-decoration: none; }
+  .item__links [class*="fa"] {
+    margin-top: 1rem;
+    font-size: 1.6rem; }
 
 .btn-row {
   display: flex;

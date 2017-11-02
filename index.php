@@ -27,11 +27,17 @@ include('data/_import.inc.php');
 				<div class="item">
 					<div class="wrap item__wrap">
 						<div class="item__img">
-							<img src="http://placehold.it/350x150" />
+							<a href="http://<?= $item->url; ?>" rel="noopener" target="_blank">
+								<img alt="View <?= $item->title; ?> project (opens in a new tab/window)" src="http://placehold.it/350x150" />
+							</a>
 						</div>
 						<div class="item__content">
 							<div class="item__info">
-								<h2 class="item__title faux-h5"><?= $item->title; ?></h2>
+								<h2 class="item__title faux-h5">
+									<a href="http://<?= $item->url; ?>" rel="noopener" target="_blank">
+										<?= $item->title; ?><?= newTabWindowWarning(); ?>
+									</a>
+								</h2>
 								<ul class="item__made-with">
 									<?php foreach($item->madewith as $madeWithItem): ?>
 										<li><?= $madeWithItem ?></li>
@@ -39,24 +45,24 @@ include('data/_import.inc.php');
 								</ul>
 								<div class="item__links">
 									<?php if (isset($item->url)): ?>
-										<a class="item__link item__link--project" href="http://<?= $item->url; ?>" rel="noopener" target="_blank">
+										<!-- <a class="item__link item__link--project" href="http://<?= $item->url; ?>" rel="noopener" target="_blank">
 											<?= icon('link'); ?>
 											View <span class="visuallyhidden"><?= $item->title; ?> </span>project<?= newTabWindowWarning(); ?>
-										</a>
+										</a> -->
 									<?php endif; ?>
 									<?php if (isset($item->github)): ?>
 										<a class="item__link item__link--project" href="http://www.github.com/simonhudson/<?= $item->github; ?>" rel="noopener" target="_blank">
 											<?= icon('github'); ?>
-											View <span class="visuallyhidden"><?= $item->title; ?> </span>on Github<?= newTabWindowWarning(); ?>
+											<span class="visuallyhidden">View <?= $item->title; ?> on Github<?= newTabWindowWarning(); ?></span>
 										</a>
 	                            	<?php endif; ?>
 								</div>
 							</div>
-							<!-- <div class="item__text">
+							<div class="item__text">
 								<?php foreach($item->text as $textItem): ?>
 									<p><?= $textItem ?></p>
 								<?php endforeach; ?>
-							</div> -->
+							</div>
 						</div>
 					</div>
 				</div>
