@@ -45,6 +45,12 @@
 		@include width-third();
 	}
 
+	&__info {
+		@include padding-y-xsm();
+		border-top: 1px solid rgba(palette(primary, bodyText), .10);
+		border-bottom: 1px solid rgba(palette(primary, bodyText), .10);
+	}
+
 	&__img {
 
 		@include bp(tab-p) {
@@ -70,8 +76,8 @@
 	}
 
 	&__made-with {
-		@include margin-b-xsm();
 		list-style: none;
+		margin: 0;
 		padding: 0;
 
 		li {
@@ -91,27 +97,11 @@
 	}
 
 	&__links {
-		@include margin-b-xsm();
 
 		a {
 			@include link();
-			@include padding-y-xsm();
 			@include strong();
 			display: block;
-
-			&:hover, &:focus {
-
-				[class*="fa"] {
-					margin-right: 10px;
-				}
-
-			}
-
-		}
-
-		[class*="fa"] {
-			@include transition();
-			margin-right: 3px;
 		}
 
 	}

@@ -52,11 +52,11 @@ include('data/_import.inc.php');
 	                            	<?php endif; ?>
 								</div>
 							</div>
-							<div class="item__text">
+							<!-- <div class="item__text">
 								<?php foreach($item->text as $textItem): ?>
 									<p><?= $textItem ?></p>
 								<?php endforeach; ?>
-							</div>
+							</div> -->
 						</div>
 					</div>
 				</div>
