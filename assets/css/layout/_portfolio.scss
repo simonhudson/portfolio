@@ -67,9 +67,14 @@
 	}
 
 	&__title {
+		@include h5();
 		@include margin-b-xsm();
 		@include strong();
 		@include uppercase();
+	}
+
+	&__title-link {
+		@include strong();
 	}
 
 	&__content {
@@ -83,6 +88,7 @@
 
 		li {
 			@include small();
+			color: lighten(palette(primary, bodyText), 15%);
 			display: inline;
 
 			&:after {

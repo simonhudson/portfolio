@@ -33,8 +33,8 @@ include('data/_import.inc.php');
 						</div>
 						<div class="item__content">
 							<div class="item__info">
-								<h2 class="item__title faux-h5">
-									<a href="http://<?= $item->url; ?>" rel="noopener" target="_blank">
+								<h2 class="item__title">
+									<a class="item__title-link" href="http://<?= $item->url; ?>" rel="noopener" target="_blank">
 										<?= $item->title; ?><?= newTabWindowWarning(); ?>
 									</a>
 								</h2>
