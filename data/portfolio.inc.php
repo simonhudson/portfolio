@@ -11,7 +11,7 @@ $portfolio = (object) array(
      ),
      'url'       => 'creditmatcher.experian.co.uk',
      'madewith'  => (object) array(
-         'XHTML',
+         'HTML',
          'CSS',
          'JavaScript (ES6)',
          'NodeJS',
@@ -28,7 +28,7 @@ $portfolio = (object) array(
      ),
      'url'       => 'www.creditexpert.co.uk',
      'madewith'  => (object) array(
-         'XHTML',
+         'HTML',
          'CSS',
          'JavaScript/jQuery',
          'Angular',
@@ -45,7 +45,7 @@ $portfolio = (object) array(
         'url'       => 'lastfm.heyhudson.com',
         'github'    => 'lastfm',
         'madewith'  => (object) array(
-            'XHTML',
+            'HTML',
             'CSS',
             'JavaScript/jQuery',
             'Last.fm API'
@@ -61,7 +61,7 @@ $portfolio = (object) array(
         'url'       => 'govpetitions.heyhudson.com',
         'github'    => 'gov-petitions',
         'madewith'  => (object) array(
-            'XHTML',
+            'HTML',
             'CSS',
             'JavaScript/jQuery',
             'KnockoutJS',
@@ -78,7 +78,7 @@ $portfolio = (object) array(
         'url'       => 'www.stevebloomerswatching.com',
         'github'    => '',
         'madewith'  => (object) array(
-            'XHTML',
+            'HTML',
             'CSS',
             'JavaScript/jQuery',
             'WordPress',
@@ -94,7 +94,7 @@ $portfolio = (object) array(
         ),
         'url'       => 'www.nhs.uk',
         'madewith'  => (object) array(
-            'XHTML',
+            'HTML',
             'CSS',
             'JavaScript/jQuery',
             'Sharepoint',
@@ -112,7 +112,7 @@ $portfolio = (object) array(
         ),
         'url'       => 'www.nhs.uk/Services/gp/Overview/DefaultView.aspx?id=39571',
         'madewith' => (object) array(
-            'XHTML',
+            'HTML',
             'CSS',
             'JavaScript/jQuery',
             '.NET',
@@ -129,7 +129,7 @@ $portfolio = (object) array(
         ),
         'url'       => 'www.nhs.uk/video',
         'madewith' => (object) array(
-            'XHTML',
+            'HTML',
             'CSS',
             'JavaScript/jQuery',
             'BEML',
@@ -147,7 +147,7 @@ $portfolio = (object) array(
         ),
         'url'       => 'www.nhs.uk/summer',
         'madewith' => (object) array(
-            'XHTML',
+            'HTML',
             'CSS',
             '.NET',
             'Sharepoint'
@@ -163,7 +163,7 @@ $portfolio = (object) array(
         ),
         'url'       => 'www.marshallstreesurgeons.co.uk',
         'madewith' => (object) array(
-            'XHTML',
+            'HTML',
             'CSS',
             'PHP',
             'MySQL',
@@ -180,7 +180,7 @@ $portfolio = (object) array(
         ),
         'url'       => 'www.heyhudson.com/nucleuschange',
         'madewith' => (object) array(
-            'XHTML',
+            'HTML',
             'CSS',
             'JavaScript',
             'PHP',
