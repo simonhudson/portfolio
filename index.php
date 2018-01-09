@@ -4,7 +4,7 @@ include('functions/_import.inc.php');
 include('data/_import.inc.php');
 ?>
 <!doctype html>
-<html>
+<html lang="en">
 	<head>
 		<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
 		<meta content="width=device-width, initial-scale=1" name="viewport" />
@@ -16,7 +16,7 @@ include('data/_import.inc.php');
 
 		<header class="js-header header">
 			<div class="wrap header__wrap">
-				<img class="header__logo" src="<?= $paths->imgs ?>logo.svg" />
+				<img alt="" class="header__logo" src="<?= $paths->imgs ?>logo.svg" />
 				<p class="header__strap"><span>Web Design &amp; Development <em>by</em> </span>Simon Hudson</p>
 			</div>
 		</header>
