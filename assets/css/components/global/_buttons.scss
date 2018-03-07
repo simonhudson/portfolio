@@ -14,14 +14,14 @@
 // Styleguide Buttons
 
 .btn {
+	@include center-text();
 	@include margin-b-sm();
 	@include padding-xsm();
 	@include strong();
 	@include transition();
 	@include uppercase();
 	@include width-full();
-	background-color: palette(primary, a);
-	border-radius:3px;
+	background-color: lighten(palette(primary, a), 20%);
 	border:0;
 	color:#fff;
 	cursor:pointer;
@@ -41,7 +41,7 @@
 		text-decoration: none;
 	}
 
-	&--is-hollow {
+	&--hollow {
 		background-color: palette(primary, white);
 		border: 1px solid palette(primary, a);
 		color: palette(primary, a);
@@ -56,7 +56,15 @@
 	}
 
 	&--secondary {
-		background: palette(primary, a-alt);
+		background: lighten(palette(primary, a), 40%);
+		color: palette(primary, a);
+
+		&:hover,
+		&:focus {
+			background: lighten(palette(primary, a), 35%);
+			color: palette(primary, a);
+		}
+
 	}
 
 }

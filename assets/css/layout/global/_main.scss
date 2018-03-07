@@ -11,7 +11,7 @@ main {
 		padding-top: $header-height;
 
 		@include bp(tab-p) {
-			padding-top: $header-height-desktop;
+			padding-top: $header-height-desktop + $spacing-sm;
 		}
 	}
 

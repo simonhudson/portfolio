@@ -1,8 +1,8 @@
 .header {
 	@include transition();
 	@include width-full();
-	background: palette(primary, white);
-	border-bottom: 1px solid transparent;
+	background: palette(primary, bodyText);
+	border-bottom: 5px solid palette(primary, a);
 
 	.has-js & {
 		position: fixed;
@@ -10,7 +10,6 @@
 	}
 
 	.is-scrolled & {
-		border-bottom-color: lighten(palette(primary, bodyText), 80%);
 		box-shadow: 0 0 5px palette(primary, bodyText);
 	}
 
@@ -20,11 +19,6 @@
 		align-items: center;
 		display: flex;
 		flex-wrap: wrap;
-
-		@include bp(tab-p) {
-			@include padding-x-sm();
-		}
-
 	}
 
 	&__logo {
@@ -47,7 +41,7 @@
 
 		span {
 			@include visuallyhidden();
-			color: palette(primary, bodyText);
+			color: rgba(palette(primary, white), .4);
 
 			@include bp(tab-p) {
 				@include visuallyshown();

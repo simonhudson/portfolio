@@ -62,15 +62,16 @@
 			@include margin-b-xsm();
 			@include width-full();
 			height:auto;
+			opacity: 0.5;
 		}
 
 	}
 
 	&__title {
 		@include h5();
-		@include margin-b-xsm();
 		@include strong();
 		@include uppercase();
+		margin: 0;
 	}
 
 	&__title-link {
@@ -88,7 +89,7 @@
 
 		li {
 			@include small();
-			color: lighten(palette(primary, bodyText), 15%);
+			color: lighten(palette(primary, bodyText), 35%);
 			display: inline;
 
 			&:after {
@@ -104,16 +105,14 @@
 	}
 
 	&__links {
+		@include padding-t-xsm();
+		display: flex;
+		justify-content: space-between;
 
 		a {
-			@include link();
-			@include strong();
-			display: block;
-		}
-
-		[class*="fa"] {
-			@include margin-t-xsm();
-			font-size: rem($base-font-size * 1.6);
+			@include margin-r-sm();
+			display: inline-block;
+			width: 50%;
 		}
 
 	}

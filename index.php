@@ -43,25 +43,25 @@ include('data/_import.inc.php');
 										<li><?= $madeWithItem ?></li>
 									<?php endforeach; ?>
 								</ul>
-								<div class="item__links">
-									<?php if (isset($item->url)): ?>
-										<!-- <a class="item__link item__link--project" href="http://<?= $item->url; ?>" rel="noopener" target="_blank">
-											<?= icon('link'); ?>
-											View <span class="visuallyhidden"><?= $item->title; ?> </span>project<?= newTabWindowWarning(); ?>
-										</a> -->
-									<?php endif; ?>
-									<?php if (isset($item->github)): ?>
-										<a class="item__link item__link--project" href="http://www.github.com/simonhudson/<?= $item->github; ?>" rel="noopener" target="_blank">
-											<?= icon('github'); ?>
-											<span class="visuallyhidden">View <?= $item->title; ?> on Github<?= newTabWindowWarning(); ?></span>
-										</a>
-	                            	<?php endif; ?>
-								</div>
 							</div>
 							<div class="item__text">
 								<?php foreach($item->text as $textItem): ?>
 									<p><?= $textItem ?></p>
 								<?php endforeach; ?>
+							</div>
+							<div class="item__links">
+								<?php if (isset($item->url)): ?>
+									<a class="btn btn--secondary item__link item__link--project" href="http://<?= $item->url; ?>" rel="noopener" target="_blank">
+										<?= icon('link'); ?>
+										View <span class="visuallyhidden"><?= $item->title; ?> </span>project<?= newTabWindowWarning(); ?>
+									</a>
+								<?php endif; ?>
+								<?php if (isset($item->github)): ?>
+									<a class="btn btn--secondary item__link item__link--project" href="http://www.github.com/simonhudson/<?= $item->github; ?>" rel="noopener" target="_blank">
+										<?= icon('github'); ?>
+										View <span class="visuallyhidden"><?= $item->title; ?></span> on Github<?= newTabWindowWarning(); ?>
+									</a>
+								<?php endif; ?>
 							</div>
 						</div>
 					</div>
