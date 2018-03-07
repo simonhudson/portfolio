@@ -569,7 +569,7 @@ main {
   transition: all .5s ease-in-out;
   padding: 2rem 0 0 0; }
   .has-js main {
-    padding-top: 69px; }
+    padding-top: 97px; }
     @media (min-width: 768px) {
       .has-js main {
         padding-top: 115px; } }

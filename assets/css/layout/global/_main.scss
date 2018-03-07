@@ -8,7 +8,7 @@ main {
 	@include padding-t-sm();
 
 	.has-js & {
-		padding-top: $header-height;
+		padding-top: $header-height + $spacing-sm;
 
 		@include bp(tab-p) {
 			padding-top: $header-height-desktop + $spacing-sm;
