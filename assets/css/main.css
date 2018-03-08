@@ -547,7 +547,7 @@ select {
       overflow: hidden;
       position: absolute;
       width: 1px;
-      color: rgba(255, 255, 255, 0.4); }
+      color: rgba(255, 255, 255, 0.6); }
       @media (min-width: 768px) {
         .header__strap span {
           clip: rect(0 0 0 0);
@@ -626,8 +626,7 @@ main {
       width: 33.33333%; } }
   .item__info {
     margin: 0 0 1rem 0;
-    padding: 1rem 0;
-    border-top: 1px solid rgba(87, 87, 87, 0.1);
+    padding: 0 0 1rem 0;
     border-bottom: 1px solid rgba(87, 87, 87, 0.1); }
   @media (min-width: 768px) {
     .item__img {
@@ -655,6 +654,9 @@ main {
     font-weight: normal; }
   .item__content {
     padding: 0 1rem; }
+    @media (min-width: 768px) {
+      .item__content {
+        padding: 0 2rem; } }
   .item__made-with {
     list-style: none;
     margin: 0;

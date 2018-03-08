@@ -47,8 +47,8 @@
 
 	&__info {
 		@include margin-b-xs();
-		@include padding-y-xs();
-		border-top: 1px solid rgba(palette(primary, bodyText), .10);
+		@include padding-b-xs();
+		// border-top: 1px solid rgba(palette(primary, bodyText), .10);
 		border-bottom: 1px solid rgba(palette(primary, bodyText), .10);
 	}
 
@@ -80,6 +80,11 @@
 
 	&__content {
 		@include padding-x-xs();
+
+		@include bp(tab-p) {
+			@include padding-x-sm();
+		}
+
 	}
 
 	&__made-with {

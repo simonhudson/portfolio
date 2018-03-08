@@ -41,7 +41,7 @@
 
 		span {
 			@include visuallyhidden();
-			color: rgba(palette(primary, white), .4);
+			color: rgba(palette(primary, white), .6);
 
 			@include bp(tab-p) {
 				@include visuallyshown();
