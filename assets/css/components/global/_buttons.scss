@@ -16,7 +16,7 @@
 .btn {
 	@include center-text();
 	@include margin-b-sm();
-	@include padding-xsm();
+	@include padding-xs();
 	@include strong();
 	@include transition();
 	@include uppercase();

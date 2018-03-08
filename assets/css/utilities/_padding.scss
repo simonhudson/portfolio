@@ -6,13 +6,13 @@
 .padding-x { @include padding-x(); }
 .padding-y { @include padding-y(); }
 
-.padding-xsm { @include padding-xsm(); }
-.padding-t-xsm { @include padding-t-xsm(); }
-.padding-r-xsm { @include padding-r-xsm(); }
-.padding-b-xsm { @include padding-b-xsm(); }
-.padding-l-xsm { @include padding-l-xsm(); }
-.padding-x-xsm { @include padding-x-xsm(); }
-.padding-y-xsm { @include padding-y-xsm(); }
+.padding-xs { @include padding-xs(); }
+.padding-t-xs { @include padding-t-xs(); }
+.padding-r-xs { @include padding-r-xs(); }
+.padding-b-xs { @include padding-b-xs(); }
+.padding-l-xs { @include padding-l-xs(); }
+.padding-x-xs { @include padding-x-xs(); }
+.padding-y-xs { @include padding-y-xs(); }
 
 .padding-sm { @include padding-sm(); }
 .padding-t-sm { @include padding-t-sm(); }
@@ -30,10 +30,10 @@
 .padding-x-lg { @include padding-x-lg(); }
 .padding-y-lg { @include padding-y-lg(); }
 
-.padding-xlg { @include padding-xlg(); }
-.padding-t-xlg { @include padding-t-xlg(); }
-.padding-r-xlg { @include padding-r-xlg(); }
-.padding-b-xlg { @include padding-b-xlg(); }
-.padding-l-xlg { @include padding-l-xlg(); }
-.padding-x-xlg { @include padding-x-xlg(); }
-.padding-y-xlg { @include padding-y-xlg(); }
+.padding-xl { @include padding-xl(); }
+.padding-t-xl { @include padding-t-xl(); }
+.padding-r-xl { @include padding-r-xl(); }
+.padding-b-xl { @include padding-b-xl(); }
+.padding-l-xl { @include padding-l-xl(); }
+.padding-x-xl { @include padding-x-xl(); }
+.padding-y-xl { @include padding-y-xl(); }

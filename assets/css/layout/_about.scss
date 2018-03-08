@@ -54,7 +54,7 @@
 		}
 
 		.fa {
-			@include margin-r-xsm();
+			@include margin-r-xs();
 			font-size: rem($base-font-size * 2);
 			vertical-align: middle;
 		}

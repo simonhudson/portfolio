@@ -6,13 +6,13 @@
 .margin-x { @include margin-x(); }
 .margin-y { @include margin-y(); }
 
-.margin-xsm { @include margin-xsm(); }
-.margin-t-xsm { @include margin-t-xsm(); }
-.margin-r-xsm { @include margin-r-xsm(); }
-.margin-b-xsm { @include margin-b-xsm(); }
-.margin-l-xsm { @include margin-l-xsm(); }
-.margin-x-xsm { @include margin-x-xsm(); }
-.margin-y-xsm { @include margin-y-xsm(); }
+.margin-xs { @include margin-xs(); }
+.margin-t-xs { @include margin-t-xs(); }
+.margin-r-xs { @include margin-r-xs(); }
+.margin-b-xs { @include margin-b-xs(); }
+.margin-l-xs { @include margin-l-xs(); }
+.margin-x-xs { @include margin-x-xs(); }
+.margin-y-xs { @include margin-y-xs(); }
 
 .margin-sm { @include margin-sm(); }
 .margin-t-sm { @include margin-t-sm(); }
@@ -30,10 +30,10 @@
 .margin-x-lg { @include margin-x-lg(); }
 .margin-y-lg { @include margin-y-lg(); }
 
-.margin-xlg { @include margin-xlg(); }
-.margin-t-xlg { @include margin-t-xlg(); }
-.margin-r-xlg { @include margin-r-xlg(); }
-.margin-b-xlg { @include margin-b-xlg(); }
-.margin-l-xlg { @include margin-l-xlg(); }
-.margin-x-xlg { @include margin-x-xlg(); }
-.margin-y-xlg { @include margin-y-xlg(); }
+.margin-xl { @include margin-xl(); }
+.margin-t-xl { @include margin-t-xl(); }
+.margin-r-xl { @include margin-r-xl(); }
+.margin-b-xl { @include margin-b-xl(); }
+.margin-l-xl { @include margin-l-xl(); }
+.margin-x-xl { @include margin-x-xl(); }
+.margin-y-xl { @include margin-y-xl(); }

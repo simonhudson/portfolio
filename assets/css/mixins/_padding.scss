@@ -1,10 +1,10 @@
-@mixin padding-xsm() { padding: rem($spacing-xsm); }
-@mixin padding-t-xsm() { padding: rem($spacing-xsm) 0 0 0; }
-@mixin padding-r-xsm() { padding: 0 rem($spacing-xsm) 0 0; }
-@mixin padding-b-xsm() { padding: 0 0 rem($spacing-xsm) 0; }
-@mixin padding-l-xsm() { padding: 0 0 0 rem($spacing-xsm); }
-@mixin padding-x-xsm() { padding: 0 rem($spacing-xsm); }
-@mixin padding-y-xsm() { padding: rem($spacing-xsm) 0; }
+@mixin padding-xs() { padding: rem($spacing-xs); }
+@mixin padding-t-xs() { padding: rem($spacing-xs) 0 0 0; }
+@mixin padding-r-xs() { padding: 0 rem($spacing-xs) 0 0; }
+@mixin padding-b-xs() { padding: 0 0 rem($spacing-xs) 0; }
+@mixin padding-l-xs() { padding: 0 0 0 rem($spacing-xs); }
+@mixin padding-x-xs() { padding: 0 rem($spacing-xs); }
+@mixin padding-y-xs() { padding: rem($spacing-xs) 0; }
 
 @mixin padding-sm() { padding: rem($spacing-sm); }
 @mixin padding-t-sm() { padding: rem($spacing-sm) 0 0 0; }
@@ -30,10 +30,10 @@
 @mixin padding-x-lg() { padding: 0 rem($spacing-lg); }
 @mixin padding-y-lg() { padding: rem($spacing-lg) 0; }
 
-@mixin padding-xlg() { padding: rem($spacing-lg); }
-@mixin padding-t-xlg() { padding: rem($spacing-xlg) 0 0 0; }
-@mixin padding-r-xlg() { padding: 0 rem($spacing-xlg) 0 0; }
-@mixin padding-b-xlg() { padding: 0 0 rem($spacing-xlg) 0; }
-@mixin padding-l-xlg() { padding: 0 0 0 rem($spacing-xlg); }
-@mixin padding-x-xlg() { padding: 0 rem($spacing-xlg); }
-@mixin padding-y-xlg() { padding: rem($spacing-xlg) 0; }
+@mixin padding-xl() { padding: rem($spacing-lg); }
+@mixin padding-t-xl() { padding: rem($spacing-xl) 0 0 0; }
+@mixin padding-r-xl() { padding: 0 rem($spacing-xl) 0 0; }
+@mixin padding-b-xl() { padding: 0 0 rem($spacing-xl) 0; }
+@mixin padding-l-xl() { padding: 0 0 0 rem($spacing-xl); }
+@mixin padding-x-xl() { padding: 0 rem($spacing-xl); }
+@mixin padding-y-xl() { padding: rem($spacing-xl) 0; }

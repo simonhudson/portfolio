@@ -278,25 +278,25 @@ select {
 .padding-y {
   padding: 4rem 0; }
 
-.padding-xsm {
+.padding-xs {
   padding: 1rem; }
 
-.padding-t-xsm {
+.padding-t-xs {
   padding: 1rem 0 0 0; }
 
-.padding-r-xsm {
+.padding-r-xs {
   padding: 0 1rem 0 0; }
 
-.padding-b-xsm {
+.padding-b-xs {
   padding: 0 0 1rem 0; }
 
-.padding-l-xsm {
+.padding-l-xs {
   padding: 0 0 0 1rem; }
 
-.padding-x-xsm {
+.padding-x-xs {
   padding: 0 1rem; }
 
-.padding-y-xsm {
+.padding-y-xs {
   padding: 1rem 0; }
 
 .padding-sm {
@@ -341,25 +341,25 @@ select {
 .padding-y-lg {
   padding: 8rem 0; }
 
-.padding-xlg {
+.padding-xl {
   padding: 8rem; }
 
-.padding-t-xlg {
+.padding-t-xl {
   padding: 16rem 0 0 0; }
 
-.padding-r-xlg {
+.padding-r-xl {
   padding: 0 16rem 0 0; }
 
-.padding-b-xlg {
+.padding-b-xl {
   padding: 0 0 16rem 0; }
 
-.padding-l-xlg {
+.padding-l-xl {
   padding: 0 0 0 16rem; }
 
-.padding-x-xlg {
+.padding-x-xl {
   padding: 0 16rem; }
 
-.padding-y-xlg {
+.padding-y-xl {
   padding: 16rem 0; }
 
 .margin {
@@ -383,25 +383,25 @@ select {
 .margin-y {
   margin: 4rem 0; }
 
-.margin-xsm {
+.margin-xs {
   margin: 1rem; }
 
-.margin-t-xsm {
+.margin-t-xs {
   margin: 1rem 0 0 0; }
 
-.margin-r-xsm {
+.margin-r-xs {
   margin: 0 1rem 0 0; }
 
-.margin-b-xsm {
+.margin-b-xs {
   margin: 0 0 1rem 0; }
 
-.margin-l-xsm {
+.margin-l-xs {
   margin: 0 0 0 1rem; }
 
-.margin-x-xsm {
+.margin-x-xs {
   margin: 0 1rem; }
 
-.margin-y-xsm {
+.margin-y-xs {
   margin: 1rem 0; }
 
 .margin-sm {
@@ -446,25 +446,25 @@ select {
 .margin-y-lg {
   margin: 8rem 0; }
 
-.margin-xlg {
+.margin-xl {
   margin: 8rem; }
 
-.margin-t-xlg {
+.margin-t-xl {
   margin: 16rem 0 0 0; }
 
-.margin-r-xlg {
+.margin-r-xl {
   margin: 0 16rem 0 0; }
 
-.margin-b-xlg {
+.margin-b-xl {
   margin: 0 0 16rem 0; }
 
-.margin-l-xlg {
+.margin-l-xl {
   margin: 0 0 0 16rem; }
 
-.margin-x-xlg {
+.margin-x-xl {
   margin: 0 16rem; }
 
-.margin-y-xlg {
+.margin-y-xl {
   margin: 16rem 0; }
 
 .center-text {
@@ -654,7 +654,7 @@ main {
     font-family: "opensans_semibold", "opensans_regular", arial, helvetica, sans-serif;
     font-weight: normal; }
   .item__content {
-    padding: 0 2rem; }
+    padding: 0 1rem; }
   .item__made-with {
     list-style: none;
     margin: 0;

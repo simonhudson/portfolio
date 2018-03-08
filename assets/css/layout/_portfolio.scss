@@ -46,8 +46,8 @@
 	}
 
 	&__info {
-		@include margin-b-xsm();
-		@include padding-y-xsm();
+		@include margin-b-xs();
+		@include padding-y-xs();
 		border-top: 1px solid rgba(palette(primary, bodyText), .10);
 		border-bottom: 1px solid rgba(palette(primary, bodyText), .10);
 	}
@@ -59,7 +59,7 @@
 		}
 
 		img {
-			@include margin-b-xsm();
+			@include margin-b-xs();
 			@include width-full();
 			height:auto;
 			opacity: 0.5;
@@ -79,7 +79,7 @@
 	}
 
 	&__content {
-		@include padding-x-sm();
+		@include padding-x-xs();
 	}
 
 	&__made-with {
@@ -105,7 +105,7 @@
 	}
 
 	&__links {
-		@include padding-t-xsm();
+		@include padding-t-xs();
 		display: flex;
 		justify-content: space-between;
 

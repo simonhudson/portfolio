@@ -14,7 +14,7 @@
 	}
 
 	&__wrap {
-		@include padding-xsm();
+		@include padding-xs();
 		@include transition();
 		align-items: center;
 		display: flex;
