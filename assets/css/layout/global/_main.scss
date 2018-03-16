@@ -1,6 +1,7 @@
 body {
 	@include transition();
 	background: palette(primary, white);
+	border-bottom: 5px solid palette(primary, a);
 }
 
 main {

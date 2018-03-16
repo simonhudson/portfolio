@@ -53,7 +53,7 @@ small,
 h1, .faux-h1 {
   color: #575757;
   font-weight: 300;
-  line-height: 1.2em;
+  line-height: 1.4em;
   margin-bottom: 1em;
   font-size: 2rem; }
   @media (min-width: 1024px) {
@@ -63,7 +63,7 @@ h1, .faux-h1 {
 h2, .faux-h2 {
   color: #575757;
   font-weight: 300;
-  line-height: 1.2em;
+  line-height: 1.4em;
   margin-bottom: 1em;
   font-size: 1.8rem; }
   @media (min-width: 1024px) {
@@ -73,7 +73,7 @@ h2, .faux-h2 {
 h3, .faux-h3 {
   color: #575757;
   font-weight: 300;
-  line-height: 1.2em;
+  line-height: 1.4em;
   margin-bottom: 1em;
   font-size: 1.6rem; }
   @media (min-width: 1024px) {
@@ -83,7 +83,7 @@ h3, .faux-h3 {
 h4, .faux-h4 {
   color: #575757;
   font-weight: 300;
-  line-height: 1.2em;
+  line-height: 1.4em;
   margin-bottom: 1em;
   font-size: 1.4rem; }
   @media (min-width: 1024px) {
@@ -93,7 +93,7 @@ h4, .faux-h4 {
 h5, .faux-h5 {
   color: #575757;
   font-weight: 300;
-  line-height: 1.2em;
+  line-height: 1.4em;
   margin-bottom: 1em;
   font-size: 1.2rem; }
   @media (min-width: 1024px) {
@@ -103,7 +103,7 @@ h5, .faux-h5 {
 h6, .faux-h6 {
   color: #575757;
   font-weight: 300;
-  line-height: 1.2em;
+  line-height: 1.4em;
   margin-bottom: 1em;
   font-size: 1rem; }
 
@@ -140,7 +140,7 @@ fieldset {
 legend {
   color: #575757;
   font-weight: 300;
-  line-height: 1.2em;
+  line-height: 1.4em;
   margin-bottom: 1em;
   font-size: 1.6rem; }
   @media (min-width: 1024px) {
@@ -583,7 +583,8 @@ select {
 
 body {
   transition: all .5s ease-in-out;
-  background: white; }
+  background: white;
+  border-bottom: 5px solid #eeb320; }
 
 main {
   transition: all .5s ease-in-out;
@@ -619,10 +620,11 @@ main {
       display: inline-block;
       height: auto;
       margin: 0 auto;
-      width: 15rem; }
+      width: 10rem; }
   .about__text {
     padding-bottom: 2rem; }
   .about__links {
+    width: 100%;
     list-style: none;
     padding: 0; }
   .about__link a {
@@ -660,7 +662,7 @@ main {
   .item__title {
     color: #575757;
     font-weight: 300;
-    line-height: 1.2em;
+    line-height: 1.4em;
     margin-bottom: 1em;
     font-size: 1.2rem;
     font-family: "opensans_semibold", "opensans_regular", arial, helvetica, sans-serif;

@@ -81,7 +81,7 @@ include('data/_import.inc.php');
 				<li class="about__link">
 					<a class="btn btn--hollow" href="<?= $root; ?>Simon_Hudson_CV.pdf" rel="noopener" target="_blank">
 						<?= icon('file-pdf-o'); ?>
-						Download my CV
+						Download CV
 						<small>(PDF, <?= formatBytes(filesize('Simon_Hudson_CV.pdf')); ?>)</small>
 						<?= newTabWindowWarning(); ?>
 					</a>
@@ -96,7 +96,7 @@ include('data/_import.inc.php');
 				<li class="about__link">
 					<a class="btn btn--hollow" href="http://stackoverflow.com/story/simonhudson" rel="noopener" target="_blank">
 						<?= icon('stack-overflow'); ?>
-						Stack Overflow Developer Story
+						<span class="visuallyhidden">Stack Overflow </span>Developer Story
 						<?= newTabWindowWarning(); ?>
 					</a>
 				</li>

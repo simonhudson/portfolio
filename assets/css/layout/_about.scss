@@ -20,7 +20,7 @@
 			display: inline-block;
 			height: auto;
 			margin: 0 auto;
-			width:rem($base-font-size * 15);
+			width:rem($base-font-size * 10);
 		}
 
 	}
@@ -30,6 +30,7 @@
 	}
 
 	&__links {
+		@include width-full();
 		list-style:none;
 		padding:0;
 
