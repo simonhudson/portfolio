@@ -1,10 +1,23 @@
 .about {
-	@include center-text();
 	@include padding-y-sm();
 	@include padding-x-xs();
 	background: rgba(palette(primary, bodyText), .05);
 	display: flex;
 	flex-wrap: wrap;
+
+	@include bp(tab-l) {
+		@include padding-x-sm();
+	    flex-wrap: nowrap;
+	}
+
+	&__content {
+		@include center-text();
+
+		@include bp(tab-l) {
+			display: flex;
+		}
+
+	}
 
 	&__img {
 		@include padding-b-sm();
@@ -27,6 +40,15 @@
 
 	&__text {
 		@include padding-b-sm();
+
+		@include bp(tab-l) {
+	    	text-align: left;
+		}
+
+		@include bp(tab-l) {
+		    @include padding-x-sm();
+		}
+
 	}
 
 	&__links {
@@ -34,8 +56,15 @@
 		list-style:none;
 		padding:0;
 
-		@include bp(tab-l) {
+		@include bp(tab-p) {
+			display: flex;
+			justify-content: space-between;
 		}
+
+		@include bp(tab-l) {
+	    	display: block;
+		}
+
 	}
 
 	&__link {
