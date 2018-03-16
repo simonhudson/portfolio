@@ -42,9 +42,15 @@
 	}
 
 	&--hollow {
-		background-color: palette(primary, white);
-		border: 1px solid palette(primary, a);
-		color: palette(primary, a);
+		
+		&,
+		&:hover,
+		&:focus {
+			background-color: transparent;
+			border: 1px solid palette(primary, a);
+			color: palette(primary, a);
+		}
+
 	}
 
 	&--has-icon {

@@ -118,6 +118,10 @@
 			@include margin-r-sm();
 			display: inline-block;
 			width: 50%;
+
+			&:last-of-type {
+				margin-right: 0;
+			}
 		}
 
 	}

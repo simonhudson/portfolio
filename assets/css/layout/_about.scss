@@ -1,5 +1,7 @@
 .about {
-	@include padding();
+	@include center-text();
+	@include padding-y-sm();
+	@include padding-x-xs();
 	background: rgba(palette(primary, bodyText), .05);
 	display: flex;
 	flex-wrap: wrap;
@@ -24,15 +26,12 @@
 	}
 
 	&__text {
-		@include padding-b();
-
-		@include bp(tab-l) {
-
-		}
+		@include padding-b-sm();
 	}
 
 	&__links {
 		list-style:none;
+		padding:0;
 
 		@include bp(tab-l) {
 		}
@@ -41,16 +40,7 @@
 	&__link {
 
 		a {
-			@include padding-sm();
 			display:block;
-
-			&:hover,
-			&:focus {
-				@include transition();
-				background: rgba(palette(primary, a), .05);
-				text-decoration: none;
-			}
-
 		}
 
 		.fa {

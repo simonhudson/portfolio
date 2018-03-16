@@ -109,7 +109,7 @@ h6, .faux-h6 {
 
 ul,
 ol {
-  margin: 0 0 2rem 0;
+  margin-bottom: 2rem;
   padding-left: 1.25rem; }
   ul ul,
   ul ol,
@@ -261,218 +261,238 @@ select {
   padding: 4rem; }
 
 .padding-t {
-  padding: 4rem 0 0 0; }
+  padding-top: 4rem; }
 
 .padding-r {
-  padding: 0 4rem 0 0; }
+  padding-right: 4rem; }
 
 .padding-b {
-  padding: 0 0 4rem 0; }
+  padding-bottom: 4rem; }
 
 .padding-l {
-  padding: 0 0 0 4rem; }
+  padding-left: 4rem; }
 
 .padding-x {
-  padding: 0 4rem; }
+  padding-right: 4rem;
+  padding-left: 4rem; }
 
 .padding-y {
-  padding: 4rem 0; }
+  padding-top: 4rem;
+  padding-bottom: 4rem; }
 
 .padding-xs {
   padding: 1rem; }
 
 .padding-t-xs {
-  padding: 1rem 0 0 0; }
+  padding-top: 1rem; }
 
 .padding-r-xs {
-  padding: 0 1rem 0 0; }
+  padding-right: 1rem; }
 
 .padding-b-xs {
-  padding: 0 0 1rem 0; }
+  padding-bottom: 1rem; }
 
 .padding-l-xs {
-  padding: 0 0 0 1rem; }
+  padding-left: 1rem; }
 
 .padding-x-xs {
-  padding: 0 1rem; }
+  padding-right: 1rem;
+  padding-left: 1rem; }
 
 .padding-y-xs {
-  padding: 1rem 0; }
+  padding-top: 1rem;
+  padding-bottom: 1rem; }
 
 .padding-sm {
   padding: 2rem; }
 
 .padding-t-sm {
-  padding: 2rem 0 0 0; }
+  padding-top: 2rem; }
 
 .padding-r-sm {
-  padding: 0 2rem 0 0; }
+  padding-right: 2rem; }
 
 .padding-b-sm {
-  padding: 0 0 2rem 0; }
+  padding-bottom: 2rem; }
 
 .padding-l-sm {
-  padding: 0 0 0 2rem; }
+  padding-left: 2rem; }
 
 .padding-x-sm {
-  padding: 0 2rem; }
+  padding-right: 2rem;
+  padding-left: 2rem; }
 
 .padding-y-sm {
-  padding: 2rem 0; }
+  padding-top: 2rem;
+  padding-bottom: 2rem; }
 
 .padding-lg {
   padding: 8rem; }
 
 .padding-t-lg {
-  padding: 8rem 0 0 0; }
+  padding-top: 8rem; }
 
 .padding-r-lg {
-  padding: 0 8rem 0 0; }
+  padding-right: 8rem; }
 
 .padding-b-lg {
-  padding: 0 0 8rem 0; }
+  padding-bottom: 8rem; }
 
 .padding-l-lg {
-  padding: 0 0 0 8rem; }
+  padding-left: 8rem; }
 
 .padding-x-lg {
-  padding: 0 8rem; }
+  padding-right: 8rem;
+  padding-left: 8rem; }
 
 .padding-y-lg {
-  padding: 8rem 0; }
+  padding-top: 8rem;
+  padding-bottom: 8rem; }
 
 .padding-xl {
-  padding: 8rem; }
+  padding: 16rem; }
 
 .padding-t-xl {
-  padding: 16rem 0 0 0; }
+  padding-top: 16rem; }
 
 .padding-r-xl {
-  padding: 0 16rem 0 0; }
+  padding-right: 16rem; }
 
 .padding-b-xl {
-  padding: 0 0 16rem 0; }
+  padding-bottom: 16rem; }
 
 .padding-l-xl {
-  padding: 0 0 0 16rem; }
+  padding-left: 16rem; }
 
 .padding-x-xl {
-  padding: 0 16rem; }
+  padding-right: 16rem;
+  padding-left: 16rem; }
 
 .padding-y-xl {
-  padding: 16rem 0; }
+  padding-top: 16rem;
+  padding-bottom: 16rem; }
 
 .margin {
   margin: 4rem; }
 
 .margin-t {
-  margin: 4rem 0 0 0; }
+  margin-top: 4rem; }
 
 .margin-r {
-  margin: 0 4rem 0 0; }
+  margin-right: 4rem; }
 
 .margin-b {
-  margin: 0 0 4rem 0; }
+  margin-bottom: 4rem; }
 
 .margin-l {
-  margin: 0 0 0 4rem; }
+  margin-left: 4rem; }
 
 .margin-x {
-  margin: 0 4rem; }
+  margin-right: 4rem;
+  margin-left: 4rem; }
 
 .margin-y {
-  margin: 4rem 0; }
+  margin-top: 4rem;
+  margin-bottom: 4rem; }
 
 .margin-xs {
   margin: 1rem; }
 
 .margin-t-xs {
-  margin: 1rem 0 0 0; }
+  margin-top: 1rem; }
 
 .margin-r-xs {
-  margin: 0 1rem 0 0; }
+  margin-right: 1rem; }
 
 .margin-b-xs {
-  margin: 0 0 1rem 0; }
+  margin-bottom: 1rem; }
 
 .margin-l-xs {
-  margin: 0 0 0 1rem; }
+  margin-left: 1rem; }
 
 .margin-x-xs {
-  margin: 0 1rem; }
+  margin-right: 1rem;
+  margin-left: 1rem; }
 
 .margin-y-xs {
-  margin: 1rem 0; }
+  margin-top: 1rem;
+  margin-bottom: 1rem; }
 
 .margin-sm {
   margin: 2rem; }
 
 .margin-t-sm {
-  margin: 2rem 0 0 0; }
+  margin-top: 2rem; }
 
 .margin-r-sm {
-  margin: 0 2rem 0 0; }
+  margin-right: 2rem; }
 
 .margin-b-sm {
-  margin: 0 0 2rem 0; }
+  margin-bottom: 2rem; }
 
 .margin-l-sm {
-  margin: 0 0 0 2rem; }
+  margin-left: 2rem; }
 
 .margin-x-sm {
-  margin: 0 2rem; }
+  margin-right: 2rem;
+  margin-left: 2rem; }
 
 .margin-y-sm {
-  margin: 2rem 0; }
+  margin-top: 2rem;
+  margin-bottom: 2rem; }
 
 .margin-lg {
   margin: 8rem; }
 
 .margin-t-lg {
-  margin: 8rem 0 0 0; }
+  margin-top: 8rem; }
 
 .margin-r-lg {
-  margin: 0 8rem 0 0; }
+  margin-right: 8rem; }
 
 .margin-b-lg {
-  margin: 0 0 8rem 0; }
+  margin-bottom: 8rem; }
 
 .margin-l-lg {
-  margin: 0 0 0 8rem; }
+  margin-left: 8rem; }
 
 .margin-x-lg {
-  margin: 0 8rem; }
+  margin-right: 8rem;
+  margin-left: 8rem; }
 
 .margin-y-lg {
-  margin: 8rem 0; }
+  margin-top: 8rem;
+  margin-bottom: 8rem; }
 
 .margin-xl {
-  margin: 8rem; }
+  margin: 16rem; }
 
 .margin-t-xl {
-  margin: 16rem 0 0 0; }
+  margin-top: 16rem; }
 
 .margin-r-xl {
-  margin: 0 16rem 0 0; }
+  margin-right: 16rem; }
 
 .margin-b-xl {
-  margin: 0 0 16rem 0; }
+  margin-bottom: 16rem; }
 
 .margin-l-xl {
-  margin: 0 0 0 16rem; }
+  margin-left: 16rem; }
 
 .margin-x-xl {
-  margin: 0 16rem; }
+  margin-right: 16rem;
+  margin-left: 16rem; }
 
 .margin-y-xl {
-  margin: 16rem 0; }
+  margin-top: 16rem;
+  margin-bottom: 16rem; }
 
 .center-text {
   text-align: center; }
 
 .btn {
   text-align: center;
-  margin: 0 0 2rem 0;
+  margin-bottom: 2rem;
   padding: 1rem;
   font-family: "opensans_semibold", "opensans_regular", arial, helvetica, sans-serif;
   font-weight: normal;
@@ -494,8 +514,8 @@ select {
     background-color: #cb9610;
     color: #fff;
     text-decoration: none; }
-  .btn--hollow {
-    background-color: white;
+  .btn--hollow, .btn--hollow:hover, .btn--hollow:focus {
+    background-color: transparent;
     border: 1px solid #eeb320;
     color: #eeb320; }
   .btn--has-icon {
@@ -567,7 +587,7 @@ body {
 
 main {
   transition: all .5s ease-in-out;
-  padding: 2rem 0 0 0; }
+  padding-top: 2rem; }
   .has-js main {
     padding-top: 97px; }
     @media (min-width: 768px) {
@@ -581,12 +601,16 @@ main {
     margin-left: auto; } }
 
 .about {
-  padding: 4rem;
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
   background: rgba(87, 87, 87, 0.05);
   display: flex;
   flex-wrap: wrap; }
   .about__img {
-    padding: 0 0 2rem 0;
+    padding-bottom: 2rem;
     width: 100%; }
     .about__img img {
       border: 3px solid white;
@@ -597,18 +621,14 @@ main {
       margin: 0 auto;
       width: 15rem; }
   .about__text {
-    padding: 0 0 4rem 0; }
+    padding-bottom: 2rem; }
   .about__links {
-    list-style: none; }
+    list-style: none;
+    padding: 0; }
   .about__link a {
-    padding: 2rem;
     display: block; }
-    .about__link a:hover, .about__link a:focus {
-      transition: all .5s ease-in-out;
-      background: rgba(238, 179, 32, 0.05);
-      text-decoration: none; }
   .about__link .fa {
-    margin: 0 1rem 0 0;
+    margin-right: 1rem;
     font-size: 2rem;
     vertical-align: middle; }
 
@@ -617,7 +637,7 @@ main {
   flex-wrap: wrap; }
 
 .item {
-  padding: 0 0 4rem 0; }
+  padding-bottom: 4rem; }
   @media (min-width: 768px) {
     .item {
       width: 50%; } }
@@ -625,14 +645,15 @@ main {
     .item {
       width: 33.33333%; } }
   .item__info {
-    margin: 0 0 1rem 0;
-    padding: 0 0 1rem 0;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
     border-bottom: 1px solid rgba(87, 87, 87, 0.1); }
   @media (min-width: 768px) {
     .item__img {
-      padding: 0 2rem; } }
+      padding-right: 2rem;
+      padding-left: 2rem; } }
   .item__img img {
-    margin: 0 0 1rem 0;
+    margin-bottom: 1rem;
     width: 100%;
     height: auto;
     opacity: 0.5; }
@@ -653,10 +674,12 @@ main {
     font-family: "opensans_semibold", "opensans_regular", arial, helvetica, sans-serif;
     font-weight: normal; }
   .item__content {
-    padding: 0 1rem; }
+    padding-right: 1rem;
+    padding-left: 1rem; }
     @media (min-width: 768px) {
       .item__content {
-        padding: 0 2rem; } }
+        padding-right: 2rem;
+        padding-left: 2rem; } }
   .item__made-with {
     list-style: none;
     margin: 0;
@@ -670,13 +693,15 @@ main {
       .item__made-with li:last-of-type:after {
         content: ''; }
   .item__links {
-    padding: 1rem 0 0 0;
+    padding-top: 1rem;
     display: flex;
     justify-content: space-between; }
     .item__links a {
-      margin: 0 2rem 0 0;
+      margin-right: 2rem;
       display: inline-block;
       width: 50%; }
+      .item__links a:last-of-type {
+        margin-right: 0; }
 
 .btn-row {
   display: flex;
