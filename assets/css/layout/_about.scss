@@ -1,5 +1,5 @@
 .about {
-	@include padding-y-sm();
+	@include padding-y();
 	@include padding-x-xs();
 	background: rgba(palette(primary, bodyText), .05);
 	display: flex;
@@ -10,20 +10,14 @@
 	    flex-wrap: nowrap;
 	}
 
-	&__content {
-		@include center-text();
-
-		@include bp(tab-l) {
-			display: flex;
-		}
-
-	}
-
 	&__img {
+		@include center-text();
 		@include padding-b-sm();
 		@include width-full();
 
 		@include bp(tab-l) {
+			padding-bottom: 0;
+			width: 25%;
 		}
 
 		img {
@@ -34,6 +28,11 @@
 			height: auto;
 			margin: 0 auto;
 			width:rem($base-font-size * 10);
+
+			@include bp(tab-l) {
+			    width:rem($base-font-size * 15);
+			}
+
 		}
 
 	}
@@ -42,11 +41,9 @@
 		@include padding-b-sm();
 
 		@include bp(tab-l) {
-	    	text-align: left;
-		}
-
-		@include bp(tab-l) {
-		    @include padding-x-sm();
+			padding-bottom: 0;
+			text-align: left;
+			width: 50%;
 		}
 
 	}
@@ -54,6 +51,7 @@
 	&__links {
 		@include width-full();
 		list-style:none;
+		margin: 0;
 		padding:0;
 
 		@include bp(tab-p) {
@@ -61,16 +59,21 @@
 			justify-content: space-between;
 		}
 
-		@include bp(tab-l) {
-	    	display: block;
-		}
-
 	}
 
 	&__link {
+		@include margin-b-sm();
+		
+		@include bp(tab-l) {
+			display: inline-block;
+		}
+
+		&:last-of-type {
+			margin-bottom: 0;
+		}
 
 		a {
-			display:block;
+			display: block;
 		}
 
 		.fa {

@@ -68,23 +68,23 @@ $portfolio = (object) array(
             'Government API'
         )
     ),
-    'steve-bloomers-watching' => (object) array(
-        'slug'      => 'steve-bloomers-watching',
-        'title'     => 'Steve Bloomer\'s Watching',
-        'client'    => 'Personal project',
-        'text'      => (object) array(
-            'As a season ticket holder at Derby County FC (for my sins!), I decided to create a blog in which to write match reports and articles on the club. The blog uses the basic WordPress engine which has been ripped out and integrated into a custom <abbr title="Hypertext Markup Language">HTML</abbr>5 template. The site also makes use of <abbr title="Cascading Style Sheets">CSS</abbr> media queries to enable a responsive layout across devices.'
-        ),
-        'url'       => 'www.stevebloomerswatching.com',
-        'github'    => '',
-        'madewith'  => (object) array(
-            'HTML',
-            'CSS',
-            'JavaScript/jQuery',
-            'WordPress',
-            'Photoshop'
-        )
-    ),
+    // 'steve-bloomers-watching' => (object) array(
+    //     'slug'      => 'steve-bloomers-watching',
+    //     'title'     => 'Steve Bloomer\'s Watching',
+    //     'client'    => 'Personal project',
+    //     'text'      => (object) array(
+    //         'As a season ticket holder at Derby County FC (for my sins!), I decided to create a blog in which to write match reports and articles on the club. The blog uses the basic WordPress engine which has been ripped out and integrated into a custom <abbr title="Hypertext Markup Language">HTML</abbr>5 template. The site also makes use of <abbr title="Cascading Style Sheets">CSS</abbr> media queries to enable a responsive layout across devices.'
+    //     ),
+    //     'url'       => 'www.stevebloomerswatching.com',
+    //     'github'    => '',
+    //     'madewith'  => (object) array(
+    //         'HTML',
+    //         'CSS',
+    //         'JavaScript/jQuery',
+    //         'WordPress',
+    //         'Photoshop'
+    //     )
+    // ),
     'nhs-choices' => (object) array(
         'slug'      => 'nhs-choices',
         'title'     => 'NHS Choices',

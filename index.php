@@ -70,39 +70,37 @@ include('data/_import.inc.php');
 		</main>
 
 		<footer class="about">
-			<div class="about__content">
-				<div class="about__img">
-					<img alt="Simon Hudson" src="<?= $paths->imgs ?>self.png"/>
-				</div>
-				<div class="about__text">
-					<h2 class="faux-h3">Hello, my name's Simon and I build websites.</h2>
-					<p>I am an experienced web designer/front-end developer who specialises in writing lean, standards-compliant <abbr title="eXtensible Hypertext Markup Language">(X)HTML</abbr>, <abbr title="Cascading Style Sheets">CSS</abbr> and JavaScript to create accessible and usable websites. I have a strong understanding of <abbr title="Web Content Accessibility Guidelines">WCAG</abbr> and <abbr title="Web Accessibility Initiative">WAI</abbr> requirements, W3C standards, browser quirks and progressive enhancement/graceful degradation, as well as experience developing for assistive technologies.</p>
-				</div>
+			<div class="about__img">
+				<img alt="Simon Hudson" src="<?= $paths->imgs ?>self.png"/>
 			</div>
-			<ul class="about__links">
-				<li class="about__link">
-					<a class="btn btn--hollow" href="<?= $root; ?>Simon_Hudson_CV.pdf" rel="noopener" target="_blank">
-						<?= icon('file-pdf-o'); ?>
-						Download CV
-						<small>(PDF, <?= formatBytes(filesize('Simon_Hudson_CV.pdf')); ?>)</small>
-						<?= newTabWindowWarning(); ?>
-					</a>
-				</li>
-				<li class="about__link">
-					<a class="btn btn--hollow" href="https://github.com/simonhudson?tab=repositories" rel="noopener" target="_blank">
-						<?= icon('github'); ?>
-						Github profile
-						<?= newTabWindowWarning(); ?>
-					</a>
-				</li>
-				<li class="about__link">
-					<a class="btn btn--hollow" href="http://stackoverflow.com/story/simonhudson" rel="noopener" target="_blank">
-						<?= icon('stack-overflow'); ?>
-						<span class="visuallyhidden">Stack Overflow </span>Developer Story
-						<?= newTabWindowWarning(); ?>
-					</a>
-				</li>
-			</ul>
+			<div class="about__text">
+				<h2 class="faux-h3">Hello, my name's Simon and I build websites.</h2>
+				<p>I am an experienced web designer/front-end developer who specialises in writing lean, standards-compliant <abbr title="eXtensible Hypertext Markup Language">(X)HTML</abbr>, <abbr title="Cascading Style Sheets">CSS</abbr> and JavaScript to create accessible and usable websites. I have a strong understanding of <abbr title="Web Content Accessibility Guidelines">WCAG</abbr> and <abbr title="Web Accessibility Initiative">WAI</abbr> requirements, W3C standards, browser quirks and progressive enhancement/graceful degradation, as well as experience developing for assistive technologies.</p>
+				<ul class="about__links">
+					<li class="about__link">
+						<a class="btn btn--hollow" href="<?= $root; ?>Simon_Hudson_CV.pdf" rel="noopener" target="_blank">
+							<?= icon('file-pdf-o'); ?>
+							Download CV
+							<small>(PDF, <?= formatBytes(filesize('Simon_Hudson_CV.pdf')); ?>)</small>
+							<?= newTabWindowWarning(); ?>
+						</a>
+					</li>
+					<li class="about__link">
+						<a class="btn btn--hollow" href="https://github.com/simonhudson?tab=repositories" rel="noopener" target="_blank">
+							<?= icon('github'); ?>
+							Github profile
+							<?= newTabWindowWarning(); ?>
+						</a>
+					</li>
+					<li class="about__link">
+						<a class="btn btn--hollow" href="http://stackoverflow.com/story/simonhudson" rel="noopener" target="_blank">
+							<?= icon('stack-overflow'); ?>
+							<span class="visuallyhidden">Stack Overflow </span>Developer Story
+							<?= newTabWindowWarning(); ?>
+						</a>
+					</li>
+				</ul>
+			</div>
 		</footer>
 
 		<script src="<?= $paths->js ?>main.js"></script>
